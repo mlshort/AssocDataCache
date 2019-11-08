@@ -24,7 +24,7 @@
 // |    57      |     2        |      5       |
 // |   0..56    |   57..58     |   59..63     |
 
-DWORD_PTR CVirtualAddress::DecodeTag (void) const
+DWORD_PTR CVirtualAddress::DecodeTag (void) const noexcept
 {
     if ( m_pAddress )
     {
@@ -36,7 +36,7 @@ DWORD_PTR CVirtualAddress::DecodeTag (void) const
         return DECODE_ERROR;
 }
 
-DWORD_PTR CVirtualAddress::DecodeOffset (void) const
+DWORD_PTR CVirtualAddress::DecodeOffset (void) const noexcept
 {
     if ( m_pAddress )
     {
@@ -48,7 +48,7 @@ DWORD_PTR CVirtualAddress::DecodeOffset (void) const
         return DECODE_ERROR;
 }
 
-DWORD_PTR CVirtualAddress::DecodeIndex (void) const
+DWORD_PTR CVirtualAddress::DecodeIndex (void) const noexcept
 {
     if ( m_pAddress )
     {

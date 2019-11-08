@@ -11,7 +11,7 @@
 #include "CacheBlock.h"
 
 
-CCacheBlock::CCacheBlock ( )
+CCacheBlock::CCacheBlock ( ) noexcept
     : m_dwTag (0)
 {  // intentionally marking the memory block with fixed value
    // for testing and debugging purposes (yeah, like M$)
@@ -19,7 +19,7 @@ CCacheBlock::CCacheBlock ( )
 };
 
 
-bool CCacheBlock::GetCacheData (size_t cbOffset, DWORD_PTR& dwData) const
+bool CCacheBlock::GetCacheData (size_t cbOffset, DWORD_PTR& dwData) const noexcept
 {
     bool bReturn = false;
     if ( cbOffset < ( sizeof (m_rgBlock) + sizeof (DWORD_PTR) - sizeof (BYTE)) )
@@ -31,7 +31,7 @@ bool CCacheBlock::GetCacheData (size_t cbOffset, DWORD_PTR& dwData) const
 }
 
 bool CCacheBlock::LoadCacheBlock (DWORD_PTR dwTag, const BYTE* pData, 
-                                  size_t cbLen /* = g_CACHE_BLOCK_SIZE */)
+                                  size_t cbLen /* = g_CACHE_BLOCK_SIZE */) noexcept
 {
     bool bReturn = false;
     if ( pData != nullptr )

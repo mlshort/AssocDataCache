@@ -10,11 +10,15 @@
 #include <iostream>
 #include "CacheSet.h"
 
-CCacheSet::CCacheSet ( )
-    : m_queAvailableBlocks ( )
+CCacheSet::CCacheSet() noexcept
+    : m_queAvailableBlocks()
 {
-    for ( int i = 0; i < _countof(m_rgCacheBlock); i++ )
-        m_queAvailableBlocks.push (&m_rgCacheBlock[i]);
+};
+
+void CCacheSet::Init(void)
+{
+    for (int i = 0; i < _countof(m_rgCacheBlock); i++)
+        m_queAvailableBlocks.push(&m_rgCacheBlock[i]);
 };
 
 bool CCacheSet::GetCacheData (DWORD_PTR dwTag, DWORD_PTR dwOffset, DWORD_PTR& dwData)
@@ -58,23 +62,26 @@ bool CCacheSet::LoadCacheBlock (DWORD_PTR dwTag, const void* pAddress)
 {
     bool bReturn = false;
     // lets find a stale CacheBlock to load
-    CCacheBlock* pCacheBlock = m_queAvailableBlocks.front ( );
-    m_queAvailableBlocks.pop ( );
-/*
-     In order to keep everything matching up correctly with our Tag association, 
-     we need to load memory addresses that would have the same tag and index 
-     fields when subsequently broken down.
+    if (!m_queAvailableBlocks.empty())
+    {
+        CCacheBlock* pCacheBlock = m_queAvailableBlocks.front();
+        m_queAvailableBlocks.pop();
+        /*
+             In order to keep everything matching up correctly with our Tag association,
+             we need to load memory addresses that would have the same tag and index
+             fields when subsequently broken down.
 
-     to do this, i am going clear the Offset bits (5 bits) of the pAddress parameter
-     to generate an address that points to memory that is properly aligned to match
-     up with our tag + index field associations
-*/
-    DWORD_PTR dwAdjustedAddress = (reinterpret_cast<DWORD_PTR>(pAddress) & ~(0x001F));
+             to do this, i am going clear the Offset bits (5 bits) of the pAddress parameter
+             to generate an address that points to memory that is properly aligned to match
+             up with our tag + index field associations
+        */
+        DWORD_PTR dwAdjustedAddress = (reinterpret_cast<DWORD_PTR>(pAddress) & ~(0x001F));
 
-    bReturn = pCacheBlock->LoadCacheBlock(dwTag, 
-                                     reinterpret_cast<const BYTE*>(dwAdjustedAddress));
+        bReturn = pCacheBlock->LoadCacheBlock(dwTag,
+            reinterpret_cast<const BYTE*>(dwAdjustedAddress));
 
-    m_queAvailableBlocks.push (pCacheBlock);
+        m_queAvailableBlocks.push(pCacheBlock);
+    }
 
     return bReturn;
 }

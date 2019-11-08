@@ -53,19 +53,18 @@ class CCacheBlock
     BYTE          m_rgBlock[g_CACHE_BLOCK_SIZE]; ///< actual cache data block
 
 public:
-    /// Default Constructor
-    CCacheBlock ( );
+    /// Default Constructor (is_nothrow_default_constructible == true)
+    CCacheBlock ( ) noexcept;
 
     /// Destructor
-    ~CCacheBlock ( )
-    { };
+    ~CCacheBlock() = default;
 
  /**
     a simple data accessor
 
     @param [in] dwSet
  */
-    void set_Tag (DWORD_PTR dwSet) throw() 
+    void set_Tag (DWORD_PTR dwSet) noexcept 
     { m_dwTag = dwSet; };
 
  /**
@@ -73,7 +72,7 @@ public:
 
     @retval DWORD_PTR containing tag
  */
-    DWORD_PTR get_Tag (void) const throw() 
+    constexpr DWORD_PTR get_Tag (void) const noexcept
     { return m_dwTag; };
 
  /**
@@ -85,7 +84,7 @@ public:
     @retval true     on cache hit, dwData is set
     @retval false    on cache miss, dwData is not set 
  */
-    bool GetCacheData   (size_t cbOffset, DWORD_PTR& dwData) const;
+    bool GetCacheData   (size_t cbOffset, DWORD_PTR& dwData) const noexcept;
 
  /**
     Loads a contiguous block of memory, upto CACHE_BLOCK_SIZE, into cache block. It
@@ -99,18 +98,16 @@ public:
     @retval false   on error
  */
     bool LoadCacheBlock (DWORD_PTR dwTag, const BYTE* pData, 
-                         size_t cbLen = g_CACHE_BLOCK_SIZE);
+                         size_t cbLen = g_CACHE_BLOCK_SIZE) noexcept;
 
 private:
 /// Following methods are generated automatically by the compiler if not 
 /// explicitly implemented.  The copy constructor and assignment operators 
 /// have been declared as 'private' methods to ensure they cannot be called.
 
-    CCacheBlock (const CCacheBlock& rhs)
-    { };
+    CCacheBlock(const CCacheBlock& rhs) = delete;
 
-    CCacheBlock& operator = (const CCacheBlock& rhs)
-    { };
+    CCacheBlock& operator = (const CCacheBlock& rhs) = delete;
 
 };
 

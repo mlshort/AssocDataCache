@@ -24,9 +24,11 @@ class CCacheManager
 
 public:
 
-    /// Default Constructor
-    CCacheManager ( )
+    /// Default Constructor (is_nothrow_default_constructible == true)
+    CCacheManager ( ) noexcept
     { };
+
+    void Init();
 
 /**
     Attempts to retrieve data from cache memory based on address

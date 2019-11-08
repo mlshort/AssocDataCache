@@ -30,7 +30,7 @@
 // |   0..56    |   57..58     |   59..63     |
 
 /// Error Code returned on decoding failure
-const DWORD_PTR DECODE_ERROR = (DWORD_PTR) -1;
+constexpr DWORD_PTR DECODE_ERROR = std::numeric_limits<DWORD_PTR>::max();
 
 /**
     This class is used to translate physical memory addresses into "virtual" 
@@ -60,7 +60,7 @@ class CVirtualAddress
 public:
 
     /// Initialization Constructor
-    CVirtualAddress (const void* pAddress)
+    constexpr CVirtualAddress (const void* pAddress) noexcept
         : m_pAddress (pAddress)
     { };
 
@@ -70,7 +70,7 @@ public:
     @retval  Tag          on success
     @retval  DECODE_ERROR on failure
  */
-    DWORD_PTR DecodeTag       (void) const;
+    DWORD_PTR DecodeTag       (void) const noexcept;
 
  /**
     Decodes and returns Block Offset from the underlying memory address
@@ -78,7 +78,7 @@ public:
     @retval Offset       on success
     @retval DECODE_ERROR on failure
  */
-    DWORD_PTR DecodeOffset    (void) const;
+    DWORD_PTR DecodeOffset    (void) const noexcept;
 
  /**
     Decodes and returns Cache Set Index from the underlying memory address
@@ -86,9 +86,9 @@ public:
     @retval Index           on success
     @retval DECODE_ERROR    on error
  */
-    DWORD_PTR DecodeIndex     (void) const;
+    DWORD_PTR DecodeIndex     (void) const noexcept;
 
-    const DWORD_PTR DecodeAddress   (void) const
+    constexpr DWORD_PTR DecodeAddress   (void) const noexcept
     { return reinterpret_cast<const DWORD_PTR>(m_pAddress); };
 
     std::ostream& operator << (std::ostream& os) const;
@@ -98,9 +98,7 @@ private:
     // so going to make private
 
     /// Default Constructor
-    CVirtualAddress ( )
-        : m_pAddress (nullptr)
-    { };
+    CVirtualAddress() = delete;
 
 };
 

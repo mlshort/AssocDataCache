@@ -22,8 +22,8 @@
 #endif
 
 /// Number of caches sets needed
-const int g_CACHE_SETS           = g_CACHE_NUM_BLOCKS / 4;        
-const int g_CACHE_BLOCKS_PER_SET = g_CACHE_NUM_BLOCKS / g_CACHE_SETS;
+constexpr int g_CACHE_SETS           = g_CACHE_NUM_BLOCKS / 4;        
+constexpr int g_CACHE_BLOCKS_PER_SET = g_CACHE_NUM_BLOCKS / g_CACHE_SETS;
 
 /*
     The simplest approach, direct-mapped, forces a many-to-one mapping between
@@ -131,8 +131,11 @@ class CCacheSet
     std::queue<CCacheBlock*> m_queAvailableBlocks;
 
 public:
-    /// Default Constructor
-    CCacheSet ( );
+    /// Default Constructor (is_nothrow_default_constructible == true)
+    CCacheSet ( ) noexcept;
+
+    void Init();
+
  /**
     Attempts to retrieve data from cache memory based on 
     tag and offset
@@ -164,8 +167,8 @@ private:
 /// explicitly implemented.  The copy constructor and assignment operators 
 /// have been declared as 'private' methods to ensure they cannot be called.
 
-    CCacheSet(const CCacheSet& rhs) { };
-    CCacheSet& operator=(const CCacheSet& rhs) { };
+    CCacheSet(const CCacheSet& rhs) = delete;
+    CCacheSet& operator=(const CCacheSet& rhs) = delete;
 };
 
 #endif

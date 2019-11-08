@@ -13,7 +13,11 @@
 #include "VirtualAddress.h"
 #include "CacheManager.h"
 
-
+void CCacheManager::Init(void)
+{
+    for (auto& it : m_rgCacheSets)
+        it.Init();
+}
 
 bool CCacheManager::GetCacheData (const void* pAddress, DWORD_PTR& dwData)
 {

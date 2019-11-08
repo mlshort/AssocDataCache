@@ -100,8 +100,8 @@
 #include "CacheManager.h"
 
 
-const int g_MAX_ARRAY_SIZE = 512;
-const int g_DR_PASSOS_LOOP = 511;
+constexpr int g_MAX_ARRAY_SIZE = 512;
+constexpr int g_DR_PASSOS_LOOP = 511;
 
 
 __declspec(align(32)) int g_rgA[g_MAX_ARRAY_SIZE] = { 0 };
@@ -151,6 +151,7 @@ int _tmain (int argc, _TCHAR* argv[])
         g_rgC[i] = i + 0x3300;
 
     CCacheManager cacheManager;
+    cacheManager.Init();
 
     // let's keep track of some cache statistics
     int iCacheMisses = 0;
