@@ -41,11 +41,12 @@ DATE WRITTEN:        September 25, 2014
    When this assignment was given, the instructor did not consider that it could 
    be solved programmatically, given the fact that in a typical program the memory 
    address of any given variable is somewhat pseudo-randomly determined at runtime. 
-   (the assignment is based off the assumption that (&A[0] == 0) )
+   (the assignment is based off the assumption that the arrays (A[512], B[512], C[512])
+   resided contiguously in memory, with a memory address beginning at 0x00000000 )
 
    I decided to proceed to solve the problem programmatically anyway, but with 
    the added difficulty of compensating for the fact that &A[0] will never equal 
-   0. (seriously, how was this even a legitimate problem to begin with?)
+   0x00000000. (an impossibility in C++)
 
    I was very aware I would have to somehow compensate for being given a random
    piece of physical memory and implement some form of virtual memory addressing, 
