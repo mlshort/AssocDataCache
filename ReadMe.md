@@ -1,4 +1,4 @@
-NAME:    Four-way associative data cache
+# Four-way set associative data cache
 
   DIRECTORY STRUCTURE:
 ======================================================================
