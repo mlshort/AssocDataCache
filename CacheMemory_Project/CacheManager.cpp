@@ -19,7 +19,7 @@ void CCacheManager::Init(void)
         it.Init();
 }
 
-bool CCacheManager::GetCacheData (const void* pAddress, DWORD_PTR& dwData)
+bool CCacheManager::GetCacheData (const void* pAddress, DWORD_PTR& dwData) noexcept
 {
     bool bReturn = false;
     // we need to decode pAddress and see if it maps to what we have in cache
@@ -55,7 +55,7 @@ bool CCacheManager::GetCacheData (const void* pAddress, DWORD_PTR& dwData)
     return bReturn;
 }
 
-bool CCacheManager::LoadCachePage (const void* pAddress)
+bool CCacheManager::LoadCachePage (const void* pAddress) noexcept
 {
     bool bReturn = false;
 

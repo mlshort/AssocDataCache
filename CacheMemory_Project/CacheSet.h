@@ -147,7 +147,7 @@ public:
     @retval true     on cache hit, dwData is set
     @retval false    on cache miss, dwData is not set 
  */
-    bool GetCacheData (DWORD_PTR dwTag, DWORD_PTR cbOffset, DWORD_PTR& dwData);
+    bool GetCacheData (DWORD_PTR dwTag, DWORD_PTR cbOffset, DWORD_PTR& dwData) noexcept;
     
  /**
     Loads a contiguous block of memory of CACHE_BLOCK_SIZE, into cache block. It
@@ -160,7 +160,7 @@ public:
     @retval true    if successful
     @retval false   on error
  */
-    bool LoadCacheBlock (DWORD_PTR dwTag, const void* pAddress);
+    bool LoadCacheBlock (DWORD_PTR dwTag, const void* pAddress) noexcept;
 
 private:
 /// Following methods are generated automatically by the compiler if not 

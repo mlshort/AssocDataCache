@@ -121,7 +121,7 @@ std::ostream& PrintIterationHeader(std::ostream& os, int iIteration)
     return os;
 }
 
-int _tmain (int argc, _TCHAR* argv[])
+int _tmain (int /*argc*/, _TCHAR* /*argv[]*/)
 {
     std::ofstream oflog;
     std::stringstream ss;

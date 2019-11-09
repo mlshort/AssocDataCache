@@ -39,7 +39,7 @@ public:
     @retval true     on cache hit, dwData is set
     @retval false    on cache miss, dwData is not set 
 */
-    bool GetCacheData  (const void* pAddress, DWORD_PTR& dwData);
+    bool GetCacheData  (const void* pAddress, DWORD_PTR& dwData) noexcept;
 
  /**
     Loads a contiguous block of memory, upto CACHE_BLOCK_SIZE, based on the
@@ -50,7 +50,7 @@ public:
     @retval true      on success
     @retval false     on error
  */
-    bool LoadCachePage (const void* pAddress);
+    bool LoadCachePage (const void* pAddress) noexcept;
 
 };
 

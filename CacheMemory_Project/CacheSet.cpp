@@ -21,7 +21,7 @@ void CCacheSet::Init(void)
         m_queAvailableBlocks.push(&m_rgCacheBlock[i]);
 };
 
-bool CCacheSet::GetCacheData (DWORD_PTR dwTag, DWORD_PTR dwOffset, DWORD_PTR& dwData)
+bool CCacheSet::GetCacheData (DWORD_PTR dwTag, DWORD_PTR dwOffset, DWORD_PTR& dwData) noexcept
 {
     bool bReturn = false;
     // lets iterate through our cache blocks and see if any matches 'dwTag'
@@ -58,7 +58,7 @@ bool CCacheSet::GetCacheData (DWORD_PTR dwTag, DWORD_PTR dwOffset, DWORD_PTR& dw
     return bReturn;
 }
 
-bool CCacheSet::LoadCacheBlock (DWORD_PTR dwTag, const void* pAddress)
+bool CCacheSet::LoadCacheBlock (DWORD_PTR dwTag, const void* pAddress) noexcept
 {
     bool bReturn = false;
     // lets find a stale CacheBlock to load

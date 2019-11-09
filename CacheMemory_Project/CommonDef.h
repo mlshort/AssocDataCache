@@ -21,7 +21,4 @@ typedef unsigned __int32 DWORD;
     #include <fstream>
 #endif
 
-extern std::ofstream oflog;
-
-
 #endif

@@ -56,9 +56,6 @@ public:
     /// Default Constructor (is_nothrow_default_constructible == true)
     CCacheBlock ( ) noexcept;
 
-    /// Destructor
-    ~CCacheBlock() = default;
-
  /**
     a simple data accessor
 
