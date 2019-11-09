@@ -10,10 +10,6 @@
 + --- \Documentation    (implementation documentation)  
 + --- \Obj              (discardable binary intermediaries)  
 
-DESCRIPTION:         see below  
-DATE WRITTEN:        September 25, 2014  
-
-
   Associative Data Cache Project Overview
 ========================================================================
 
@@ -77,7 +73,7 @@ DATE WRITTEN:        September 25, 2014
    1.  Even though my course book & lecture lacked enough detailed information 
        for me to work from, I quickly found other lecture notes that filled in the 
        gaps.  One example was here : 
-       http://www.cs.cornell.edu/~tomf/notes/cps104/cache.html
+       [Cornell University Cache Lecture](http://www.cs.cornell.edu/~tomf/notes/cps104/cache.html])
    2.  This was exactly the kind of detailed information I needed to implement a 
        real software solution.  If you notice my source code documentation, I 
        incorporated pertinent narrations directly in my comments for further 
