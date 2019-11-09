@@ -22,7 +22,7 @@
     <ProjectGuid>{DBB8C9C0-B034-405F-9654-877E8A6FBFF5}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MemoryProject</RootNamespace>
-    <ProjectName>CacheMemoryProject</ProjectName>
+    <ProjectName>4WaySetAssocCache</ProjectName>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <SccProjectName>SAK</SccProjectName>
     <SccAuxPath>SAK</SccAuxPath>
