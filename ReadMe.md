@@ -1,16 +1,24 @@
 # Four-way set associative data cache
+  
+# [Project Documentation](https://mlshort.github.io/AssocDataCache/html/index.html)
 
-  DIRECTORY STRUCTURE:
-======================================================================
+DIRECTORY STRUCTURE
+===================
+```
+  +-- Assoc Data Cache
+        |
+        +-- CacheMemory_Project  (source)
+        |
+        +-- Bin              (compiled executable)
+        |
+        +-- Data             (output file data)
+        |
+        +-- Documentation    (implementation documentation)
+        |
+        +-- Obj              (discardable binary intermediaries)  
+```    
 
-\Assoc Data Cache  
-+ --- \CacheMemory_Project  (source)  
-+ --- \Bin              (compiled executable)  
-+ --- \Data             (output file data)  
-+ --- \Documentation    (implementation documentation)  
-+ --- \Obj              (discardable binary intermediaries)  
-
-  Associative Data Cache Project Overview
+Associative Data Cache Project Overview
 ========================================================================
 
 1. ASSIGNMENT:
