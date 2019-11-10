@@ -87,8 +87,10 @@ $(document).ready(function(){initNavTree('CommonDef_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">CommonDef.h File Reference</div>  </div>
 </div><!--header-->
@@ -111,6 +113,11 @@ Include dependency graph for CommonDef.h:</div>
 </div>
 <p><a href="CommonDef_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacereq"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereq.html">req</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ac718dfc71c84135cbded9806db0fb317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonDef_8h.html#ac718dfc71c84135cbded9806db0fb317">_COMMON_DEF_H__</a></td></tr>
@@ -122,6 +129,22 @@ Typedefs</h2></td></tr>
 <tr class="separator:a634460dafaee84690f6af3690c42dedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e573b32980bc2aee14f4d2639269b85"><td class="memItemLeft" align="right" valign="top">typedef unsigned __int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonDef_8h.html#a9e573b32980bc2aee14f4d2639269b85">DWORD</a></td></tr>
 <tr class="separator:a9e573b32980bc2aee14f4d2639269b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab09855ba48d494fecf6bcb0ae4687adf"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereq.html#ab09855ba48d494fecf6bcb0ae4687adf">req::g_CACHE_NUM_BLOCKS</a> = 16</td></tr>
+<tr class="memdesc:ab09855ba48d494fecf6bcb0ae4687adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of cache data blocks (Project Requirement)  <a href="namespacereq.html#ab09855ba48d494fecf6bcb0ae4687adf">More...</a><br /></td></tr>
+<tr class="separator:ab09855ba48d494fecf6bcb0ae4687adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a9fe9f4845e2499267792763eb752c"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereq.html#a17a9fe9f4845e2499267792763eb752c">req::g_CACHE_BLOCK_SIZE</a> = 32</td></tr>
+<tr class="memdesc:a17a9fe9f4845e2499267792763eb752c"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of cache block (in bytes)  <a href="namespacereq.html#a17a9fe9f4845e2499267792763eb752c">More...</a><br /></td></tr>
+<tr class="separator:a17a9fe9f4845e2499267792763eb752c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e356360cff2a1d4e13211477b049364"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereq.html#a4e356360cff2a1d4e13211477b049364">req::g_4WAY_BLOCKS_PER_SET</a> = 4</td></tr>
+<tr class="memdesc:a4e356360cff2a1d4e13211477b049364"><td class="mdescLeft">&#160;</td><td class="mdescRight">4-way set associative cache (Project Requirement)  <a href="namespacereq.html#a4e356360cff2a1d4e13211477b049364">More...</a><br /></td></tr>
+<tr class="separator:a4e356360cff2a1d4e13211477b049364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3ab502f229a2a4c425e597aeac3b91"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereq.html#adf3ab502f229a2a4c425e597aeac3b91">req::g_4WAY_CACHE_SETS</a> = g_CACHE_NUM_BLOCKS / g_4WAY_BLOCKS_PER_SET</td></tr>
+<tr class="separator:adf3ab502f229a2a4c425e597aeac3b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57f33076ade7d794410f0bdacf49d7d"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacereq.html#ae57f33076ade7d794410f0bdacf49d7d">req::g_MAX_ARRAY_SIZE</a> = 512</td></tr>
+<tr class="separator:ae57f33076ade7d794410f0bdacf49d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Common type definitions. </p>
@@ -184,7 +207,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_daf31f26a43db8669501ae1cb1258dfc.html">CacheMemory_Project</a></li><li class="navelem"><a class="el" href="CommonDef_8h.html">CommonDef.h</a></li>
-    <li class="footer">Generated on Sat Nov 9 2019 10:18:22 for 4-way Set Associative Cache Project by
+    <li class="footer">Generated on Sat Nov 9 2019 19:51:35 for 4-way Set Associative Cache Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

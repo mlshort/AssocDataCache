@@ -21,7 +21,7 @@ void CCacheSet::Init(void)
         m_queAvailableBlocks.push(&m_rgCacheBlock[i]);
 };
 
-bool CCacheSet::GetCacheData (DWORD_PTR dwTag, DWORD_PTR dwOffset, DWORD_PTR& dwData) noexcept
+bool CCacheSet::GetCacheData (DWORD_PTR dwTag, size_t cbOffset, DWORD& dwData) noexcept
 {
     bool bReturn = false;
     // lets iterate through our cache blocks and see if any matches 'dwTag'
@@ -45,7 +45,7 @@ bool CCacheSet::GetCacheData (DWORD_PTR dwTag, DWORD_PTR dwOffset, DWORD_PTR& dw
 
     if ( bFound )
     {
-        bReturn = m_rgCacheBlock[i].GetCacheData (dwOffset, dwData);
+        bReturn = m_rgCacheBlock[i].GetCacheData (cbOffset, dwData);
 #ifdef _DEBUG
         std::cout << "    ** Cache Hit ** ";
         if (bReturn)
@@ -58,6 +58,27 @@ bool CCacheSet::GetCacheData (DWORD_PTR dwTag, DWORD_PTR dwOffset, DWORD_PTR& dw
     return bReturn;
 }
 
+/**
+    @note LoadCacheBlock utilitizes the FIFO replacement policy
+
+    The FIFO policy simply keeps track of the insertion order of the candidates
+    and evicts the entry that has resided in the cache for the longest amount of
+    time.  The mechanism that implements this policy is straightforward, since
+    the candidate eviction set (all blocks in a fully associative cache, or all
+    blocks in a single set in a set-associative cache) can be managed as a circular
+    queue. The circular queue has a single pointer to the oldest entry which is
+    used to identify the eviction candidate and the pointer is incremented whenever
+    a new entry is placed in the queue. This results in a single update for every
+    miss in the cache.
+
+    However, the FIFO policy does not always match the temporal locality
+    characteristics inherent in a program's reference stream, since some memory
+    locations are accessed continually throughout the execution (e.g., commonly
+    referenced global variables). Such references would experience frequent misses
+    under a FIFO policy, since the blocks used to satisfy them would be evicted
+    at regular intervals, as soon as every other block in the candidate eviction
+    set had been evicted.
+*/
 bool CCacheSet::LoadCacheBlock (DWORD_PTR dwTag, const void* pAddress) noexcept
 {
     bool bReturn = false;

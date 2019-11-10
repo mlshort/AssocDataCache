@@ -20,17 +20,17 @@ static constexpr _T bitmask(size_t nBitsSet)
         & (static_cast<_T>(-1) >> ((sizeof(_T) * CHAR_BIT) - nBitsSet));
 };
 
-//           32 bit Address
-//     Tag       (set) Index   (blocK) Offset
-// |   bits[t]  |   bits[i]    |   bits[o]    |
-// |    25      |     2        |      5       |
-// |   0..24    |   25..26     |   27..31     |
+constexpr size_t static_log2(size_t n)
+{
+    return ((n < 2) ? 0 : 1 + static_log2(n >> 1));
+};
 
-//           64 bit Address
-//     Tag       (set) Index   (blocK) Offset
-// |   bits[t]  |   bits[i]    |   bits[o]    |
-// |    57      |     2        |      5       |
-// |   0..56    |   57..58     |   59..63     |
+/// calculated as log2(BlockSize), specifically log2(32) in this instance
+constexpr size_t   OFFSET_BITS = static_log2(req::g_CACHE_BLOCK_SIZE);
+/// calculated as log2(NumSets), specifically log2(4) in this instance
+constexpr size_t   INDEX_BITS  = static_log2(req::g_4WAY_CACHE_SETS);
+
+constexpr size_t   TAG_BITS    = sizeof(DWORD_PTR) - INDEX_BITS - OFFSET_BITS;
 
 DWORD_PTR CVirtualAddress::DecodeTag (void) const noexcept
 {

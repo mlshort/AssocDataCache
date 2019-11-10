@@ -108,7 +108,7 @@ for (i = 0; i &lt; 511, i++)
 <ol type="1">
 <li>No assumptions were made regarding the address of A[0] being zero. <br  />
  As a result, a more involved and accurate four-way associative data cache implementation was required.</li>
-<li>The attached source code has been run on a x64 bit system, but compiled as a 32bit application. It is not designed or developed for porting or recompilation as a x64 bit executable. There are explicit types, type-casts and assumptions made throughout the code (i.e. casting memory address to 32-bit types) that limit it to a 32-bit executable.</li>
+<li>The attached source code has been run on a x64 bit system, but compiled as a 32bit application. It is has been modified to support x32 / x64.</li>
 <li>"Handling Updates to a Block" was not considered at this time and would require further implementation.</li>
 <li>Efforts were made to meaningfully test and debug the algorithms involved in this implementation. Code was added to test the validity of the data returned from cache. Due to the added coding precautions taken, an error was uncovered that would result in the following: <pre class="fragment">Misses: 195 (est)
 Hits:  1850 (est)
@@ -142,7 +142,7 @@ Errors:   0
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Nov 9 2019 10:18:23 for 4-way Set Associative Cache Project by
+    <li class="footer">Generated on Sat Nov 9 2019 19:51:36 for 4-way Set Associative Cache Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

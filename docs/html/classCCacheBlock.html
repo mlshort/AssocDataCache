@@ -99,21 +99,21 @@ $(document).ready(function(){initNavTree('classCCacheBlock.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad64f34425e9bd5cd47fb105273626451"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheBlock.html#ad64f34425e9bd5cd47fb105273626451">CCacheBlock</a> () noexcept</td></tr>
-<tr class="memdesc:ad64f34425e9bd5cd47fb105273626451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor (is_nothrow_default_constructible == true)  <a href="classCCacheBlock.html#ad64f34425e9bd5cd47fb105273626451">More...</a><br /></td></tr>
 <tr class="separator:ad64f34425e9bd5cd47fb105273626451"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc3cd6e420890c931d81be78c76c97b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheBlock.html#adc3cd6e420890c931d81be78c76c97b8">set_Tag</a> (DWORD_PTR dwSet) noexcept</td></tr>
 <tr class="separator:adc3cd6e420890c931d81be78c76c97b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7da2308fe1bd493fe40270de9ef8978f"><td class="memItemLeft" align="right" valign="top">constexpr DWORD_PTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheBlock.html#a7da2308fe1bd493fe40270de9ef8978f">get_Tag</a> (void) const noexcept</td></tr>
 <tr class="separator:a7da2308fe1bd493fe40270de9ef8978f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf1dde86a057cc5a9b1bd88684aa3ece"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheBlock.html#abf1dde86a057cc5a9b1bd88684aa3ece">GetCacheData</a> (size_t cbOffset, DWORD_PTR &amp;dwData) const noexcept</td></tr>
-<tr class="separator:abf1dde86a057cc5a9b1bd88684aa3ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c40311c2f535d52f4caee133110f152"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheBlock.html#a8c40311c2f535d52f4caee133110f152">LoadCacheBlock</a> (DWORD_PTR dwTag, const <a class="el" href="CommonDef_8h.html#a634460dafaee84690f6af3690c42dedd">BYTE</a> *pData, size_t cbLen=<a class="el" href="CacheBlock_8h.html#a5dac5aa98e1e801de5ccc3a433daa0f2">g_CACHE_BLOCK_SIZE</a>) noexcept</td></tr>
-<tr class="separator:a8c40311c2f535d52f4caee133110f152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2817a9b0f8f25b5cbf64e66b28cb15a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheBlock.html#ae2817a9b0f8f25b5cbf64e66b28cb15a">GetCacheData</a> (size_t cbOffset, <a class="el" href="CommonDef_8h.html#a9e573b32980bc2aee14f4d2639269b85">DWORD</a> &amp;dwData) const noexcept</td></tr>
+<tr class="separator:ae2817a9b0f8f25b5cbf64e66b28cb15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a86be16eb4bfe41f8fdce3f964c47bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheBlock.html#a4a86be16eb4bfe41f8fdce3f964c47bb">LoadCacheBlock</a> (DWORD_PTR dwTag, const <a class="el" href="CommonDef_8h.html#a634460dafaee84690f6af3690c42dedd">BYTE</a> *pData, size_t cbLen=<a class="el" href="namespacereq.html#a17a9fe9f4845e2499267792763eb752c">req::g_CACHE_BLOCK_SIZE</a>) noexcept</td></tr>
+<tr class="separator:a4a86be16eb4bfe41f8fdce3f964c47bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classCCacheBlock.html">CCacheBlock</a> class manages a logical unit of contiguous memory (i.e. block, entity) </p>
+<div class="textblock"><p><a class="el" href="classCCacheBlock.html">CCacheBlock</a> class manages a logical unit of contiguous memory and the associated reference Tag. <br  />
+ </p>
 
-<p class="definition">Definition at line <a class="el" href="CacheBlock_8h_source.html#l00049">49</a> of file <a class="el" href="CacheBlock_8h_source.html">CacheBlock.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CacheBlock_8h_source.html#l00020">20</a> of file <a class="el" href="CacheBlock_8h_source.html">CacheBlock.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad64f34425e9bd5cd47fb105273626451"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad64f34425e9bd5cd47fb105273626451">&#9670;&nbsp;</a></span>CCacheBlock()</h2>
@@ -137,8 +137,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Default Constructor (is_nothrow_default_constructible == true) </p>
+<p>Default Constructor</p>
+<dl class="section note"><dt>Note</dt><dd>(is_nothrow_default_constructible == true) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="CacheBlock_8cpp_source.html#l00014">14</a> of file <a class="el" href="CacheBlock_8cpp_source.html">CacheBlock.cpp</a>.</p>
 
@@ -168,20 +168,20 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>a simple data accessor</p>
+<p>Returns cache block Tag identifier</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">DWORD_PTR</td><td>containing tag </td></tr>
+    <tr><td class="paramname">DWORD_PTR</td><td>containing Tag identifier </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CacheBlock_8h_source.html#l00072">72</a> of file <a class="el" href="CacheBlock_8h_source.html">CacheBlock.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CacheBlock_8h_source.html#l00046">46</a> of file <a class="el" href="CacheBlock_8h_source.html">CacheBlock.h</a>.</p>
 
 </div>
 </div>
-<a id="abf1dde86a057cc5a9b1bd88684aa3ece"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf1dde86a057cc5a9b1bd88684aa3ece">&#9670;&nbsp;</a></span>GetCacheData()</h2>
+<a id="ae2817a9b0f8f25b5cbf64e66b28cb15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2817a9b0f8f25b5cbf64e66b28cb15a">&#9670;&nbsp;</a></span>GetCacheData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +198,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DWORD_PTR &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="CommonDef_8h.html#a9e573b32980bc2aee14f4d2639269b85">DWORD</a> &amp;&#160;</td>
           <td class="paramname"><em>dwData</em>&#160;</td>
         </tr>
         <tr>
@@ -213,7 +213,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Attempts to retrieve data from cache memory based on offset</p>
+<p>Attempts to retrieve data from the underlying cache block based on offset</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cbOffset</td><td>count of byte (cb) offset into cache block </td></tr>
@@ -233,8 +233,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8c40311c2f535d52f4caee133110f152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c40311c2f535d52f4caee133110f152">&#9670;&nbsp;</a></span>LoadCacheBlock()</h2>
+<a id="a4a86be16eb4bfe41f8fdce3f964c47bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a86be16eb4bfe41f8fdce3f964c47bb">&#9670;&nbsp;</a></span>LoadCacheBlock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +258,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>cbLen</em> = <code><a class="el" href="CacheBlock_8h.html#a5dac5aa98e1e801de5ccc3a433daa0f2">g_CACHE_BLOCK_SIZE</a></code>&#160;</td>
+          <td class="paramname"><em>cbLen</em> = <code><a class="el" href="namespacereq.html#a17a9fe9f4845e2499267792763eb752c">req::g_CACHE_BLOCK_SIZE</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -289,7 +289,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CacheBlock_8cpp_source.html#l00033">33</a> of file <a class="el" href="CacheBlock_8cpp_source.html">CacheBlock.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CacheBlock_8cpp_source.html#l00037">37</a> of file <a class="el" href="CacheBlock_8cpp_source.html">CacheBlock.cpp</a>.</p>
 
 </div>
 </div>
@@ -316,15 +316,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>a simple data accessor</p>
+<p>Sets cache block Tag identifier</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dwSet</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dwSet</td><td>new Tag identifier </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CacheBlock_8h_source.html#l00064">64</a> of file <a class="el" href="CacheBlock_8h_source.html">CacheBlock.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CacheBlock_8h_source.html#l00038">38</a> of file <a class="el" href="CacheBlock_8h_source.html">CacheBlock.h</a>.</p>
 
 </div>
 </div>
@@ -334,7 +334,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classCCacheBlock.html">CCacheBlock</a></li>
-    <li class="footer">Generated on Sat Nov 9 2019 10:18:23 for 4-way Set Associative Cache Project by
+    <li class="footer">Generated on Sat Nov 9 2019 19:51:35 for 4-way Set Associative Cache Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

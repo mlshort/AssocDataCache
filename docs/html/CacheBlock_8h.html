@@ -87,8 +87,7 @@ $(document).ready(function(){initNavTree('CacheBlock_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">CacheBlock.h File Reference</div>  </div>
 </div><!--header-->
@@ -115,69 +114,19 @@ Include dependency graph for CacheBlock.h:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheBlock.html">CCacheBlock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a5dac5aa98e1e801de5ccc3a433daa0f2"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CacheBlock_8h.html#a5dac5aa98e1e801de5ccc3a433daa0f2">g_CACHE_BLOCK_SIZE</a> = 32</td></tr>
-<tr class="memdesc:a5dac5aa98e1e801de5ccc3a433daa0f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">size, in bytes, of each cache block  <a href="CacheBlock_8h.html#a5dac5aa98e1e801de5ccc3a433daa0f2">More...</a><br /></td></tr>
-<tr class="separator:a5dac5aa98e1e801de5ccc3a433daa0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e37c0a4c09dc16b3fb5f1dd224fcc46"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CacheBlock_8h.html#a4e37c0a4c09dc16b3fb5f1dd224fcc46">g_CACHE_NUM_BLOCKS</a> = 16</td></tr>
-<tr class="memdesc:a4e37c0a4c09dc16b3fb5f1dd224fcc46"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of cache data blocks  <a href="CacheBlock_8h.html#a4e37c0a4c09dc16b3fb5f1dd224fcc46">More...</a><br /></td></tr>
-<tr class="separator:a4e37c0a4c09dc16b3fb5f1dd224fcc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classCCacheBlock.html">CCacheBlock</a> class interface. </p>
 <dl class="section author"><dt>Author</dt><dd>Mark L. Short </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="CacheBlock_8h_source.html">CacheBlock.h</a>.</p>
-</div><h2 class="groupheader">Variable Documentation</h2>
-<a id="a5dac5aa98e1e801de5ccc3a433daa0f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dac5aa98e1e801de5ccc3a433daa0f2">&#9670;&nbsp;</a></span>g_CACHE_BLOCK_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int g_CACHE_BLOCK_SIZE = 32</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>size, in bytes, of each cache block </p>
-<p>Block size (sometimes referred to as line size) describes the granularity at which the cache operates. Each block is a contiguous series of bytes in memory and begins on a naturally aligned boundary.</p>
-<p>For example, in a cache with 16 - byte blocks, each block would contain 16 bytes, and the first byte in each block would be aligned to 16 - byte boundaries in the address space, implying that the low - order 4 bits of the address of the first byte would always be zero(i.e., 0b ... 0000). The smallest usable block size is the natural word size of the processor (i.e., 4 bytes for a 32 - bit machine, or 8 bytes for a 64 - bit machine), since each access will require the cache to supply at least that many bytes, and splitting a single access over multiple blocks would introduce unacceptable overhead into the access path.</p>
-<p>Whenever the block size is greater than 1 byte, the low-order bits of an address must be used to find the byte or word being accessed within the block. As stated above, the low-order bits for the first byte in the block must always be zero, corresponding to a naturally aligned block in memory. However, if a byte other than the first byte needs to be accessed, the low-order bits must be used as a block offset to index into the block to find the right byte.</p>
-<p>The number of bits needed for the block offset is the log2 of the block size, so that enough bits are available to span all the bytes in the block. For example, if the block size is 64 bytes, log2(64) = 6 low-order bits are used as the block offset. The remaining higher-order bits are then used to locate the appropriate block in the cache memory. </p>
-
-<p class="definition">Definition at line <a class="el" href="CacheBlock_8h_source.html#l00042">42</a> of file <a class="el" href="CacheBlock_8h_source.html">CacheBlock.h</a>.</p>
-
-</div>
-</div>
-<a id="a4e37c0a4c09dc16b3fb5f1dd224fcc46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e37c0a4c09dc16b3fb5f1dd224fcc46">&#9670;&nbsp;</a></span>g_CACHE_NUM_BLOCKS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int g_CACHE_NUM_BLOCKS = 16</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>number of cache data blocks </p>
-
-<p class="definition">Definition at line <a class="el" href="CacheBlock_8h_source.html#l00043">43</a> of file <a class="el" href="CacheBlock_8h_source.html">CacheBlock.h</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_daf31f26a43db8669501ae1cb1258dfc.html">CacheMemory_Project</a></li><li class="navelem"><a class="el" href="CacheBlock_8h.html">CacheBlock.h</a></li>
-    <li class="footer">Generated on Sat Nov 9 2019 10:18:22 for 4-way Set Associative Cache Project by
+    <li class="footer">Generated on Sat Nov 9 2019 19:51:35 for 4-way Set Associative Cache Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -1,0 +1,4062 @@
+Executing an x64 build
+Following based on the physical address of A[0] being 0x00007ff64415ec40
+=================================================================
+
+Cache Miss(es) in Iteration[1]
+-----------------------------------------------------
+   Cache Miss[1] for 'B[0 + 1]'
+   Address[0x00007ff64415f444] Tag[274796251898] Index[1] Offset[4] 
+   Cache Miss[2] for 'C[0]'
+   Address[0x00007ff64415fc40] Tag[274796251902] Index[1] Offset[0] 
+   Cache Miss[3] for 'A[0]'
+   Address[0x00007ff64415ec40] Tag[274796251894] Index[1] Offset[0] 
+
+Cache Miss(es) in Iteration[10]
+-----------------------------------------------------
+   Cache Miss[4] for 'B[9 + 1]'
+   Address[0x00007ff64415f468] Tag[274796251898] Index[1] Offset[40] 
+
+Cache Miss(es) in Iteration[11]
+-----------------------------------------------------
+   Cache Miss[5] for 'B[10 + 1]'
+   Address[0x00007ff64415f46c] Tag[274796251898] Index[1] Offset[44] 
+   Cache Miss[6] for 'C[10]'
+   Address[0x00007ff64415fc68] Tag[274796251902] Index[1] Offset[40] 
+   Cache Miss[7] for 'A[10]'
+   Address[0x00007ff64415ec68] Tag[274796251894] Index[1] Offset[40] 
+   Cache Miss[8] for 'B[10]'
+   Address[0x00007ff64415f468] Tag[274796251898] Index[1] Offset[40] 
+
+Cache Miss(es) in Iteration[12]
+-----------------------------------------------------
+   Cache Miss[9] for 'B[11 + 1]'
+   Address[0x00007ff64415f470] Tag[274796251898] Index[1] Offset[48] 
+   Cache Miss[10] for 'C[11]'
+   Address[0x00007ff64415fc6c] Tag[274796251902] Index[1] Offset[44] 
+   Cache Miss[11] for 'A[11]'
+   Address[0x00007ff64415ec6c] Tag[274796251894] Index[1] Offset[44] 
+   Cache Miss[12] for 'B[11]'
+   Address[0x00007ff64415f46c] Tag[274796251898] Index[1] Offset[44] 
+
+Cache Miss(es) in Iteration[13]
+-----------------------------------------------------
+   Cache Miss[13] for 'B[12 + 1]'
+   Address[0x00007ff64415f474] Tag[274796251898] Index[1] Offset[52] 
+   Cache Miss[14] for 'C[12]'
+   Address[0x00007ff64415fc70] Tag[274796251902] Index[1] Offset[48] 
+   Cache Miss[15] for 'A[12]'
+   Address[0x00007ff64415ec70] Tag[274796251894] Index[1] Offset[48] 
+   Cache Miss[16] for 'B[12]'
+   Address[0x00007ff64415f470] Tag[274796251898] Index[1] Offset[48] 
+
+Cache Miss(es) in Iteration[14]
+-----------------------------------------------------
+   Cache Miss[17] for 'B[13 + 1]'
+   Address[0x00007ff64415f478] Tag[274796251898] Index[1] Offset[56] 
+   Cache Miss[18] for 'C[13]'
+   Address[0x00007ff64415fc74] Tag[274796251902] Index[1] Offset[52] 
+   Cache Miss[19] for 'A[13]'
+   Address[0x00007ff64415ec74] Tag[274796251894] Index[1] Offset[52] 
+   Cache Miss[20] for 'B[13]'
+   Address[0x00007ff64415f474] Tag[274796251898] Index[1] Offset[52] 
+
+Cache Miss(es) in Iteration[15]
+-----------------------------------------------------
+   Cache Miss[21] for 'B[14 + 1]'
+   Address[0x00007ff64415f47c] Tag[274796251898] Index[1] Offset[60] 
+   Cache Miss[22] for 'C[14]'
+   Address[0x00007ff64415fc78] Tag[274796251902] Index[1] Offset[56] 
+   Cache Miss[23] for 'A[14]'
+   Address[0x00007ff64415ec78] Tag[274796251894] Index[1] Offset[56] 
+   Cache Miss[24] for 'B[14]'
+   Address[0x00007ff64415f478] Tag[274796251898] Index[1] Offset[56] 
+
+Cache Miss(es) in Iteration[16]
+-----------------------------------------------------
+   Cache Miss[25] for 'B[15 + 1]'
+   Address[0x00007ff64415f480] Tag[274796251898] Index[2] Offset[0] 
+   Cache Miss[26] for 'C[15]'
+   Address[0x00007ff64415fc7c] Tag[274796251902] Index[1] Offset[60] 
+   Cache Miss[27] for 'A[15]'
+   Address[0x00007ff64415ec7c] Tag[274796251894] Index[1] Offset[60] 
+   Cache Miss[28] for 'B[15]'
+   Address[0x00007ff64415f47c] Tag[274796251898] Index[1] Offset[60] 
+
+Cache Miss(es) in Iteration[17]
+-----------------------------------------------------
+   Cache Miss[29] for 'C[16]'
+   Address[0x00007ff64415fc80] Tag[274796251902] Index[2] Offset[0] 
+   Cache Miss[30] for 'A[16]'
+   Address[0x00007ff64415ec80] Tag[274796251894] Index[2] Offset[0] 
+
+Cache Miss(es) in Iteration[26]
+-----------------------------------------------------
+   Cache Miss[31] for 'B[25 + 1]'
+   Address[0x00007ff64415f4a8] Tag[274796251898] Index[2] Offset[40] 
+
+Cache Miss(es) in Iteration[27]
+-----------------------------------------------------
+   Cache Miss[32] for 'B[26 + 1]'
+   Address[0x00007ff64415f4ac] Tag[274796251898] Index[2] Offset[44] 
+   Cache Miss[33] for 'C[26]'
+   Address[0x00007ff64415fca8] Tag[274796251902] Index[2] Offset[40] 
+   Cache Miss[34] for 'A[26]'
+   Address[0x00007ff64415eca8] Tag[274796251894] Index[2] Offset[40] 
+   Cache Miss[35] for 'B[26]'
+   Address[0x00007ff64415f4a8] Tag[274796251898] Index[2] Offset[40] 
+
+Cache Miss(es) in Iteration[28]
+-----------------------------------------------------
+   Cache Miss[36] for 'B[27 + 1]'
+   Address[0x00007ff64415f4b0] Tag[274796251898] Index[2] Offset[48] 
+   Cache Miss[37] for 'C[27]'
+   Address[0x00007ff64415fcac] Tag[274796251902] Index[2] Offset[44] 
+   Cache Miss[38] for 'A[27]'
+   Address[0x00007ff64415ecac] Tag[274796251894] Index[2] Offset[44] 
+   Cache Miss[39] for 'B[27]'
+   Address[0x00007ff64415f4ac] Tag[274796251898] Index[2] Offset[44] 
+
+Cache Miss(es) in Iteration[29]
+-----------------------------------------------------
+   Cache Miss[40] for 'B[28 + 1]'
+   Address[0x00007ff64415f4b4] Tag[274796251898] Index[2] Offset[52] 
+   Cache Miss[41] for 'C[28]'
+   Address[0x00007ff64415fcb0] Tag[274796251902] Index[2] Offset[48] 
+   Cache Miss[42] for 'A[28]'
+   Address[0x00007ff64415ecb0] Tag[274796251894] Index[2] Offset[48] 
+   Cache Miss[43] for 'B[28]'
+   Address[0x00007ff64415f4b0] Tag[274796251898] Index[2] Offset[48] 
+
+Cache Miss(es) in Iteration[30]
+-----------------------------------------------------
+   Cache Miss[44] for 'B[29 + 1]'
+   Address[0x00007ff64415f4b8] Tag[274796251898] Index[2] Offset[56] 
+   Cache Miss[45] for 'C[29]'
+   Address[0x00007ff64415fcb4] Tag[274796251902] Index[2] Offset[52] 
+   Cache Miss[46] for 'A[29]'
+   Address[0x00007ff64415ecb4] Tag[274796251894] Index[2] Offset[52] 
+   Cache Miss[47] for 'B[29]'
+   Address[0x00007ff64415f4b4] Tag[274796251898] Index[2] Offset[52] 
+
+Cache Miss(es) in Iteration[31]
+-----------------------------------------------------
+   Cache Miss[48] for 'B[30 + 1]'
+   Address[0x00007ff64415f4bc] Tag[274796251898] Index[2] Offset[60] 
+   Cache Miss[49] for 'C[30]'
+   Address[0x00007ff64415fcb8] Tag[274796251902] Index[2] Offset[56] 
+   Cache Miss[50] for 'A[30]'
+   Address[0x00007ff64415ecb8] Tag[274796251894] Index[2] Offset[56] 
+   Cache Miss[51] for 'B[30]'
+   Address[0x00007ff64415f4b8] Tag[274796251898] Index[2] Offset[56] 
+
+Cache Miss(es) in Iteration[32]
+-----------------------------------------------------
+   Cache Miss[52] for 'B[31 + 1]'
+   Address[0x00007ff64415f4c0] Tag[274796251898] Index[3] Offset[0] 
+   Cache Miss[53] for 'C[31]'
+   Address[0x00007ff64415fcbc] Tag[274796251902] Index[2] Offset[60] 
+   Cache Miss[54] for 'A[31]'
+   Address[0x00007ff64415ecbc] Tag[274796251894] Index[2] Offset[60] 
+   Cache Miss[55] for 'B[31]'
+   Address[0x00007ff64415f4bc] Tag[274796251898] Index[2] Offset[60] 
+
+Cache Miss(es) in Iteration[33]
+-----------------------------------------------------
+   Cache Miss[56] for 'C[32]'
+   Address[0x00007ff64415fcc0] Tag[274796251902] Index[3] Offset[0] 
+   Cache Miss[57] for 'A[32]'
+   Address[0x00007ff64415ecc0] Tag[274796251894] Index[3] Offset[0] 
+
+Cache Miss(es) in Iteration[42]
+-----------------------------------------------------
+   Cache Miss[58] for 'B[41 + 1]'
+   Address[0x00007ff64415f4e8] Tag[274796251898] Index[3] Offset[40] 
+
+Cache Miss(es) in Iteration[43]
+-----------------------------------------------------
+   Cache Miss[59] for 'B[42 + 1]'
+   Address[0x00007ff64415f4ec] Tag[274796251898] Index[3] Offset[44] 
+   Cache Miss[60] for 'C[42]'
+   Address[0x00007ff64415fce8] Tag[274796251902] Index[3] Offset[40] 
+   Cache Miss[61] for 'A[42]'
+   Address[0x00007ff64415ece8] Tag[274796251894] Index[3] Offset[40] 
+   Cache Miss[62] for 'B[42]'
+   Address[0x00007ff64415f4e8] Tag[274796251898] Index[3] Offset[40] 
+
+Cache Miss(es) in Iteration[44]
+-----------------------------------------------------
+   Cache Miss[63] for 'B[43 + 1]'
+   Address[0x00007ff64415f4f0] Tag[274796251898] Index[3] Offset[48] 
+   Cache Miss[64] for 'C[43]'
+   Address[0x00007ff64415fcec] Tag[274796251902] Index[3] Offset[44] 
+   Cache Miss[65] for 'A[43]'
+   Address[0x00007ff64415ecec] Tag[274796251894] Index[3] Offset[44] 
+   Cache Miss[66] for 'B[43]'
+   Address[0x00007ff64415f4ec] Tag[274796251898] Index[3] Offset[44] 
+
+Cache Miss(es) in Iteration[45]
+-----------------------------------------------------
+   Cache Miss[67] for 'B[44 + 1]'
+   Address[0x00007ff64415f4f4] Tag[274796251898] Index[3] Offset[52] 
+   Cache Miss[68] for 'C[44]'
+   Address[0x00007ff64415fcf0] Tag[274796251902] Index[3] Offset[48] 
+   Cache Miss[69] for 'A[44]'
+   Address[0x00007ff64415ecf0] Tag[274796251894] Index[3] Offset[48] 
+   Cache Miss[70] for 'B[44]'
+   Address[0x00007ff64415f4f0] Tag[274796251898] Index[3] Offset[48] 
+
+Cache Miss(es) in Iteration[46]
+-----------------------------------------------------
+   Cache Miss[71] for 'B[45 + 1]'
+   Address[0x00007ff64415f4f8] Tag[274796251898] Index[3] Offset[56] 
+   Cache Miss[72] for 'C[45]'
+   Address[0x00007ff64415fcf4] Tag[274796251902] Index[3] Offset[52] 
+   Cache Miss[73] for 'A[45]'
+   Address[0x00007ff64415ecf4] Tag[274796251894] Index[3] Offset[52] 
+   Cache Miss[74] for 'B[45]'
+   Address[0x00007ff64415f4f4] Tag[274796251898] Index[3] Offset[52] 
+
+Cache Miss(es) in Iteration[47]
+-----------------------------------------------------
+   Cache Miss[75] for 'B[46 + 1]'
+   Address[0x00007ff64415f4fc] Tag[274796251898] Index[3] Offset[60] 
+   Cache Miss[76] for 'C[46]'
+   Address[0x00007ff64415fcf8] Tag[274796251902] Index[3] Offset[56] 
+   Cache Miss[77] for 'A[46]'
+   Address[0x00007ff64415ecf8] Tag[274796251894] Index[3] Offset[56] 
+   Cache Miss[78] for 'B[46]'
+   Address[0x00007ff64415f4f8] Tag[274796251898] Index[3] Offset[56] 
+
+Cache Miss(es) in Iteration[48]
+-----------------------------------------------------
+   Cache Miss[79] for 'B[47 + 1]'
+   Address[0x00007ff64415f500] Tag[274796251898] Index[4] Offset[0] 
+   Cache Miss[80] for 'C[47]'
+   Address[0x00007ff64415fcfc] Tag[274796251902] Index[3] Offset[60] 
+   Cache Miss[81] for 'A[47]'
+   Address[0x00007ff64415ecfc] Tag[274796251894] Index[3] Offset[60] 
+   Cache Miss[82] for 'B[47]'
+   Address[0x00007ff64415f4fc] Tag[274796251898] Index[3] Offset[60] 
+
+Cache Miss(es) in Iteration[49]
+-----------------------------------------------------
+   Cache Miss[83] for 'B[48 + 1]'
+   Address[0x00007ff64415f504] Tag[274796251898] Index[4] Offset[4] 
+   Cache Miss[84] for 'C[48]'
+   Address[0x00007ff64415fd00] Tag[274796251902] Index[4] Offset[0] 
+   Cache Miss[85] for 'A[48]'
+   Address[0x00007ff64415ed00] Tag[274796251894] Index[4] Offset[0] 
+   Cache Miss[86] for 'B[48]'
+   Address[0x00007ff64415f500] Tag[274796251898] Index[4] Offset[0] 
+
+Cache Miss(es) in Iteration[50]
+-----------------------------------------------------
+   Cache Miss[87] for 'B[49 + 1]'
+   Address[0x00007ff64415f508] Tag[274796251898] Index[4] Offset[8] 
+   Cache Miss[88] for 'C[49]'
+   Address[0x00007ff64415fd04] Tag[274796251902] Index[4] Offset[4] 
+   Cache Miss[89] for 'A[49]'
+   Address[0x00007ff64415ed04] Tag[274796251894] Index[4] Offset[4] 
+   Cache Miss[90] for 'B[49]'
+   Address[0x00007ff64415f504] Tag[274796251898] Index[4] Offset[4] 
+
+Cache Miss(es) in Iteration[51]
+-----------------------------------------------------
+   Cache Miss[91] for 'B[50 + 1]'
+   Address[0x00007ff64415f50c] Tag[274796251898] Index[4] Offset[12] 
+   Cache Miss[92] for 'C[50]'
+   Address[0x00007ff64415fd08] Tag[274796251902] Index[4] Offset[8] 
+   Cache Miss[93] for 'A[50]'
+   Address[0x00007ff64415ed08] Tag[274796251894] Index[4] Offset[8] 
+   Cache Miss[94] for 'B[50]'
+   Address[0x00007ff64415f508] Tag[274796251898] Index[4] Offset[8] 
+
+Cache Miss(es) in Iteration[52]
+-----------------------------------------------------
+   Cache Miss[95] for 'B[51 + 1]'
+   Address[0x00007ff64415f510] Tag[274796251898] Index[4] Offset[16] 
+   Cache Miss[96] for 'C[51]'
+   Address[0x00007ff64415fd0c] Tag[274796251902] Index[4] Offset[12] 
+   Cache Miss[97] for 'A[51]'
+   Address[0x00007ff64415ed0c] Tag[274796251894] Index[4] Offset[12] 
+   Cache Miss[98] for 'B[51]'
+   Address[0x00007ff64415f50c] Tag[274796251898] Index[4] Offset[12] 
+
+Cache Miss(es) in Iteration[53]
+-----------------------------------------------------
+   Cache Miss[99] for 'B[52 + 1]'
+   Address[0x00007ff64415f514] Tag[274796251898] Index[4] Offset[20] 
+   Cache Miss[100] for 'C[52]'
+   Address[0x00007ff64415fd10] Tag[274796251902] Index[4] Offset[16] 
+   Cache Miss[101] for 'A[52]'
+   Address[0x00007ff64415ed10] Tag[274796251894] Index[4] Offset[16] 
+   Cache Miss[102] for 'B[52]'
+   Address[0x00007ff64415f510] Tag[274796251898] Index[4] Offset[16] 
+
+Cache Miss(es) in Iteration[54]
+-----------------------------------------------------
+   Cache Miss[103] for 'B[53 + 1]'
+   Address[0x00007ff64415f518] Tag[274796251898] Index[4] Offset[24] 
+   Cache Miss[104] for 'C[53]'
+   Address[0x00007ff64415fd14] Tag[274796251902] Index[4] Offset[20] 
+   Cache Miss[105] for 'A[53]'
+   Address[0x00007ff64415ed14] Tag[274796251894] Index[4] Offset[20] 
+   Cache Miss[106] for 'B[53]'
+   Address[0x00007ff64415f514] Tag[274796251898] Index[4] Offset[20] 
+
+Cache Miss(es) in Iteration[55]
+-----------------------------------------------------
+   Cache Miss[107] for 'B[54 + 1]'
+   Address[0x00007ff64415f51c] Tag[274796251898] Index[4] Offset[28] 
+   Cache Miss[108] for 'C[54]'
+   Address[0x00007ff64415fd18] Tag[274796251902] Index[4] Offset[24] 
+   Cache Miss[109] for 'A[54]'
+   Address[0x00007ff64415ed18] Tag[274796251894] Index[4] Offset[24] 
+   Cache Miss[110] for 'B[54]'
+   Address[0x00007ff64415f518] Tag[274796251898] Index[4] Offset[24] 
+
+Cache Miss(es) in Iteration[56]
+-----------------------------------------------------
+   Cache Miss[111] for 'B[55 + 1]'
+   Address[0x00007ff64415f520] Tag[274796251898] Index[4] Offset[32] 
+   Cache Miss[112] for 'C[55]'
+   Address[0x00007ff64415fd1c] Tag[274796251902] Index[4] Offset[28] 
+   Cache Miss[113] for 'A[55]'
+   Address[0x00007ff64415ed1c] Tag[274796251894] Index[4] Offset[28] 
+   Cache Miss[114] for 'B[55]'
+   Address[0x00007ff64415f51c] Tag[274796251898] Index[4] Offset[28] 
+
+Cache Miss(es) in Iteration[57]
+-----------------------------------------------------
+   Cache Miss[115] for 'B[56 + 1]'
+   Address[0x00007ff64415f524] Tag[274796251898] Index[4] Offset[36] 
+   Cache Miss[116] for 'C[56]'
+   Address[0x00007ff64415fd20] Tag[274796251902] Index[4] Offset[32] 
+   Cache Miss[117] for 'A[56]'
+   Address[0x00007ff64415ed20] Tag[274796251894] Index[4] Offset[32] 
+   Cache Miss[118] for 'B[56]'
+   Address[0x00007ff64415f520] Tag[274796251898] Index[4] Offset[32] 
+
+Cache Miss(es) in Iteration[58]
+-----------------------------------------------------
+   Cache Miss[119] for 'B[57 + 1]'
+   Address[0x00007ff64415f528] Tag[274796251898] Index[4] Offset[40] 
+   Cache Miss[120] for 'C[57]'
+   Address[0x00007ff64415fd24] Tag[274796251902] Index[4] Offset[36] 
+   Cache Miss[121] for 'A[57]'
+   Address[0x00007ff64415ed24] Tag[274796251894] Index[4] Offset[36] 
+   Cache Miss[122] for 'B[57]'
+   Address[0x00007ff64415f524] Tag[274796251898] Index[4] Offset[36] 
+
+Cache Miss(es) in Iteration[59]
+-----------------------------------------------------
+   Cache Miss[123] for 'B[58 + 1]'
+   Address[0x00007ff64415f52c] Tag[274796251898] Index[4] Offset[44] 
+   Cache Miss[124] for 'C[58]'
+   Address[0x00007ff64415fd28] Tag[274796251902] Index[4] Offset[40] 
+   Cache Miss[125] for 'A[58]'
+   Address[0x00007ff64415ed28] Tag[274796251894] Index[4] Offset[40] 
+   Cache Miss[126] for 'B[58]'
+   Address[0x00007ff64415f528] Tag[274796251898] Index[4] Offset[40] 
+
+Cache Miss(es) in Iteration[60]
+-----------------------------------------------------
+   Cache Miss[127] for 'B[59 + 1]'
+   Address[0x00007ff64415f530] Tag[274796251898] Index[4] Offset[48] 
+   Cache Miss[128] for 'C[59]'
+   Address[0x00007ff64415fd2c] Tag[274796251902] Index[4] Offset[44] 
+   Cache Miss[129] for 'A[59]'
+   Address[0x00007ff64415ed2c] Tag[274796251894] Index[4] Offset[44] 
+   Cache Miss[130] for 'B[59]'
+   Address[0x00007ff64415f52c] Tag[274796251898] Index[4] Offset[44] 
+
+Cache Miss(es) in Iteration[61]
+-----------------------------------------------------
+   Cache Miss[131] for 'B[60 + 1]'
+   Address[0x00007ff64415f534] Tag[274796251898] Index[4] Offset[52] 
+   Cache Miss[132] for 'C[60]'
+   Address[0x00007ff64415fd30] Tag[274796251902] Index[4] Offset[48] 
+   Cache Miss[133] for 'A[60]'
+   Address[0x00007ff64415ed30] Tag[274796251894] Index[4] Offset[48] 
+   Cache Miss[134] for 'B[60]'
+   Address[0x00007ff64415f530] Tag[274796251898] Index[4] Offset[48] 
+
+Cache Miss(es) in Iteration[62]
+-----------------------------------------------------
+   Cache Miss[135] for 'B[61 + 1]'
+   Address[0x00007ff64415f538] Tag[274796251898] Index[4] Offset[56] 
+   Cache Miss[136] for 'C[61]'
+   Address[0x00007ff64415fd34] Tag[274796251902] Index[4] Offset[52] 
+   Cache Miss[137] for 'A[61]'
+   Address[0x00007ff64415ed34] Tag[274796251894] Index[4] Offset[52] 
+   Cache Miss[138] for 'B[61]'
+   Address[0x00007ff64415f534] Tag[274796251898] Index[4] Offset[52] 
+
+Cache Miss(es) in Iteration[63]
+-----------------------------------------------------
+   Cache Miss[139] for 'B[62 + 1]'
+   Address[0x00007ff64415f53c] Tag[274796251898] Index[4] Offset[60] 
+   Cache Miss[140] for 'C[62]'
+   Address[0x00007ff64415fd38] Tag[274796251902] Index[4] Offset[56] 
+   Cache Miss[141] for 'A[62]'
+   Address[0x00007ff64415ed38] Tag[274796251894] Index[4] Offset[56] 
+   Cache Miss[142] for 'B[62]'
+   Address[0x00007ff64415f538] Tag[274796251898] Index[4] Offset[56] 
+
+Cache Miss(es) in Iteration[64]
+-----------------------------------------------------
+   Cache Miss[143] for 'B[63 + 1]'
+   Address[0x00007ff64415f540] Tag[274796251898] Index[5] Offset[0] 
+   Cache Miss[144] for 'C[63]'
+   Address[0x00007ff64415fd3c] Tag[274796251902] Index[4] Offset[60] 
+   Cache Miss[145] for 'A[63]'
+   Address[0x00007ff64415ed3c] Tag[274796251894] Index[4] Offset[60] 
+   Cache Miss[146] for 'B[63]'
+   Address[0x00007ff64415f53c] Tag[274796251898] Index[4] Offset[60] 
+
+Cache Miss(es) in Iteration[65]
+-----------------------------------------------------
+   Cache Miss[147] for 'B[64 + 1]'
+   Address[0x00007ff64415f544] Tag[274796251898] Index[5] Offset[4] 
+   Cache Miss[148] for 'C[64]'
+   Address[0x00007ff64415fd40] Tag[274796251902] Index[5] Offset[0] 
+   Cache Miss[149] for 'A[64]'
+   Address[0x00007ff64415ed40] Tag[274796251894] Index[5] Offset[0] 
+   Cache Miss[150] for 'B[64]'
+   Address[0x00007ff64415f540] Tag[274796251898] Index[5] Offset[0] 
+
+Cache Miss(es) in Iteration[66]
+-----------------------------------------------------
+   Cache Miss[151] for 'B[65 + 1]'
+   Address[0x00007ff64415f548] Tag[274796251898] Index[5] Offset[8] 
+   Cache Miss[152] for 'C[65]'
+   Address[0x00007ff64415fd44] Tag[274796251902] Index[5] Offset[4] 
+   Cache Miss[153] for 'A[65]'
+   Address[0x00007ff64415ed44] Tag[274796251894] Index[5] Offset[4] 
+   Cache Miss[154] for 'B[65]'
+   Address[0x00007ff64415f544] Tag[274796251898] Index[5] Offset[4] 
+
+Cache Miss(es) in Iteration[67]
+-----------------------------------------------------
+   Cache Miss[155] for 'B[66 + 1]'
+   Address[0x00007ff64415f54c] Tag[274796251898] Index[5] Offset[12] 
+   Cache Miss[156] for 'C[66]'
+   Address[0x00007ff64415fd48] Tag[274796251902] Index[5] Offset[8] 
+   Cache Miss[157] for 'A[66]'
+   Address[0x00007ff64415ed48] Tag[274796251894] Index[5] Offset[8] 
+   Cache Miss[158] for 'B[66]'
+   Address[0x00007ff64415f548] Tag[274796251898] Index[5] Offset[8] 
+
+Cache Miss(es) in Iteration[68]
+-----------------------------------------------------
+   Cache Miss[159] for 'B[67 + 1]'
+   Address[0x00007ff64415f550] Tag[274796251898] Index[5] Offset[16] 
+   Cache Miss[160] for 'C[67]'
+   Address[0x00007ff64415fd4c] Tag[274796251902] Index[5] Offset[12] 
+   Cache Miss[161] for 'A[67]'
+   Address[0x00007ff64415ed4c] Tag[274796251894] Index[5] Offset[12] 
+   Cache Miss[162] for 'B[67]'
+   Address[0x00007ff64415f54c] Tag[274796251898] Index[5] Offset[12] 
+
+Cache Miss(es) in Iteration[69]
+-----------------------------------------------------
+   Cache Miss[163] for 'B[68 + 1]'
+   Address[0x00007ff64415f554] Tag[274796251898] Index[5] Offset[20] 
+   Cache Miss[164] for 'C[68]'
+   Address[0x00007ff64415fd50] Tag[274796251902] Index[5] Offset[16] 
+   Cache Miss[165] for 'A[68]'
+   Address[0x00007ff64415ed50] Tag[274796251894] Index[5] Offset[16] 
+   Cache Miss[166] for 'B[68]'
+   Address[0x00007ff64415f550] Tag[274796251898] Index[5] Offset[16] 
+
+Cache Miss(es) in Iteration[70]
+-----------------------------------------------------
+   Cache Miss[167] for 'B[69 + 1]'
+   Address[0x00007ff64415f558] Tag[274796251898] Index[5] Offset[24] 
+   Cache Miss[168] for 'C[69]'
+   Address[0x00007ff64415fd54] Tag[274796251902] Index[5] Offset[20] 
+   Cache Miss[169] for 'A[69]'
+   Address[0x00007ff64415ed54] Tag[274796251894] Index[5] Offset[20] 
+   Cache Miss[170] for 'B[69]'
+   Address[0x00007ff64415f554] Tag[274796251898] Index[5] Offset[20] 
+
+Cache Miss(es) in Iteration[71]
+-----------------------------------------------------
+   Cache Miss[171] for 'B[70 + 1]'
+   Address[0x00007ff64415f55c] Tag[274796251898] Index[5] Offset[28] 
+   Cache Miss[172] for 'C[70]'
+   Address[0x00007ff64415fd58] Tag[274796251902] Index[5] Offset[24] 
+   Cache Miss[173] for 'A[70]'
+   Address[0x00007ff64415ed58] Tag[274796251894] Index[5] Offset[24] 
+   Cache Miss[174] for 'B[70]'
+   Address[0x00007ff64415f558] Tag[274796251898] Index[5] Offset[24] 
+
+Cache Miss(es) in Iteration[72]
+-----------------------------------------------------
+   Cache Miss[175] for 'B[71 + 1]'
+   Address[0x00007ff64415f560] Tag[274796251898] Index[5] Offset[32] 
+   Cache Miss[176] for 'C[71]'
+   Address[0x00007ff64415fd5c] Tag[274796251902] Index[5] Offset[28] 
+   Cache Miss[177] for 'A[71]'
+   Address[0x00007ff64415ed5c] Tag[274796251894] Index[5] Offset[28] 
+   Cache Miss[178] for 'B[71]'
+   Address[0x00007ff64415f55c] Tag[274796251898] Index[5] Offset[28] 
+
+Cache Miss(es) in Iteration[73]
+-----------------------------------------------------
+   Cache Miss[179] for 'B[72 + 1]'
+   Address[0x00007ff64415f564] Tag[274796251898] Index[5] Offset[36] 
+   Cache Miss[180] for 'C[72]'
+   Address[0x00007ff64415fd60] Tag[274796251902] Index[5] Offset[32] 
+   Cache Miss[181] for 'A[72]'
+   Address[0x00007ff64415ed60] Tag[274796251894] Index[5] Offset[32] 
+   Cache Miss[182] for 'B[72]'
+   Address[0x00007ff64415f560] Tag[274796251898] Index[5] Offset[32] 
+
+Cache Miss(es) in Iteration[74]
+-----------------------------------------------------
+   Cache Miss[183] for 'B[73 + 1]'
+   Address[0x00007ff64415f568] Tag[274796251898] Index[5] Offset[40] 
+   Cache Miss[184] for 'C[73]'
+   Address[0x00007ff64415fd64] Tag[274796251902] Index[5] Offset[36] 
+   Cache Miss[185] for 'A[73]'
+   Address[0x00007ff64415ed64] Tag[274796251894] Index[5] Offset[36] 
+   Cache Miss[186] for 'B[73]'
+   Address[0x00007ff64415f564] Tag[274796251898] Index[5] Offset[36] 
+
+Cache Miss(es) in Iteration[75]
+-----------------------------------------------------
+   Cache Miss[187] for 'B[74 + 1]'
+   Address[0x00007ff64415f56c] Tag[274796251898] Index[5] Offset[44] 
+   Cache Miss[188] for 'C[74]'
+   Address[0x00007ff64415fd68] Tag[274796251902] Index[5] Offset[40] 
+   Cache Miss[189] for 'A[74]'
+   Address[0x00007ff64415ed68] Tag[274796251894] Index[5] Offset[40] 
+   Cache Miss[190] for 'B[74]'
+   Address[0x00007ff64415f568] Tag[274796251898] Index[5] Offset[40] 
+
+Cache Miss(es) in Iteration[76]
+-----------------------------------------------------
+   Cache Miss[191] for 'B[75 + 1]'
+   Address[0x00007ff64415f570] Tag[274796251898] Index[5] Offset[48] 
+   Cache Miss[192] for 'C[75]'
+   Address[0x00007ff64415fd6c] Tag[274796251902] Index[5] Offset[44] 
+   Cache Miss[193] for 'A[75]'
+   Address[0x00007ff64415ed6c] Tag[274796251894] Index[5] Offset[44] 
+   Cache Miss[194] for 'B[75]'
+   Address[0x00007ff64415f56c] Tag[274796251898] Index[5] Offset[44] 
+
+Cache Miss(es) in Iteration[77]
+-----------------------------------------------------
+   Cache Miss[195] for 'B[76 + 1]'
+   Address[0x00007ff64415f574] Tag[274796251898] Index[5] Offset[52] 
+   Cache Miss[196] for 'C[76]'
+   Address[0x00007ff64415fd70] Tag[274796251902] Index[5] Offset[48] 
+   Cache Miss[197] for 'A[76]'
+   Address[0x00007ff64415ed70] Tag[274796251894] Index[5] Offset[48] 
+   Cache Miss[198] for 'B[76]'
+   Address[0x00007ff64415f570] Tag[274796251898] Index[5] Offset[48] 
+
+Cache Miss(es) in Iteration[78]
+-----------------------------------------------------
+   Cache Miss[199] for 'B[77 + 1]'
+   Address[0x00007ff64415f578] Tag[274796251898] Index[5] Offset[56] 
+   Cache Miss[200] for 'C[77]'
+   Address[0x00007ff64415fd74] Tag[274796251902] Index[5] Offset[52] 
+   Cache Miss[201] for 'A[77]'
+   Address[0x00007ff64415ed74] Tag[274796251894] Index[5] Offset[52] 
+   Cache Miss[202] for 'B[77]'
+   Address[0x00007ff64415f574] Tag[274796251898] Index[5] Offset[52] 
+
+Cache Miss(es) in Iteration[79]
+-----------------------------------------------------
+   Cache Miss[203] for 'B[78 + 1]'
+   Address[0x00007ff64415f57c] Tag[274796251898] Index[5] Offset[60] 
+   Cache Miss[204] for 'C[78]'
+   Address[0x00007ff64415fd78] Tag[274796251902] Index[5] Offset[56] 
+   Cache Miss[205] for 'A[78]'
+   Address[0x00007ff64415ed78] Tag[274796251894] Index[5] Offset[56] 
+   Cache Miss[206] for 'B[78]'
+   Address[0x00007ff64415f578] Tag[274796251898] Index[5] Offset[56] 
+
+Cache Miss(es) in Iteration[80]
+-----------------------------------------------------
+   Cache Miss[207] for 'B[79 + 1]'
+   Address[0x00007ff64415f580] Tag[274796251898] Index[6] Offset[0] 
+   Cache Miss[208] for 'C[79]'
+   Address[0x00007ff64415fd7c] Tag[274796251902] Index[5] Offset[60] 
+   Cache Miss[209] for 'A[79]'
+   Address[0x00007ff64415ed7c] Tag[274796251894] Index[5] Offset[60] 
+   Cache Miss[210] for 'B[79]'
+   Address[0x00007ff64415f57c] Tag[274796251898] Index[5] Offset[60] 
+
+Cache Miss(es) in Iteration[81]
+-----------------------------------------------------
+   Cache Miss[211] for 'B[80 + 1]'
+   Address[0x00007ff64415f584] Tag[274796251898] Index[6] Offset[4] 
+   Cache Miss[212] for 'C[80]'
+   Address[0x00007ff64415fd80] Tag[274796251902] Index[6] Offset[0] 
+   Cache Miss[213] for 'A[80]'
+   Address[0x00007ff64415ed80] Tag[274796251894] Index[6] Offset[0] 
+   Cache Miss[214] for 'B[80]'
+   Address[0x00007ff64415f580] Tag[274796251898] Index[6] Offset[0] 
+
+Cache Miss(es) in Iteration[82]
+-----------------------------------------------------
+   Cache Miss[215] for 'B[81 + 1]'
+   Address[0x00007ff64415f588] Tag[274796251898] Index[6] Offset[8] 
+   Cache Miss[216] for 'C[81]'
+   Address[0x00007ff64415fd84] Tag[274796251902] Index[6] Offset[4] 
+   Cache Miss[217] for 'A[81]'
+   Address[0x00007ff64415ed84] Tag[274796251894] Index[6] Offset[4] 
+   Cache Miss[218] for 'B[81]'
+   Address[0x00007ff64415f584] Tag[274796251898] Index[6] Offset[4] 
+
+Cache Miss(es) in Iteration[83]
+-----------------------------------------------------
+   Cache Miss[219] for 'B[82 + 1]'
+   Address[0x00007ff64415f58c] Tag[274796251898] Index[6] Offset[12] 
+   Cache Miss[220] for 'C[82]'
+   Address[0x00007ff64415fd88] Tag[274796251902] Index[6] Offset[8] 
+   Cache Miss[221] for 'A[82]'
+   Address[0x00007ff64415ed88] Tag[274796251894] Index[6] Offset[8] 
+   Cache Miss[222] for 'B[82]'
+   Address[0x00007ff64415f588] Tag[274796251898] Index[6] Offset[8] 
+
+Cache Miss(es) in Iteration[84]
+-----------------------------------------------------
+   Cache Miss[223] for 'B[83 + 1]'
+   Address[0x00007ff64415f590] Tag[274796251898] Index[6] Offset[16] 
+   Cache Miss[224] for 'C[83]'
+   Address[0x00007ff64415fd8c] Tag[274796251902] Index[6] Offset[12] 
+   Cache Miss[225] for 'A[83]'
+   Address[0x00007ff64415ed8c] Tag[274796251894] Index[6] Offset[12] 
+   Cache Miss[226] for 'B[83]'
+   Address[0x00007ff64415f58c] Tag[274796251898] Index[6] Offset[12] 
+
+Cache Miss(es) in Iteration[85]
+-----------------------------------------------------
+   Cache Miss[227] for 'B[84 + 1]'
+   Address[0x00007ff64415f594] Tag[274796251898] Index[6] Offset[20] 
+   Cache Miss[228] for 'C[84]'
+   Address[0x00007ff64415fd90] Tag[274796251902] Index[6] Offset[16] 
+   Cache Miss[229] for 'A[84]'
+   Address[0x00007ff64415ed90] Tag[274796251894] Index[6] Offset[16] 
+   Cache Miss[230] for 'B[84]'
+   Address[0x00007ff64415f590] Tag[274796251898] Index[6] Offset[16] 
+
+Cache Miss(es) in Iteration[86]
+-----------------------------------------------------
+   Cache Miss[231] for 'B[85 + 1]'
+   Address[0x00007ff64415f598] Tag[274796251898] Index[6] Offset[24] 
+   Cache Miss[232] for 'C[85]'
+   Address[0x00007ff64415fd94] Tag[274796251902] Index[6] Offset[20] 
+   Cache Miss[233] for 'A[85]'
+   Address[0x00007ff64415ed94] Tag[274796251894] Index[6] Offset[20] 
+   Cache Miss[234] for 'B[85]'
+   Address[0x00007ff64415f594] Tag[274796251898] Index[6] Offset[20] 
+
+Cache Miss(es) in Iteration[87]
+-----------------------------------------------------
+   Cache Miss[235] for 'B[86 + 1]'
+   Address[0x00007ff64415f59c] Tag[274796251898] Index[6] Offset[28] 
+   Cache Miss[236] for 'C[86]'
+   Address[0x00007ff64415fd98] Tag[274796251902] Index[6] Offset[24] 
+   Cache Miss[237] for 'A[86]'
+   Address[0x00007ff64415ed98] Tag[274796251894] Index[6] Offset[24] 
+   Cache Miss[238] for 'B[86]'
+   Address[0x00007ff64415f598] Tag[274796251898] Index[6] Offset[24] 
+
+Cache Miss(es) in Iteration[88]
+-----------------------------------------------------
+   Cache Miss[239] for 'B[87 + 1]'
+   Address[0x00007ff64415f5a0] Tag[274796251898] Index[6] Offset[32] 
+   Cache Miss[240] for 'C[87]'
+   Address[0x00007ff64415fd9c] Tag[274796251902] Index[6] Offset[28] 
+   Cache Miss[241] for 'A[87]'
+   Address[0x00007ff64415ed9c] Tag[274796251894] Index[6] Offset[28] 
+   Cache Miss[242] for 'B[87]'
+   Address[0x00007ff64415f59c] Tag[274796251898] Index[6] Offset[28] 
+
+Cache Miss(es) in Iteration[89]
+-----------------------------------------------------
+   Cache Miss[243] for 'B[88 + 1]'
+   Address[0x00007ff64415f5a4] Tag[274796251898] Index[6] Offset[36] 
+   Cache Miss[244] for 'C[88]'
+   Address[0x00007ff64415fda0] Tag[274796251902] Index[6] Offset[32] 
+   Cache Miss[245] for 'A[88]'
+   Address[0x00007ff64415eda0] Tag[274796251894] Index[6] Offset[32] 
+   Cache Miss[246] for 'B[88]'
+   Address[0x00007ff64415f5a0] Tag[274796251898] Index[6] Offset[32] 
+
+Cache Miss(es) in Iteration[90]
+-----------------------------------------------------
+   Cache Miss[247] for 'B[89 + 1]'
+   Address[0x00007ff64415f5a8] Tag[274796251898] Index[6] Offset[40] 
+   Cache Miss[248] for 'C[89]'
+   Address[0x00007ff64415fda4] Tag[274796251902] Index[6] Offset[36] 
+   Cache Miss[249] for 'A[89]'
+   Address[0x00007ff64415eda4] Tag[274796251894] Index[6] Offset[36] 
+   Cache Miss[250] for 'B[89]'
+   Address[0x00007ff64415f5a4] Tag[274796251898] Index[6] Offset[36] 
+
+Cache Miss(es) in Iteration[91]
+-----------------------------------------------------
+   Cache Miss[251] for 'B[90 + 1]'
+   Address[0x00007ff64415f5ac] Tag[274796251898] Index[6] Offset[44] 
+   Cache Miss[252] for 'C[90]'
+   Address[0x00007ff64415fda8] Tag[274796251902] Index[6] Offset[40] 
+   Cache Miss[253] for 'A[90]'
+   Address[0x00007ff64415eda8] Tag[274796251894] Index[6] Offset[40] 
+   Cache Miss[254] for 'B[90]'
+   Address[0x00007ff64415f5a8] Tag[274796251898] Index[6] Offset[40] 
+
+Cache Miss(es) in Iteration[92]
+-----------------------------------------------------
+   Cache Miss[255] for 'B[91 + 1]'
+   Address[0x00007ff64415f5b0] Tag[274796251898] Index[6] Offset[48] 
+   Cache Miss[256] for 'C[91]'
+   Address[0x00007ff64415fdac] Tag[274796251902] Index[6] Offset[44] 
+   Cache Miss[257] for 'A[91]'
+   Address[0x00007ff64415edac] Tag[274796251894] Index[6] Offset[44] 
+   Cache Miss[258] for 'B[91]'
+   Address[0x00007ff64415f5ac] Tag[274796251898] Index[6] Offset[44] 
+
+Cache Miss(es) in Iteration[93]
+-----------------------------------------------------
+   Cache Miss[259] for 'B[92 + 1]'
+   Address[0x00007ff64415f5b4] Tag[274796251898] Index[6] Offset[52] 
+   Cache Miss[260] for 'C[92]'
+   Address[0x00007ff64415fdb0] Tag[274796251902] Index[6] Offset[48] 
+   Cache Miss[261] for 'A[92]'
+   Address[0x00007ff64415edb0] Tag[274796251894] Index[6] Offset[48] 
+   Cache Miss[262] for 'B[92]'
+   Address[0x00007ff64415f5b0] Tag[274796251898] Index[6] Offset[48] 
+
+Cache Miss(es) in Iteration[94]
+-----------------------------------------------------
+   Cache Miss[263] for 'B[93 + 1]'
+   Address[0x00007ff64415f5b8] Tag[274796251898] Index[6] Offset[56] 
+   Cache Miss[264] for 'C[93]'
+   Address[0x00007ff64415fdb4] Tag[274796251902] Index[6] Offset[52] 
+   Cache Miss[265] for 'A[93]'
+   Address[0x00007ff64415edb4] Tag[274796251894] Index[6] Offset[52] 
+   Cache Miss[266] for 'B[93]'
+   Address[0x00007ff64415f5b4] Tag[274796251898] Index[6] Offset[52] 
+
+Cache Miss(es) in Iteration[95]
+-----------------------------------------------------
+   Cache Miss[267] for 'B[94 + 1]'
+   Address[0x00007ff64415f5bc] Tag[274796251898] Index[6] Offset[60] 
+   Cache Miss[268] for 'C[94]'
+   Address[0x00007ff64415fdb8] Tag[274796251902] Index[6] Offset[56] 
+   Cache Miss[269] for 'A[94]'
+   Address[0x00007ff64415edb8] Tag[274796251894] Index[6] Offset[56] 
+   Cache Miss[270] for 'B[94]'
+   Address[0x00007ff64415f5b8] Tag[274796251898] Index[6] Offset[56] 
+
+Cache Miss(es) in Iteration[96]
+-----------------------------------------------------
+   Cache Miss[271] for 'B[95 + 1]'
+   Address[0x00007ff64415f5c0] Tag[274796251898] Index[7] Offset[0] 
+   Cache Miss[272] for 'C[95]'
+   Address[0x00007ff64415fdbc] Tag[274796251902] Index[6] Offset[60] 
+   Cache Miss[273] for 'A[95]'
+   Address[0x00007ff64415edbc] Tag[274796251894] Index[6] Offset[60] 
+   Cache Miss[274] for 'B[95]'
+   Address[0x00007ff64415f5bc] Tag[274796251898] Index[6] Offset[60] 
+
+Cache Miss(es) in Iteration[97]
+-----------------------------------------------------
+   Cache Miss[275] for 'B[96 + 1]'
+   Address[0x00007ff64415f5c4] Tag[274796251898] Index[7] Offset[4] 
+   Cache Miss[276] for 'C[96]'
+   Address[0x00007ff64415fdc0] Tag[274796251902] Index[7] Offset[0] 
+   Cache Miss[277] for 'A[96]'
+   Address[0x00007ff64415edc0] Tag[274796251894] Index[7] Offset[0] 
+   Cache Miss[278] for 'B[96]'
+   Address[0x00007ff64415f5c0] Tag[274796251898] Index[7] Offset[0] 
+
+Cache Miss(es) in Iteration[98]
+-----------------------------------------------------
+   Cache Miss[279] for 'B[97 + 1]'
+   Address[0x00007ff64415f5c8] Tag[274796251898] Index[7] Offset[8] 
+   Cache Miss[280] for 'C[97]'
+   Address[0x00007ff64415fdc4] Tag[274796251902] Index[7] Offset[4] 
+   Cache Miss[281] for 'A[97]'
+   Address[0x00007ff64415edc4] Tag[274796251894] Index[7] Offset[4] 
+   Cache Miss[282] for 'B[97]'
+   Address[0x00007ff64415f5c4] Tag[274796251898] Index[7] Offset[4] 
+
+Cache Miss(es) in Iteration[99]
+-----------------------------------------------------
+   Cache Miss[283] for 'B[98 + 1]'
+   Address[0x00007ff64415f5cc] Tag[274796251898] Index[7] Offset[12] 
+   Cache Miss[284] for 'C[98]'
+   Address[0x00007ff64415fdc8] Tag[274796251902] Index[7] Offset[8] 
+   Cache Miss[285] for 'A[98]'
+   Address[0x00007ff64415edc8] Tag[274796251894] Index[7] Offset[8] 
+   Cache Miss[286] for 'B[98]'
+   Address[0x00007ff64415f5c8] Tag[274796251898] Index[7] Offset[8] 
+
+Cache Miss(es) in Iteration[100]
+-----------------------------------------------------
+   Cache Miss[287] for 'B[99 + 1]'
+   Address[0x00007ff64415f5d0] Tag[274796251898] Index[7] Offset[16] 
+   Cache Miss[288] for 'C[99]'
+   Address[0x00007ff64415fdcc] Tag[274796251902] Index[7] Offset[12] 
+   Cache Miss[289] for 'A[99]'
+   Address[0x00007ff64415edcc] Tag[274796251894] Index[7] Offset[12] 
+   Cache Miss[290] for 'B[99]'
+   Address[0x00007ff64415f5cc] Tag[274796251898] Index[7] Offset[12] 
+
+Cache Miss(es) in Iteration[101]
+-----------------------------------------------------
+   Cache Miss[291] for 'B[100 + 1]'
+   Address[0x00007ff64415f5d4] Tag[274796251898] Index[7] Offset[20] 
+   Cache Miss[292] for 'C[100]'
+   Address[0x00007ff64415fdd0] Tag[274796251902] Index[7] Offset[16] 
+   Cache Miss[293] for 'A[100]'
+   Address[0x00007ff64415edd0] Tag[274796251894] Index[7] Offset[16] 
+   Cache Miss[294] for 'B[100]'
+   Address[0x00007ff64415f5d0] Tag[274796251898] Index[7] Offset[16] 
+
+Cache Miss(es) in Iteration[102]
+-----------------------------------------------------
+   Cache Miss[295] for 'B[101 + 1]'
+   Address[0x00007ff64415f5d8] Tag[274796251898] Index[7] Offset[24] 
+   Cache Miss[296] for 'C[101]'
+   Address[0x00007ff64415fdd4] Tag[274796251902] Index[7] Offset[20] 
+   Cache Miss[297] for 'A[101]'
+   Address[0x00007ff64415edd4] Tag[274796251894] Index[7] Offset[20] 
+   Cache Miss[298] for 'B[101]'
+   Address[0x00007ff64415f5d4] Tag[274796251898] Index[7] Offset[20] 
+
+Cache Miss(es) in Iteration[103]
+-----------------------------------------------------
+   Cache Miss[299] for 'B[102 + 1]'
+   Address[0x00007ff64415f5dc] Tag[274796251898] Index[7] Offset[28] 
+   Cache Miss[300] for 'C[102]'
+   Address[0x00007ff64415fdd8] Tag[274796251902] Index[7] Offset[24] 
+   Cache Miss[301] for 'A[102]'
+   Address[0x00007ff64415edd8] Tag[274796251894] Index[7] Offset[24] 
+   Cache Miss[302] for 'B[102]'
+   Address[0x00007ff64415f5d8] Tag[274796251898] Index[7] Offset[24] 
+
+Cache Miss(es) in Iteration[104]
+-----------------------------------------------------
+   Cache Miss[303] for 'B[103 + 1]'
+   Address[0x00007ff64415f5e0] Tag[274796251898] Index[7] Offset[32] 
+   Cache Miss[304] for 'C[103]'
+   Address[0x00007ff64415fddc] Tag[274796251902] Index[7] Offset[28] 
+   Cache Miss[305] for 'A[103]'
+   Address[0x00007ff64415eddc] Tag[274796251894] Index[7] Offset[28] 
+   Cache Miss[306] for 'B[103]'
+   Address[0x00007ff64415f5dc] Tag[274796251898] Index[7] Offset[28] 
+
+Cache Miss(es) in Iteration[105]
+-----------------------------------------------------
+   Cache Miss[307] for 'B[104 + 1]'
+   Address[0x00007ff64415f5e4] Tag[274796251898] Index[7] Offset[36] 
+   Cache Miss[308] for 'C[104]'
+   Address[0x00007ff64415fde0] Tag[274796251902] Index[7] Offset[32] 
+   Cache Miss[309] for 'A[104]'
+   Address[0x00007ff64415ede0] Tag[274796251894] Index[7] Offset[32] 
+   Cache Miss[310] for 'B[104]'
+   Address[0x00007ff64415f5e0] Tag[274796251898] Index[7] Offset[32] 
+
+Cache Miss(es) in Iteration[106]
+-----------------------------------------------------
+   Cache Miss[311] for 'B[105 + 1]'
+   Address[0x00007ff64415f5e8] Tag[274796251898] Index[7] Offset[40] 
+   Cache Miss[312] for 'C[105]'
+   Address[0x00007ff64415fde4] Tag[274796251902] Index[7] Offset[36] 
+   Cache Miss[313] for 'A[105]'
+   Address[0x00007ff64415ede4] Tag[274796251894] Index[7] Offset[36] 
+   Cache Miss[314] for 'B[105]'
+   Address[0x00007ff64415f5e4] Tag[274796251898] Index[7] Offset[36] 
+
+Cache Miss(es) in Iteration[107]
+-----------------------------------------------------
+   Cache Miss[315] for 'B[106 + 1]'
+   Address[0x00007ff64415f5ec] Tag[274796251898] Index[7] Offset[44] 
+   Cache Miss[316] for 'C[106]'
+   Address[0x00007ff64415fde8] Tag[274796251902] Index[7] Offset[40] 
+   Cache Miss[317] for 'A[106]'
+   Address[0x00007ff64415ede8] Tag[274796251894] Index[7] Offset[40] 
+   Cache Miss[318] for 'B[106]'
+   Address[0x00007ff64415f5e8] Tag[274796251898] Index[7] Offset[40] 
+
+Cache Miss(es) in Iteration[108]
+-----------------------------------------------------
+   Cache Miss[319] for 'B[107 + 1]'
+   Address[0x00007ff64415f5f0] Tag[274796251898] Index[7] Offset[48] 
+   Cache Miss[320] for 'C[107]'
+   Address[0x00007ff64415fdec] Tag[274796251902] Index[7] Offset[44] 
+   Cache Miss[321] for 'A[107]'
+   Address[0x00007ff64415edec] Tag[274796251894] Index[7] Offset[44] 
+   Cache Miss[322] for 'B[107]'
+   Address[0x00007ff64415f5ec] Tag[274796251898] Index[7] Offset[44] 
+
+Cache Miss(es) in Iteration[109]
+-----------------------------------------------------
+   Cache Miss[323] for 'B[108 + 1]'
+   Address[0x00007ff64415f5f4] Tag[274796251898] Index[7] Offset[52] 
+   Cache Miss[324] for 'C[108]'
+   Address[0x00007ff64415fdf0] Tag[274796251902] Index[7] Offset[48] 
+   Cache Miss[325] for 'A[108]'
+   Address[0x00007ff64415edf0] Tag[274796251894] Index[7] Offset[48] 
+   Cache Miss[326] for 'B[108]'
+   Address[0x00007ff64415f5f0] Tag[274796251898] Index[7] Offset[48] 
+
+Cache Miss(es) in Iteration[110]
+-----------------------------------------------------
+   Cache Miss[327] for 'B[109 + 1]'
+   Address[0x00007ff64415f5f8] Tag[274796251898] Index[7] Offset[56] 
+   Cache Miss[328] for 'C[109]'
+   Address[0x00007ff64415fdf4] Tag[274796251902] Index[7] Offset[52] 
+   Cache Miss[329] for 'A[109]'
+   Address[0x00007ff64415edf4] Tag[274796251894] Index[7] Offset[52] 
+   Cache Miss[330] for 'B[109]'
+   Address[0x00007ff64415f5f4] Tag[274796251898] Index[7] Offset[52] 
+
+Cache Miss(es) in Iteration[111]
+-----------------------------------------------------
+   Cache Miss[331] for 'B[110 + 1]'
+   Address[0x00007ff64415f5fc] Tag[274796251898] Index[7] Offset[60] 
+   Cache Miss[332] for 'C[110]'
+   Address[0x00007ff64415fdf8] Tag[274796251902] Index[7] Offset[56] 
+   Cache Miss[333] for 'A[110]'
+   Address[0x00007ff64415edf8] Tag[274796251894] Index[7] Offset[56] 
+   Cache Miss[334] for 'B[110]'
+   Address[0x00007ff64415f5f8] Tag[274796251898] Index[7] Offset[56] 
+
+Cache Miss(es) in Iteration[112]
+-----------------------------------------------------
+   Cache Miss[335] for 'B[111 + 1]'
+   Address[0x00007ff64415f600] Tag[274796251899] Index[0] Offset[0] 
+   Cache Miss[336] for 'C[111]'
+   Address[0x00007ff64415fdfc] Tag[274796251902] Index[7] Offset[60] 
+   Cache Miss[337] for 'A[111]'
+   Address[0x00007ff64415edfc] Tag[274796251894] Index[7] Offset[60] 
+   Cache Miss[338] for 'B[111]'
+   Address[0x00007ff64415f5fc] Tag[274796251898] Index[7] Offset[60] 
+
+Cache Miss(es) in Iteration[113]
+-----------------------------------------------------
+   Cache Miss[339] for 'C[112]'
+   Address[0x00007ff64415fe00] Tag[274796251903] Index[0] Offset[0] 
+   Cache Miss[340] for 'A[112]'
+   Address[0x00007ff64415ee00] Tag[274796251895] Index[0] Offset[0] 
+
+Cache Miss(es) in Iteration[122]
+-----------------------------------------------------
+   Cache Miss[341] for 'B[121 + 1]'
+   Address[0x00007ff64415f628] Tag[274796251899] Index[0] Offset[40] 
+
+Cache Miss(es) in Iteration[123]
+-----------------------------------------------------
+   Cache Miss[342] for 'B[122 + 1]'
+   Address[0x00007ff64415f62c] Tag[274796251899] Index[0] Offset[44] 
+   Cache Miss[343] for 'C[122]'
+   Address[0x00007ff64415fe28] Tag[274796251903] Index[0] Offset[40] 
+   Cache Miss[344] for 'A[122]'
+   Address[0x00007ff64415ee28] Tag[274796251895] Index[0] Offset[40] 
+   Cache Miss[345] for 'B[122]'
+   Address[0x00007ff64415f628] Tag[274796251899] Index[0] Offset[40] 
+
+Cache Miss(es) in Iteration[124]
+-----------------------------------------------------
+   Cache Miss[346] for 'B[123 + 1]'
+   Address[0x00007ff64415f630] Tag[274796251899] Index[0] Offset[48] 
+   Cache Miss[347] for 'C[123]'
+   Address[0x00007ff64415fe2c] Tag[274796251903] Index[0] Offset[44] 
+   Cache Miss[348] for 'A[123]'
+   Address[0x00007ff64415ee2c] Tag[274796251895] Index[0] Offset[44] 
+   Cache Miss[349] for 'B[123]'
+   Address[0x00007ff64415f62c] Tag[274796251899] Index[0] Offset[44] 
+
+Cache Miss(es) in Iteration[125]
+-----------------------------------------------------
+   Cache Miss[350] for 'B[124 + 1]'
+   Address[0x00007ff64415f634] Tag[274796251899] Index[0] Offset[52] 
+   Cache Miss[351] for 'C[124]'
+   Address[0x00007ff64415fe30] Tag[274796251903] Index[0] Offset[48] 
+   Cache Miss[352] for 'A[124]'
+   Address[0x00007ff64415ee30] Tag[274796251895] Index[0] Offset[48] 
+   Cache Miss[353] for 'B[124]'
+   Address[0x00007ff64415f630] Tag[274796251899] Index[0] Offset[48] 
+
+Cache Miss(es) in Iteration[126]
+-----------------------------------------------------
+   Cache Miss[354] for 'B[125 + 1]'
+   Address[0x00007ff64415f638] Tag[274796251899] Index[0] Offset[56] 
+   Cache Miss[355] for 'C[125]'
+   Address[0x00007ff64415fe34] Tag[274796251903] Index[0] Offset[52] 
+   Cache Miss[356] for 'A[125]'
+   Address[0x00007ff64415ee34] Tag[274796251895] Index[0] Offset[52] 
+   Cache Miss[357] for 'B[125]'
+   Address[0x00007ff64415f634] Tag[274796251899] Index[0] Offset[52] 
+
+Cache Miss(es) in Iteration[127]
+-----------------------------------------------------
+   Cache Miss[358] for 'B[126 + 1]'
+   Address[0x00007ff64415f63c] Tag[274796251899] Index[0] Offset[60] 
+   Cache Miss[359] for 'C[126]'
+   Address[0x00007ff64415fe38] Tag[274796251903] Index[0] Offset[56] 
+   Cache Miss[360] for 'A[126]'
+   Address[0x00007ff64415ee38] Tag[274796251895] Index[0] Offset[56] 
+   Cache Miss[361] for 'B[126]'
+   Address[0x00007ff64415f638] Tag[274796251899] Index[0] Offset[56] 
+
+Cache Miss(es) in Iteration[128]
+-----------------------------------------------------
+   Cache Miss[362] for 'B[127 + 1]'
+   Address[0x00007ff64415f640] Tag[274796251899] Index[1] Offset[0] 
+   Cache Miss[363] for 'C[127]'
+   Address[0x00007ff64415fe3c] Tag[274796251903] Index[0] Offset[60] 
+   Cache Miss[364] for 'A[127]'
+   Address[0x00007ff64415ee3c] Tag[274796251895] Index[0] Offset[60] 
+   Cache Miss[365] for 'B[127]'
+   Address[0x00007ff64415f63c] Tag[274796251899] Index[0] Offset[60] 
+
+Cache Miss(es) in Iteration[129]
+-----------------------------------------------------
+   Cache Miss[366] for 'C[128]'
+   Address[0x00007ff64415fe40] Tag[274796251903] Index[1] Offset[0] 
+   Cache Miss[367] for 'A[128]'
+   Address[0x00007ff64415ee40] Tag[274796251895] Index[1] Offset[0] 
+
+Cache Miss(es) in Iteration[138]
+-----------------------------------------------------
+   Cache Miss[368] for 'B[137 + 1]'
+   Address[0x00007ff64415f668] Tag[274796251899] Index[1] Offset[40] 
+
+Cache Miss(es) in Iteration[139]
+-----------------------------------------------------
+   Cache Miss[369] for 'B[138 + 1]'
+   Address[0x00007ff64415f66c] Tag[274796251899] Index[1] Offset[44] 
+   Cache Miss[370] for 'C[138]'
+   Address[0x00007ff64415fe68] Tag[274796251903] Index[1] Offset[40] 
+   Cache Miss[371] for 'A[138]'
+   Address[0x00007ff64415ee68] Tag[274796251895] Index[1] Offset[40] 
+   Cache Miss[372] for 'B[138]'
+   Address[0x00007ff64415f668] Tag[274796251899] Index[1] Offset[40] 
+
+Cache Miss(es) in Iteration[140]
+-----------------------------------------------------
+   Cache Miss[373] for 'B[139 + 1]'
+   Address[0x00007ff64415f670] Tag[274796251899] Index[1] Offset[48] 
+   Cache Miss[374] for 'C[139]'
+   Address[0x00007ff64415fe6c] Tag[274796251903] Index[1] Offset[44] 
+   Cache Miss[375] for 'A[139]'
+   Address[0x00007ff64415ee6c] Tag[274796251895] Index[1] Offset[44] 
+   Cache Miss[376] for 'B[139]'
+   Address[0x00007ff64415f66c] Tag[274796251899] Index[1] Offset[44] 
+
+Cache Miss(es) in Iteration[141]
+-----------------------------------------------------
+   Cache Miss[377] for 'B[140 + 1]'
+   Address[0x00007ff64415f674] Tag[274796251899] Index[1] Offset[52] 
+   Cache Miss[378] for 'C[140]'
+   Address[0x00007ff64415fe70] Tag[274796251903] Index[1] Offset[48] 
+   Cache Miss[379] for 'A[140]'
+   Address[0x00007ff64415ee70] Tag[274796251895] Index[1] Offset[48] 
+   Cache Miss[380] for 'B[140]'
+   Address[0x00007ff64415f670] Tag[274796251899] Index[1] Offset[48] 
+
+Cache Miss(es) in Iteration[142]
+-----------------------------------------------------
+   Cache Miss[381] for 'B[141 + 1]'
+   Address[0x00007ff64415f678] Tag[274796251899] Index[1] Offset[56] 
+   Cache Miss[382] for 'C[141]'
+   Address[0x00007ff64415fe74] Tag[274796251903] Index[1] Offset[52] 
+   Cache Miss[383] for 'A[141]'
+   Address[0x00007ff64415ee74] Tag[274796251895] Index[1] Offset[52] 
+   Cache Miss[384] for 'B[141]'
+   Address[0x00007ff64415f674] Tag[274796251899] Index[1] Offset[52] 
+
+Cache Miss(es) in Iteration[143]
+-----------------------------------------------------
+   Cache Miss[385] for 'B[142 + 1]'
+   Address[0x00007ff64415f67c] Tag[274796251899] Index[1] Offset[60] 
+   Cache Miss[386] for 'C[142]'
+   Address[0x00007ff64415fe78] Tag[274796251903] Index[1] Offset[56] 
+   Cache Miss[387] for 'A[142]'
+   Address[0x00007ff64415ee78] Tag[274796251895] Index[1] Offset[56] 
+   Cache Miss[388] for 'B[142]'
+   Address[0x00007ff64415f678] Tag[274796251899] Index[1] Offset[56] 
+
+Cache Miss(es) in Iteration[144]
+-----------------------------------------------------
+   Cache Miss[389] for 'B[143 + 1]'
+   Address[0x00007ff64415f680] Tag[274796251899] Index[2] Offset[0] 
+   Cache Miss[390] for 'C[143]'
+   Address[0x00007ff64415fe7c] Tag[274796251903] Index[1] Offset[60] 
+   Cache Miss[391] for 'A[143]'
+   Address[0x00007ff64415ee7c] Tag[274796251895] Index[1] Offset[60] 
+   Cache Miss[392] for 'B[143]'
+   Address[0x00007ff64415f67c] Tag[274796251899] Index[1] Offset[60] 
+
+Cache Miss(es) in Iteration[145]
+-----------------------------------------------------
+   Cache Miss[393] for 'C[144]'
+   Address[0x00007ff64415fe80] Tag[274796251903] Index[2] Offset[0] 
+   Cache Miss[394] for 'A[144]'
+   Address[0x00007ff64415ee80] Tag[274796251895] Index[2] Offset[0] 
+
+Cache Miss(es) in Iteration[154]
+-----------------------------------------------------
+   Cache Miss[395] for 'B[153 + 1]'
+   Address[0x00007ff64415f6a8] Tag[274796251899] Index[2] Offset[40] 
+
+Cache Miss(es) in Iteration[155]
+-----------------------------------------------------
+   Cache Miss[396] for 'B[154 + 1]'
+   Address[0x00007ff64415f6ac] Tag[274796251899] Index[2] Offset[44] 
+   Cache Miss[397] for 'C[154]'
+   Address[0x00007ff64415fea8] Tag[274796251903] Index[2] Offset[40] 
+   Cache Miss[398] for 'A[154]'
+   Address[0x00007ff64415eea8] Tag[274796251895] Index[2] Offset[40] 
+   Cache Miss[399] for 'B[154]'
+   Address[0x00007ff64415f6a8] Tag[274796251899] Index[2] Offset[40] 
+
+Cache Miss(es) in Iteration[156]
+-----------------------------------------------------
+   Cache Miss[400] for 'B[155 + 1]'
+   Address[0x00007ff64415f6b0] Tag[274796251899] Index[2] Offset[48] 
+   Cache Miss[401] for 'C[155]'
+   Address[0x00007ff64415feac] Tag[274796251903] Index[2] Offset[44] 
+   Cache Miss[402] for 'A[155]'
+   Address[0x00007ff64415eeac] Tag[274796251895] Index[2] Offset[44] 
+   Cache Miss[403] for 'B[155]'
+   Address[0x00007ff64415f6ac] Tag[274796251899] Index[2] Offset[44] 
+
+Cache Miss(es) in Iteration[157]
+-----------------------------------------------------
+   Cache Miss[404] for 'B[156 + 1]'
+   Address[0x00007ff64415f6b4] Tag[274796251899] Index[2] Offset[52] 
+   Cache Miss[405] for 'C[156]'
+   Address[0x00007ff64415feb0] Tag[274796251903] Index[2] Offset[48] 
+   Cache Miss[406] for 'A[156]'
+   Address[0x00007ff64415eeb0] Tag[274796251895] Index[2] Offset[48] 
+   Cache Miss[407] for 'B[156]'
+   Address[0x00007ff64415f6b0] Tag[274796251899] Index[2] Offset[48] 
+
+Cache Miss(es) in Iteration[158]
+-----------------------------------------------------
+   Cache Miss[408] for 'B[157 + 1]'
+   Address[0x00007ff64415f6b8] Tag[274796251899] Index[2] Offset[56] 
+   Cache Miss[409] for 'C[157]'
+   Address[0x00007ff64415feb4] Tag[274796251903] Index[2] Offset[52] 
+   Cache Miss[410] for 'A[157]'
+   Address[0x00007ff64415eeb4] Tag[274796251895] Index[2] Offset[52] 
+   Cache Miss[411] for 'B[157]'
+   Address[0x00007ff64415f6b4] Tag[274796251899] Index[2] Offset[52] 
+
+Cache Miss(es) in Iteration[159]
+-----------------------------------------------------
+   Cache Miss[412] for 'B[158 + 1]'
+   Address[0x00007ff64415f6bc] Tag[274796251899] Index[2] Offset[60] 
+   Cache Miss[413] for 'C[158]'
+   Address[0x00007ff64415feb8] Tag[274796251903] Index[2] Offset[56] 
+   Cache Miss[414] for 'A[158]'
+   Address[0x00007ff64415eeb8] Tag[274796251895] Index[2] Offset[56] 
+   Cache Miss[415] for 'B[158]'
+   Address[0x00007ff64415f6b8] Tag[274796251899] Index[2] Offset[56] 
+
+Cache Miss(es) in Iteration[160]
+-----------------------------------------------------
+   Cache Miss[416] for 'B[159 + 1]'
+   Address[0x00007ff64415f6c0] Tag[274796251899] Index[3] Offset[0] 
+   Cache Miss[417] for 'C[159]'
+   Address[0x00007ff64415febc] Tag[274796251903] Index[2] Offset[60] 
+   Cache Miss[418] for 'A[159]'
+   Address[0x00007ff64415eebc] Tag[274796251895] Index[2] Offset[60] 
+   Cache Miss[419] for 'B[159]'
+   Address[0x00007ff64415f6bc] Tag[274796251899] Index[2] Offset[60] 
+
+Cache Miss(es) in Iteration[161]
+-----------------------------------------------------
+   Cache Miss[420] for 'C[160]'
+   Address[0x00007ff64415fec0] Tag[274796251903] Index[3] Offset[0] 
+   Cache Miss[421] for 'A[160]'
+   Address[0x00007ff64415eec0] Tag[274796251895] Index[3] Offset[0] 
+
+Cache Miss(es) in Iteration[170]
+-----------------------------------------------------
+   Cache Miss[422] for 'B[169 + 1]'
+   Address[0x00007ff64415f6e8] Tag[274796251899] Index[3] Offset[40] 
+
+Cache Miss(es) in Iteration[171]
+-----------------------------------------------------
+   Cache Miss[423] for 'B[170 + 1]'
+   Address[0x00007ff64415f6ec] Tag[274796251899] Index[3] Offset[44] 
+   Cache Miss[424] for 'C[170]'
+   Address[0x00007ff64415fee8] Tag[274796251903] Index[3] Offset[40] 
+   Cache Miss[425] for 'A[170]'
+   Address[0x00007ff64415eee8] Tag[274796251895] Index[3] Offset[40] 
+   Cache Miss[426] for 'B[170]'
+   Address[0x00007ff64415f6e8] Tag[274796251899] Index[3] Offset[40] 
+
+Cache Miss(es) in Iteration[172]
+-----------------------------------------------------
+   Cache Miss[427] for 'B[171 + 1]'
+   Address[0x00007ff64415f6f0] Tag[274796251899] Index[3] Offset[48] 
+   Cache Miss[428] for 'C[171]'
+   Address[0x00007ff64415feec] Tag[274796251903] Index[3] Offset[44] 
+   Cache Miss[429] for 'A[171]'
+   Address[0x00007ff64415eeec] Tag[274796251895] Index[3] Offset[44] 
+   Cache Miss[430] for 'B[171]'
+   Address[0x00007ff64415f6ec] Tag[274796251899] Index[3] Offset[44] 
+
+Cache Miss(es) in Iteration[173]
+-----------------------------------------------------
+   Cache Miss[431] for 'B[172 + 1]'
+   Address[0x00007ff64415f6f4] Tag[274796251899] Index[3] Offset[52] 
+   Cache Miss[432] for 'C[172]'
+   Address[0x00007ff64415fef0] Tag[274796251903] Index[3] Offset[48] 
+   Cache Miss[433] for 'A[172]'
+   Address[0x00007ff64415eef0] Tag[274796251895] Index[3] Offset[48] 
+   Cache Miss[434] for 'B[172]'
+   Address[0x00007ff64415f6f0] Tag[274796251899] Index[3] Offset[48] 
+
+Cache Miss(es) in Iteration[174]
+-----------------------------------------------------
+   Cache Miss[435] for 'B[173 + 1]'
+   Address[0x00007ff64415f6f8] Tag[274796251899] Index[3] Offset[56] 
+   Cache Miss[436] for 'C[173]'
+   Address[0x00007ff64415fef4] Tag[274796251903] Index[3] Offset[52] 
+   Cache Miss[437] for 'A[173]'
+   Address[0x00007ff64415eef4] Tag[274796251895] Index[3] Offset[52] 
+   Cache Miss[438] for 'B[173]'
+   Address[0x00007ff64415f6f4] Tag[274796251899] Index[3] Offset[52] 
+
+Cache Miss(es) in Iteration[175]
+-----------------------------------------------------
+   Cache Miss[439] for 'B[174 + 1]'
+   Address[0x00007ff64415f6fc] Tag[274796251899] Index[3] Offset[60] 
+   Cache Miss[440] for 'C[174]'
+   Address[0x00007ff64415fef8] Tag[274796251903] Index[3] Offset[56] 
+   Cache Miss[441] for 'A[174]'
+   Address[0x00007ff64415eef8] Tag[274796251895] Index[3] Offset[56] 
+   Cache Miss[442] for 'B[174]'
+   Address[0x00007ff64415f6f8] Tag[274796251899] Index[3] Offset[56] 
+
+Cache Miss(es) in Iteration[176]
+-----------------------------------------------------
+   Cache Miss[443] for 'B[175 + 1]'
+   Address[0x00007ff64415f700] Tag[274796251899] Index[4] Offset[0] 
+   Cache Miss[444] for 'C[175]'
+   Address[0x00007ff64415fefc] Tag[274796251903] Index[3] Offset[60] 
+   Cache Miss[445] for 'A[175]'
+   Address[0x00007ff64415eefc] Tag[274796251895] Index[3] Offset[60] 
+   Cache Miss[446] for 'B[175]'
+   Address[0x00007ff64415f6fc] Tag[274796251899] Index[3] Offset[60] 
+
+Cache Miss(es) in Iteration[177]
+-----------------------------------------------------
+   Cache Miss[447] for 'B[176 + 1]'
+   Address[0x00007ff64415f704] Tag[274796251899] Index[4] Offset[4] 
+   Cache Miss[448] for 'C[176]'
+   Address[0x00007ff64415ff00] Tag[274796251903] Index[4] Offset[0] 
+   Cache Miss[449] for 'A[176]'
+   Address[0x00007ff64415ef00] Tag[274796251895] Index[4] Offset[0] 
+   Cache Miss[450] for 'B[176]'
+   Address[0x00007ff64415f700] Tag[274796251899] Index[4] Offset[0] 
+
+Cache Miss(es) in Iteration[178]
+-----------------------------------------------------
+   Cache Miss[451] for 'B[177 + 1]'
+   Address[0x00007ff64415f708] Tag[274796251899] Index[4] Offset[8] 
+   Cache Miss[452] for 'C[177]'
+   Address[0x00007ff64415ff04] Tag[274796251903] Index[4] Offset[4] 
+   Cache Miss[453] for 'A[177]'
+   Address[0x00007ff64415ef04] Tag[274796251895] Index[4] Offset[4] 
+   Cache Miss[454] for 'B[177]'
+   Address[0x00007ff64415f704] Tag[274796251899] Index[4] Offset[4] 
+
+Cache Miss(es) in Iteration[179]
+-----------------------------------------------------
+   Cache Miss[455] for 'B[178 + 1]'
+   Address[0x00007ff64415f70c] Tag[274796251899] Index[4] Offset[12] 
+   Cache Miss[456] for 'C[178]'
+   Address[0x00007ff64415ff08] Tag[274796251903] Index[4] Offset[8] 
+   Cache Miss[457] for 'A[178]'
+   Address[0x00007ff64415ef08] Tag[274796251895] Index[4] Offset[8] 
+   Cache Miss[458] for 'B[178]'
+   Address[0x00007ff64415f708] Tag[274796251899] Index[4] Offset[8] 
+
+Cache Miss(es) in Iteration[180]
+-----------------------------------------------------
+   Cache Miss[459] for 'B[179 + 1]'
+   Address[0x00007ff64415f710] Tag[274796251899] Index[4] Offset[16] 
+   Cache Miss[460] for 'C[179]'
+   Address[0x00007ff64415ff0c] Tag[274796251903] Index[4] Offset[12] 
+   Cache Miss[461] for 'A[179]'
+   Address[0x00007ff64415ef0c] Tag[274796251895] Index[4] Offset[12] 
+   Cache Miss[462] for 'B[179]'
+   Address[0x00007ff64415f70c] Tag[274796251899] Index[4] Offset[12] 
+
+Cache Miss(es) in Iteration[181]
+-----------------------------------------------------
+   Cache Miss[463] for 'B[180 + 1]'
+   Address[0x00007ff64415f714] Tag[274796251899] Index[4] Offset[20] 
+   Cache Miss[464] for 'C[180]'
+   Address[0x00007ff64415ff10] Tag[274796251903] Index[4] Offset[16] 
+   Cache Miss[465] for 'A[180]'
+   Address[0x00007ff64415ef10] Tag[274796251895] Index[4] Offset[16] 
+   Cache Miss[466] for 'B[180]'
+   Address[0x00007ff64415f710] Tag[274796251899] Index[4] Offset[16] 
+
+Cache Miss(es) in Iteration[182]
+-----------------------------------------------------
+   Cache Miss[467] for 'B[181 + 1]'
+   Address[0x00007ff64415f718] Tag[274796251899] Index[4] Offset[24] 
+   Cache Miss[468] for 'C[181]'
+   Address[0x00007ff64415ff14] Tag[274796251903] Index[4] Offset[20] 
+   Cache Miss[469] for 'A[181]'
+   Address[0x00007ff64415ef14] Tag[274796251895] Index[4] Offset[20] 
+   Cache Miss[470] for 'B[181]'
+   Address[0x00007ff64415f714] Tag[274796251899] Index[4] Offset[20] 
+
+Cache Miss(es) in Iteration[183]
+-----------------------------------------------------
+   Cache Miss[471] for 'B[182 + 1]'
+   Address[0x00007ff64415f71c] Tag[274796251899] Index[4] Offset[28] 
+   Cache Miss[472] for 'C[182]'
+   Address[0x00007ff64415ff18] Tag[274796251903] Index[4] Offset[24] 
+   Cache Miss[473] for 'A[182]'
+   Address[0x00007ff64415ef18] Tag[274796251895] Index[4] Offset[24] 
+   Cache Miss[474] for 'B[182]'
+   Address[0x00007ff64415f718] Tag[274796251899] Index[4] Offset[24] 
+
+Cache Miss(es) in Iteration[184]
+-----------------------------------------------------
+   Cache Miss[475] for 'B[183 + 1]'
+   Address[0x00007ff64415f720] Tag[274796251899] Index[4] Offset[32] 
+   Cache Miss[476] for 'C[183]'
+   Address[0x00007ff64415ff1c] Tag[274796251903] Index[4] Offset[28] 
+   Cache Miss[477] for 'A[183]'
+   Address[0x00007ff64415ef1c] Tag[274796251895] Index[4] Offset[28] 
+   Cache Miss[478] for 'B[183]'
+   Address[0x00007ff64415f71c] Tag[274796251899] Index[4] Offset[28] 
+
+Cache Miss(es) in Iteration[185]
+-----------------------------------------------------
+   Cache Miss[479] for 'B[184 + 1]'
+   Address[0x00007ff64415f724] Tag[274796251899] Index[4] Offset[36] 
+   Cache Miss[480] for 'C[184]'
+   Address[0x00007ff64415ff20] Tag[274796251903] Index[4] Offset[32] 
+   Cache Miss[481] for 'A[184]'
+   Address[0x00007ff64415ef20] Tag[274796251895] Index[4] Offset[32] 
+   Cache Miss[482] for 'B[184]'
+   Address[0x00007ff64415f720] Tag[274796251899] Index[4] Offset[32] 
+
+Cache Miss(es) in Iteration[186]
+-----------------------------------------------------
+   Cache Miss[483] for 'B[185 + 1]'
+   Address[0x00007ff64415f728] Tag[274796251899] Index[4] Offset[40] 
+   Cache Miss[484] for 'C[185]'
+   Address[0x00007ff64415ff24] Tag[274796251903] Index[4] Offset[36] 
+   Cache Miss[485] for 'A[185]'
+   Address[0x00007ff64415ef24] Tag[274796251895] Index[4] Offset[36] 
+   Cache Miss[486] for 'B[185]'
+   Address[0x00007ff64415f724] Tag[274796251899] Index[4] Offset[36] 
+
+Cache Miss(es) in Iteration[187]
+-----------------------------------------------------
+   Cache Miss[487] for 'B[186 + 1]'
+   Address[0x00007ff64415f72c] Tag[274796251899] Index[4] Offset[44] 
+   Cache Miss[488] for 'C[186]'
+   Address[0x00007ff64415ff28] Tag[274796251903] Index[4] Offset[40] 
+   Cache Miss[489] for 'A[186]'
+   Address[0x00007ff64415ef28] Tag[274796251895] Index[4] Offset[40] 
+   Cache Miss[490] for 'B[186]'
+   Address[0x00007ff64415f728] Tag[274796251899] Index[4] Offset[40] 
+
+Cache Miss(es) in Iteration[188]
+-----------------------------------------------------
+   Cache Miss[491] for 'B[187 + 1]'
+   Address[0x00007ff64415f730] Tag[274796251899] Index[4] Offset[48] 
+   Cache Miss[492] for 'C[187]'
+   Address[0x00007ff64415ff2c] Tag[274796251903] Index[4] Offset[44] 
+   Cache Miss[493] for 'A[187]'
+   Address[0x00007ff64415ef2c] Tag[274796251895] Index[4] Offset[44] 
+   Cache Miss[494] for 'B[187]'
+   Address[0x00007ff64415f72c] Tag[274796251899] Index[4] Offset[44] 
+
+Cache Miss(es) in Iteration[189]
+-----------------------------------------------------
+   Cache Miss[495] for 'B[188 + 1]'
+   Address[0x00007ff64415f734] Tag[274796251899] Index[4] Offset[52] 
+   Cache Miss[496] for 'C[188]'
+   Address[0x00007ff64415ff30] Tag[274796251903] Index[4] Offset[48] 
+   Cache Miss[497] for 'A[188]'
+   Address[0x00007ff64415ef30] Tag[274796251895] Index[4] Offset[48] 
+   Cache Miss[498] for 'B[188]'
+   Address[0x00007ff64415f730] Tag[274796251899] Index[4] Offset[48] 
+
+Cache Miss(es) in Iteration[190]
+-----------------------------------------------------
+   Cache Miss[499] for 'B[189 + 1]'
+   Address[0x00007ff64415f738] Tag[274796251899] Index[4] Offset[56] 
+   Cache Miss[500] for 'C[189]'
+   Address[0x00007ff64415ff34] Tag[274796251903] Index[4] Offset[52] 
+   Cache Miss[501] for 'A[189]'
+   Address[0x00007ff64415ef34] Tag[274796251895] Index[4] Offset[52] 
+   Cache Miss[502] for 'B[189]'
+   Address[0x00007ff64415f734] Tag[274796251899] Index[4] Offset[52] 
+
+Cache Miss(es) in Iteration[191]
+-----------------------------------------------------
+   Cache Miss[503] for 'B[190 + 1]'
+   Address[0x00007ff64415f73c] Tag[274796251899] Index[4] Offset[60] 
+   Cache Miss[504] for 'C[190]'
+   Address[0x00007ff64415ff38] Tag[274796251903] Index[4] Offset[56] 
+   Cache Miss[505] for 'A[190]'
+   Address[0x00007ff64415ef38] Tag[274796251895] Index[4] Offset[56] 
+   Cache Miss[506] for 'B[190]'
+   Address[0x00007ff64415f738] Tag[274796251899] Index[4] Offset[56] 
+
+Cache Miss(es) in Iteration[192]
+-----------------------------------------------------
+   Cache Miss[507] for 'B[191 + 1]'
+   Address[0x00007ff64415f740] Tag[274796251899] Index[5] Offset[0] 
+   Cache Miss[508] for 'C[191]'
+   Address[0x00007ff64415ff3c] Tag[274796251903] Index[4] Offset[60] 
+   Cache Miss[509] for 'A[191]'
+   Address[0x00007ff64415ef3c] Tag[274796251895] Index[4] Offset[60] 
+   Cache Miss[510] for 'B[191]'
+   Address[0x00007ff64415f73c] Tag[274796251899] Index[4] Offset[60] 
+
+Cache Miss(es) in Iteration[193]
+-----------------------------------------------------
+   Cache Miss[511] for 'B[192 + 1]'
+   Address[0x00007ff64415f744] Tag[274796251899] Index[5] Offset[4] 
+   Cache Miss[512] for 'C[192]'
+   Address[0x00007ff64415ff40] Tag[274796251903] Index[5] Offset[0] 
+   Cache Miss[513] for 'A[192]'
+   Address[0x00007ff64415ef40] Tag[274796251895] Index[5] Offset[0] 
+   Cache Miss[514] for 'B[192]'
+   Address[0x00007ff64415f740] Tag[274796251899] Index[5] Offset[0] 
+
+Cache Miss(es) in Iteration[194]
+-----------------------------------------------------
+   Cache Miss[515] for 'B[193 + 1]'
+   Address[0x00007ff64415f748] Tag[274796251899] Index[5] Offset[8] 
+   Cache Miss[516] for 'C[193]'
+   Address[0x00007ff64415ff44] Tag[274796251903] Index[5] Offset[4] 
+   Cache Miss[517] for 'A[193]'
+   Address[0x00007ff64415ef44] Tag[274796251895] Index[5] Offset[4] 
+   Cache Miss[518] for 'B[193]'
+   Address[0x00007ff64415f744] Tag[274796251899] Index[5] Offset[4] 
+
+Cache Miss(es) in Iteration[195]
+-----------------------------------------------------
+   Cache Miss[519] for 'B[194 + 1]'
+   Address[0x00007ff64415f74c] Tag[274796251899] Index[5] Offset[12] 
+   Cache Miss[520] for 'C[194]'
+   Address[0x00007ff64415ff48] Tag[274796251903] Index[5] Offset[8] 
+   Cache Miss[521] for 'A[194]'
+   Address[0x00007ff64415ef48] Tag[274796251895] Index[5] Offset[8] 
+   Cache Miss[522] for 'B[194]'
+   Address[0x00007ff64415f748] Tag[274796251899] Index[5] Offset[8] 
+
+Cache Miss(es) in Iteration[196]
+-----------------------------------------------------
+   Cache Miss[523] for 'B[195 + 1]'
+   Address[0x00007ff64415f750] Tag[274796251899] Index[5] Offset[16] 
+   Cache Miss[524] for 'C[195]'
+   Address[0x00007ff64415ff4c] Tag[274796251903] Index[5] Offset[12] 
+   Cache Miss[525] for 'A[195]'
+   Address[0x00007ff64415ef4c] Tag[274796251895] Index[5] Offset[12] 
+   Cache Miss[526] for 'B[195]'
+   Address[0x00007ff64415f74c] Tag[274796251899] Index[5] Offset[12] 
+
+Cache Miss(es) in Iteration[197]
+-----------------------------------------------------
+   Cache Miss[527] for 'B[196 + 1]'
+   Address[0x00007ff64415f754] Tag[274796251899] Index[5] Offset[20] 
+   Cache Miss[528] for 'C[196]'
+   Address[0x00007ff64415ff50] Tag[274796251903] Index[5] Offset[16] 
+   Cache Miss[529] for 'A[196]'
+   Address[0x00007ff64415ef50] Tag[274796251895] Index[5] Offset[16] 
+   Cache Miss[530] for 'B[196]'
+   Address[0x00007ff64415f750] Tag[274796251899] Index[5] Offset[16] 
+
+Cache Miss(es) in Iteration[198]
+-----------------------------------------------------
+   Cache Miss[531] for 'B[197 + 1]'
+   Address[0x00007ff64415f758] Tag[274796251899] Index[5] Offset[24] 
+   Cache Miss[532] for 'C[197]'
+   Address[0x00007ff64415ff54] Tag[274796251903] Index[5] Offset[20] 
+   Cache Miss[533] for 'A[197]'
+   Address[0x00007ff64415ef54] Tag[274796251895] Index[5] Offset[20] 
+   Cache Miss[534] for 'B[197]'
+   Address[0x00007ff64415f754] Tag[274796251899] Index[5] Offset[20] 
+
+Cache Miss(es) in Iteration[199]
+-----------------------------------------------------
+   Cache Miss[535] for 'B[198 + 1]'
+   Address[0x00007ff64415f75c] Tag[274796251899] Index[5] Offset[28] 
+   Cache Miss[536] for 'C[198]'
+   Address[0x00007ff64415ff58] Tag[274796251903] Index[5] Offset[24] 
+   Cache Miss[537] for 'A[198]'
+   Address[0x00007ff64415ef58] Tag[274796251895] Index[5] Offset[24] 
+   Cache Miss[538] for 'B[198]'
+   Address[0x00007ff64415f758] Tag[274796251899] Index[5] Offset[24] 
+
+Cache Miss(es) in Iteration[200]
+-----------------------------------------------------
+   Cache Miss[539] for 'B[199 + 1]'
+   Address[0x00007ff64415f760] Tag[274796251899] Index[5] Offset[32] 
+   Cache Miss[540] for 'C[199]'
+   Address[0x00007ff64415ff5c] Tag[274796251903] Index[5] Offset[28] 
+   Cache Miss[541] for 'A[199]'
+   Address[0x00007ff64415ef5c] Tag[274796251895] Index[5] Offset[28] 
+   Cache Miss[542] for 'B[199]'
+   Address[0x00007ff64415f75c] Tag[274796251899] Index[5] Offset[28] 
+
+Cache Miss(es) in Iteration[201]
+-----------------------------------------------------
+   Cache Miss[543] for 'B[200 + 1]'
+   Address[0x00007ff64415f764] Tag[274796251899] Index[5] Offset[36] 
+   Cache Miss[544] for 'C[200]'
+   Address[0x00007ff64415ff60] Tag[274796251903] Index[5] Offset[32] 
+   Cache Miss[545] for 'A[200]'
+   Address[0x00007ff64415ef60] Tag[274796251895] Index[5] Offset[32] 
+   Cache Miss[546] for 'B[200]'
+   Address[0x00007ff64415f760] Tag[274796251899] Index[5] Offset[32] 
+
+Cache Miss(es) in Iteration[202]
+-----------------------------------------------------
+   Cache Miss[547] for 'B[201 + 1]'
+   Address[0x00007ff64415f768] Tag[274796251899] Index[5] Offset[40] 
+   Cache Miss[548] for 'C[201]'
+   Address[0x00007ff64415ff64] Tag[274796251903] Index[5] Offset[36] 
+   Cache Miss[549] for 'A[201]'
+   Address[0x00007ff64415ef64] Tag[274796251895] Index[5] Offset[36] 
+   Cache Miss[550] for 'B[201]'
+   Address[0x00007ff64415f764] Tag[274796251899] Index[5] Offset[36] 
+
+Cache Miss(es) in Iteration[203]
+-----------------------------------------------------
+   Cache Miss[551] for 'B[202 + 1]'
+   Address[0x00007ff64415f76c] Tag[274796251899] Index[5] Offset[44] 
+   Cache Miss[552] for 'C[202]'
+   Address[0x00007ff64415ff68] Tag[274796251903] Index[5] Offset[40] 
+   Cache Miss[553] for 'A[202]'
+   Address[0x00007ff64415ef68] Tag[274796251895] Index[5] Offset[40] 
+   Cache Miss[554] for 'B[202]'
+   Address[0x00007ff64415f768] Tag[274796251899] Index[5] Offset[40] 
+
+Cache Miss(es) in Iteration[204]
+-----------------------------------------------------
+   Cache Miss[555] for 'B[203 + 1]'
+   Address[0x00007ff64415f770] Tag[274796251899] Index[5] Offset[48] 
+   Cache Miss[556] for 'C[203]'
+   Address[0x00007ff64415ff6c] Tag[274796251903] Index[5] Offset[44] 
+   Cache Miss[557] for 'A[203]'
+   Address[0x00007ff64415ef6c] Tag[274796251895] Index[5] Offset[44] 
+   Cache Miss[558] for 'B[203]'
+   Address[0x00007ff64415f76c] Tag[274796251899] Index[5] Offset[44] 
+
+Cache Miss(es) in Iteration[205]
+-----------------------------------------------------
+   Cache Miss[559] for 'B[204 + 1]'
+   Address[0x00007ff64415f774] Tag[274796251899] Index[5] Offset[52] 
+   Cache Miss[560] for 'C[204]'
+   Address[0x00007ff64415ff70] Tag[274796251903] Index[5] Offset[48] 
+   Cache Miss[561] for 'A[204]'
+   Address[0x00007ff64415ef70] Tag[274796251895] Index[5] Offset[48] 
+   Cache Miss[562] for 'B[204]'
+   Address[0x00007ff64415f770] Tag[274796251899] Index[5] Offset[48] 
+
+Cache Miss(es) in Iteration[206]
+-----------------------------------------------------
+   Cache Miss[563] for 'B[205 + 1]'
+   Address[0x00007ff64415f778] Tag[274796251899] Index[5] Offset[56] 
+   Cache Miss[564] for 'C[205]'
+   Address[0x00007ff64415ff74] Tag[274796251903] Index[5] Offset[52] 
+   Cache Miss[565] for 'A[205]'
+   Address[0x00007ff64415ef74] Tag[274796251895] Index[5] Offset[52] 
+   Cache Miss[566] for 'B[205]'
+   Address[0x00007ff64415f774] Tag[274796251899] Index[5] Offset[52] 
+
+Cache Miss(es) in Iteration[207]
+-----------------------------------------------------
+   Cache Miss[567] for 'B[206 + 1]'
+   Address[0x00007ff64415f77c] Tag[274796251899] Index[5] Offset[60] 
+   Cache Miss[568] for 'C[206]'
+   Address[0x00007ff64415ff78] Tag[274796251903] Index[5] Offset[56] 
+   Cache Miss[569] for 'A[206]'
+   Address[0x00007ff64415ef78] Tag[274796251895] Index[5] Offset[56] 
+   Cache Miss[570] for 'B[206]'
+   Address[0x00007ff64415f778] Tag[274796251899] Index[5] Offset[56] 
+
+Cache Miss(es) in Iteration[208]
+-----------------------------------------------------
+   Cache Miss[571] for 'B[207 + 1]'
+   Address[0x00007ff64415f780] Tag[274796251899] Index[6] Offset[0] 
+   Cache Miss[572] for 'C[207]'
+   Address[0x00007ff64415ff7c] Tag[274796251903] Index[5] Offset[60] 
+   Cache Miss[573] for 'A[207]'
+   Address[0x00007ff64415ef7c] Tag[274796251895] Index[5] Offset[60] 
+   Cache Miss[574] for 'B[207]'
+   Address[0x00007ff64415f77c] Tag[274796251899] Index[5] Offset[60] 
+
+Cache Miss(es) in Iteration[209]
+-----------------------------------------------------
+   Cache Miss[575] for 'B[208 + 1]'
+   Address[0x00007ff64415f784] Tag[274796251899] Index[6] Offset[4] 
+   Cache Miss[576] for 'C[208]'
+   Address[0x00007ff64415ff80] Tag[274796251903] Index[6] Offset[0] 
+   Cache Miss[577] for 'A[208]'
+   Address[0x00007ff64415ef80] Tag[274796251895] Index[6] Offset[0] 
+   Cache Miss[578] for 'B[208]'
+   Address[0x00007ff64415f780] Tag[274796251899] Index[6] Offset[0] 
+
+Cache Miss(es) in Iteration[210]
+-----------------------------------------------------
+   Cache Miss[579] for 'B[209 + 1]'
+   Address[0x00007ff64415f788] Tag[274796251899] Index[6] Offset[8] 
+   Cache Miss[580] for 'C[209]'
+   Address[0x00007ff64415ff84] Tag[274796251903] Index[6] Offset[4] 
+   Cache Miss[581] for 'A[209]'
+   Address[0x00007ff64415ef84] Tag[274796251895] Index[6] Offset[4] 
+   Cache Miss[582] for 'B[209]'
+   Address[0x00007ff64415f784] Tag[274796251899] Index[6] Offset[4] 
+
+Cache Miss(es) in Iteration[211]
+-----------------------------------------------------
+   Cache Miss[583] for 'B[210 + 1]'
+   Address[0x00007ff64415f78c] Tag[274796251899] Index[6] Offset[12] 
+   Cache Miss[584] for 'C[210]'
+   Address[0x00007ff64415ff88] Tag[274796251903] Index[6] Offset[8] 
+   Cache Miss[585] for 'A[210]'
+   Address[0x00007ff64415ef88] Tag[274796251895] Index[6] Offset[8] 
+   Cache Miss[586] for 'B[210]'
+   Address[0x00007ff64415f788] Tag[274796251899] Index[6] Offset[8] 
+
+Cache Miss(es) in Iteration[212]
+-----------------------------------------------------
+   Cache Miss[587] for 'B[211 + 1]'
+   Address[0x00007ff64415f790] Tag[274796251899] Index[6] Offset[16] 
+   Cache Miss[588] for 'C[211]'
+   Address[0x00007ff64415ff8c] Tag[274796251903] Index[6] Offset[12] 
+   Cache Miss[589] for 'A[211]'
+   Address[0x00007ff64415ef8c] Tag[274796251895] Index[6] Offset[12] 
+   Cache Miss[590] for 'B[211]'
+   Address[0x00007ff64415f78c] Tag[274796251899] Index[6] Offset[12] 
+
+Cache Miss(es) in Iteration[213]
+-----------------------------------------------------
+   Cache Miss[591] for 'B[212 + 1]'
+   Address[0x00007ff64415f794] Tag[274796251899] Index[6] Offset[20] 
+   Cache Miss[592] for 'C[212]'
+   Address[0x00007ff64415ff90] Tag[274796251903] Index[6] Offset[16] 
+   Cache Miss[593] for 'A[212]'
+   Address[0x00007ff64415ef90] Tag[274796251895] Index[6] Offset[16] 
+   Cache Miss[594] for 'B[212]'
+   Address[0x00007ff64415f790] Tag[274796251899] Index[6] Offset[16] 
+
+Cache Miss(es) in Iteration[214]
+-----------------------------------------------------
+   Cache Miss[595] for 'B[213 + 1]'
+   Address[0x00007ff64415f798] Tag[274796251899] Index[6] Offset[24] 
+   Cache Miss[596] for 'C[213]'
+   Address[0x00007ff64415ff94] Tag[274796251903] Index[6] Offset[20] 
+   Cache Miss[597] for 'A[213]'
+   Address[0x00007ff64415ef94] Tag[274796251895] Index[6] Offset[20] 
+   Cache Miss[598] for 'B[213]'
+   Address[0x00007ff64415f794] Tag[274796251899] Index[6] Offset[20] 
+
+Cache Miss(es) in Iteration[215]
+-----------------------------------------------------
+   Cache Miss[599] for 'B[214 + 1]'
+   Address[0x00007ff64415f79c] Tag[274796251899] Index[6] Offset[28] 
+   Cache Miss[600] for 'C[214]'
+   Address[0x00007ff64415ff98] Tag[274796251903] Index[6] Offset[24] 
+   Cache Miss[601] for 'A[214]'
+   Address[0x00007ff64415ef98] Tag[274796251895] Index[6] Offset[24] 
+   Cache Miss[602] for 'B[214]'
+   Address[0x00007ff64415f798] Tag[274796251899] Index[6] Offset[24] 
+
+Cache Miss(es) in Iteration[216]
+-----------------------------------------------------
+   Cache Miss[603] for 'B[215 + 1]'
+   Address[0x00007ff64415f7a0] Tag[274796251899] Index[6] Offset[32] 
+   Cache Miss[604] for 'C[215]'
+   Address[0x00007ff64415ff9c] Tag[274796251903] Index[6] Offset[28] 
+   Cache Miss[605] for 'A[215]'
+   Address[0x00007ff64415ef9c] Tag[274796251895] Index[6] Offset[28] 
+   Cache Miss[606] for 'B[215]'
+   Address[0x00007ff64415f79c] Tag[274796251899] Index[6] Offset[28] 
+
+Cache Miss(es) in Iteration[217]
+-----------------------------------------------------
+   Cache Miss[607] for 'B[216 + 1]'
+   Address[0x00007ff64415f7a4] Tag[274796251899] Index[6] Offset[36] 
+   Cache Miss[608] for 'C[216]'
+   Address[0x00007ff64415ffa0] Tag[274796251903] Index[6] Offset[32] 
+   Cache Miss[609] for 'A[216]'
+   Address[0x00007ff64415efa0] Tag[274796251895] Index[6] Offset[32] 
+   Cache Miss[610] for 'B[216]'
+   Address[0x00007ff64415f7a0] Tag[274796251899] Index[6] Offset[32] 
+
+Cache Miss(es) in Iteration[218]
+-----------------------------------------------------
+   Cache Miss[611] for 'B[217 + 1]'
+   Address[0x00007ff64415f7a8] Tag[274796251899] Index[6] Offset[40] 
+   Cache Miss[612] for 'C[217]'
+   Address[0x00007ff64415ffa4] Tag[274796251903] Index[6] Offset[36] 
+   Cache Miss[613] for 'A[217]'
+   Address[0x00007ff64415efa4] Tag[274796251895] Index[6] Offset[36] 
+   Cache Miss[614] for 'B[217]'
+   Address[0x00007ff64415f7a4] Tag[274796251899] Index[6] Offset[36] 
+
+Cache Miss(es) in Iteration[219]
+-----------------------------------------------------
+   Cache Miss[615] for 'B[218 + 1]'
+   Address[0x00007ff64415f7ac] Tag[274796251899] Index[6] Offset[44] 
+   Cache Miss[616] for 'C[218]'
+   Address[0x00007ff64415ffa8] Tag[274796251903] Index[6] Offset[40] 
+   Cache Miss[617] for 'A[218]'
+   Address[0x00007ff64415efa8] Tag[274796251895] Index[6] Offset[40] 
+   Cache Miss[618] for 'B[218]'
+   Address[0x00007ff64415f7a8] Tag[274796251899] Index[6] Offset[40] 
+
+Cache Miss(es) in Iteration[220]
+-----------------------------------------------------
+   Cache Miss[619] for 'B[219 + 1]'
+   Address[0x00007ff64415f7b0] Tag[274796251899] Index[6] Offset[48] 
+   Cache Miss[620] for 'C[219]'
+   Address[0x00007ff64415ffac] Tag[274796251903] Index[6] Offset[44] 
+   Cache Miss[621] for 'A[219]'
+   Address[0x00007ff64415efac] Tag[274796251895] Index[6] Offset[44] 
+   Cache Miss[622] for 'B[219]'
+   Address[0x00007ff64415f7ac] Tag[274796251899] Index[6] Offset[44] 
+
+Cache Miss(es) in Iteration[221]
+-----------------------------------------------------
+   Cache Miss[623] for 'B[220 + 1]'
+   Address[0x00007ff64415f7b4] Tag[274796251899] Index[6] Offset[52] 
+   Cache Miss[624] for 'C[220]'
+   Address[0x00007ff64415ffb0] Tag[274796251903] Index[6] Offset[48] 
+   Cache Miss[625] for 'A[220]'
+   Address[0x00007ff64415efb0] Tag[274796251895] Index[6] Offset[48] 
+   Cache Miss[626] for 'B[220]'
+   Address[0x00007ff64415f7b0] Tag[274796251899] Index[6] Offset[48] 
+
+Cache Miss(es) in Iteration[222]
+-----------------------------------------------------
+   Cache Miss[627] for 'B[221 + 1]'
+   Address[0x00007ff64415f7b8] Tag[274796251899] Index[6] Offset[56] 
+   Cache Miss[628] for 'C[221]'
+   Address[0x00007ff64415ffb4] Tag[274796251903] Index[6] Offset[52] 
+   Cache Miss[629] for 'A[221]'
+   Address[0x00007ff64415efb4] Tag[274796251895] Index[6] Offset[52] 
+   Cache Miss[630] for 'B[221]'
+   Address[0x00007ff64415f7b4] Tag[274796251899] Index[6] Offset[52] 
+
+Cache Miss(es) in Iteration[223]
+-----------------------------------------------------
+   Cache Miss[631] for 'B[222 + 1]'
+   Address[0x00007ff64415f7bc] Tag[274796251899] Index[6] Offset[60] 
+   Cache Miss[632] for 'C[222]'
+   Address[0x00007ff64415ffb8] Tag[274796251903] Index[6] Offset[56] 
+   Cache Miss[633] for 'A[222]'
+   Address[0x00007ff64415efb8] Tag[274796251895] Index[6] Offset[56] 
+   Cache Miss[634] for 'B[222]'
+   Address[0x00007ff64415f7b8] Tag[274796251899] Index[6] Offset[56] 
+
+Cache Miss(es) in Iteration[224]
+-----------------------------------------------------
+   Cache Miss[635] for 'B[223 + 1]'
+   Address[0x00007ff64415f7c0] Tag[274796251899] Index[7] Offset[0] 
+   Cache Miss[636] for 'C[223]'
+   Address[0x00007ff64415ffbc] Tag[274796251903] Index[6] Offset[60] 
+   Cache Miss[637] for 'A[223]'
+   Address[0x00007ff64415efbc] Tag[274796251895] Index[6] Offset[60] 
+   Cache Miss[638] for 'B[223]'
+   Address[0x00007ff64415f7bc] Tag[274796251899] Index[6] Offset[60] 
+
+Cache Miss(es) in Iteration[225]
+-----------------------------------------------------
+   Cache Miss[639] for 'B[224 + 1]'
+   Address[0x00007ff64415f7c4] Tag[274796251899] Index[7] Offset[4] 
+   Cache Miss[640] for 'C[224]'
+   Address[0x00007ff64415ffc0] Tag[274796251903] Index[7] Offset[0] 
+   Cache Miss[641] for 'A[224]'
+   Address[0x00007ff64415efc0] Tag[274796251895] Index[7] Offset[0] 
+   Cache Miss[642] for 'B[224]'
+   Address[0x00007ff64415f7c0] Tag[274796251899] Index[7] Offset[0] 
+
+Cache Miss(es) in Iteration[226]
+-----------------------------------------------------
+   Cache Miss[643] for 'B[225 + 1]'
+   Address[0x00007ff64415f7c8] Tag[274796251899] Index[7] Offset[8] 
+   Cache Miss[644] for 'C[225]'
+   Address[0x00007ff64415ffc4] Tag[274796251903] Index[7] Offset[4] 
+   Cache Miss[645] for 'A[225]'
+   Address[0x00007ff64415efc4] Tag[274796251895] Index[7] Offset[4] 
+   Cache Miss[646] for 'B[225]'
+   Address[0x00007ff64415f7c4] Tag[274796251899] Index[7] Offset[4] 
+
+Cache Miss(es) in Iteration[227]
+-----------------------------------------------------
+   Cache Miss[647] for 'B[226 + 1]'
+   Address[0x00007ff64415f7cc] Tag[274796251899] Index[7] Offset[12] 
+   Cache Miss[648] for 'C[226]'
+   Address[0x00007ff64415ffc8] Tag[274796251903] Index[7] Offset[8] 
+   Cache Miss[649] for 'A[226]'
+   Address[0x00007ff64415efc8] Tag[274796251895] Index[7] Offset[8] 
+   Cache Miss[650] for 'B[226]'
+   Address[0x00007ff64415f7c8] Tag[274796251899] Index[7] Offset[8] 
+
+Cache Miss(es) in Iteration[228]
+-----------------------------------------------------
+   Cache Miss[651] for 'B[227 + 1]'
+   Address[0x00007ff64415f7d0] Tag[274796251899] Index[7] Offset[16] 
+   Cache Miss[652] for 'C[227]'
+   Address[0x00007ff64415ffcc] Tag[274796251903] Index[7] Offset[12] 
+   Cache Miss[653] for 'A[227]'
+   Address[0x00007ff64415efcc] Tag[274796251895] Index[7] Offset[12] 
+   Cache Miss[654] for 'B[227]'
+   Address[0x00007ff64415f7cc] Tag[274796251899] Index[7] Offset[12] 
+
+Cache Miss(es) in Iteration[229]
+-----------------------------------------------------
+   Cache Miss[655] for 'B[228 + 1]'
+   Address[0x00007ff64415f7d4] Tag[274796251899] Index[7] Offset[20] 
+   Cache Miss[656] for 'C[228]'
+   Address[0x00007ff64415ffd0] Tag[274796251903] Index[7] Offset[16] 
+   Cache Miss[657] for 'A[228]'
+   Address[0x00007ff64415efd0] Tag[274796251895] Index[7] Offset[16] 
+   Cache Miss[658] for 'B[228]'
+   Address[0x00007ff64415f7d0] Tag[274796251899] Index[7] Offset[16] 
+
+Cache Miss(es) in Iteration[230]
+-----------------------------------------------------
+   Cache Miss[659] for 'B[229 + 1]'
+   Address[0x00007ff64415f7d8] Tag[274796251899] Index[7] Offset[24] 
+   Cache Miss[660] for 'C[229]'
+   Address[0x00007ff64415ffd4] Tag[274796251903] Index[7] Offset[20] 
+   Cache Miss[661] for 'A[229]'
+   Address[0x00007ff64415efd4] Tag[274796251895] Index[7] Offset[20] 
+   Cache Miss[662] for 'B[229]'
+   Address[0x00007ff64415f7d4] Tag[274796251899] Index[7] Offset[20] 
+
+Cache Miss(es) in Iteration[231]
+-----------------------------------------------------
+   Cache Miss[663] for 'B[230 + 1]'
+   Address[0x00007ff64415f7dc] Tag[274796251899] Index[7] Offset[28] 
+   Cache Miss[664] for 'C[230]'
+   Address[0x00007ff64415ffd8] Tag[274796251903] Index[7] Offset[24] 
+   Cache Miss[665] for 'A[230]'
+   Address[0x00007ff64415efd8] Tag[274796251895] Index[7] Offset[24] 
+   Cache Miss[666] for 'B[230]'
+   Address[0x00007ff64415f7d8] Tag[274796251899] Index[7] Offset[24] 
+
+Cache Miss(es) in Iteration[232]
+-----------------------------------------------------
+   Cache Miss[667] for 'B[231 + 1]'
+   Address[0x00007ff64415f7e0] Tag[274796251899] Index[7] Offset[32] 
+   Cache Miss[668] for 'C[231]'
+   Address[0x00007ff64415ffdc] Tag[274796251903] Index[7] Offset[28] 
+   Cache Miss[669] for 'A[231]'
+   Address[0x00007ff64415efdc] Tag[274796251895] Index[7] Offset[28] 
+   Cache Miss[670] for 'B[231]'
+   Address[0x00007ff64415f7dc] Tag[274796251899] Index[7] Offset[28] 
+
+Cache Miss(es) in Iteration[233]
+-----------------------------------------------------
+   Cache Miss[671] for 'B[232 + 1]'
+   Address[0x00007ff64415f7e4] Tag[274796251899] Index[7] Offset[36] 
+   Cache Miss[672] for 'C[232]'
+   Address[0x00007ff64415ffe0] Tag[274796251903] Index[7] Offset[32] 
+   Cache Miss[673] for 'A[232]'
+   Address[0x00007ff64415efe0] Tag[274796251895] Index[7] Offset[32] 
+   Cache Miss[674] for 'B[232]'
+   Address[0x00007ff64415f7e0] Tag[274796251899] Index[7] Offset[32] 
+
+Cache Miss(es) in Iteration[234]
+-----------------------------------------------------
+   Cache Miss[675] for 'B[233 + 1]'
+   Address[0x00007ff64415f7e8] Tag[274796251899] Index[7] Offset[40] 
+   Cache Miss[676] for 'C[233]'
+   Address[0x00007ff64415ffe4] Tag[274796251903] Index[7] Offset[36] 
+   Cache Miss[677] for 'A[233]'
+   Address[0x00007ff64415efe4] Tag[274796251895] Index[7] Offset[36] 
+   Cache Miss[678] for 'B[233]'
+   Address[0x00007ff64415f7e4] Tag[274796251899] Index[7] Offset[36] 
+
+Cache Miss(es) in Iteration[235]
+-----------------------------------------------------
+   Cache Miss[679] for 'B[234 + 1]'
+   Address[0x00007ff64415f7ec] Tag[274796251899] Index[7] Offset[44] 
+   Cache Miss[680] for 'C[234]'
+   Address[0x00007ff64415ffe8] Tag[274796251903] Index[7] Offset[40] 
+   Cache Miss[681] for 'A[234]'
+   Address[0x00007ff64415efe8] Tag[274796251895] Index[7] Offset[40] 
+   Cache Miss[682] for 'B[234]'
+   Address[0x00007ff64415f7e8] Tag[274796251899] Index[7] Offset[40] 
+
+Cache Miss(es) in Iteration[236]
+-----------------------------------------------------
+   Cache Miss[683] for 'B[235 + 1]'
+   Address[0x00007ff64415f7f0] Tag[274796251899] Index[7] Offset[48] 
+   Cache Miss[684] for 'C[235]'
+   Address[0x00007ff64415ffec] Tag[274796251903] Index[7] Offset[44] 
+   Cache Miss[685] for 'A[235]'
+   Address[0x00007ff64415efec] Tag[274796251895] Index[7] Offset[44] 
+   Cache Miss[686] for 'B[235]'
+   Address[0x00007ff64415f7ec] Tag[274796251899] Index[7] Offset[44] 
+
+Cache Miss(es) in Iteration[237]
+-----------------------------------------------------
+   Cache Miss[687] for 'B[236 + 1]'
+   Address[0x00007ff64415f7f4] Tag[274796251899] Index[7] Offset[52] 
+   Cache Miss[688] for 'C[236]'
+   Address[0x00007ff64415fff0] Tag[274796251903] Index[7] Offset[48] 
+   Cache Miss[689] for 'A[236]'
+   Address[0x00007ff64415eff0] Tag[274796251895] Index[7] Offset[48] 
+   Cache Miss[690] for 'B[236]'
+   Address[0x00007ff64415f7f0] Tag[274796251899] Index[7] Offset[48] 
+
+Cache Miss(es) in Iteration[238]
+-----------------------------------------------------
+   Cache Miss[691] for 'B[237 + 1]'
+   Address[0x00007ff64415f7f8] Tag[274796251899] Index[7] Offset[56] 
+   Cache Miss[692] for 'C[237]'
+   Address[0x00007ff64415fff4] Tag[274796251903] Index[7] Offset[52] 
+   Cache Miss[693] for 'A[237]'
+   Address[0x00007ff64415eff4] Tag[274796251895] Index[7] Offset[52] 
+   Cache Miss[694] for 'B[237]'
+   Address[0x00007ff64415f7f4] Tag[274796251899] Index[7] Offset[52] 
+
+Cache Miss(es) in Iteration[239]
+-----------------------------------------------------
+   Cache Miss[695] for 'B[238 + 1]'
+   Address[0x00007ff64415f7fc] Tag[274796251899] Index[7] Offset[60] 
+   Cache Miss[696] for 'C[238]'
+   Address[0x00007ff64415fff8] Tag[274796251903] Index[7] Offset[56] 
+   Cache Miss[697] for 'A[238]'
+   Address[0x00007ff64415eff8] Tag[274796251895] Index[7] Offset[56] 
+   Cache Miss[698] for 'B[238]'
+   Address[0x00007ff64415f7f8] Tag[274796251899] Index[7] Offset[56] 
+
+Cache Miss(es) in Iteration[240]
+-----------------------------------------------------
+   Cache Miss[699] for 'B[239 + 1]'
+   Address[0x00007ff64415f800] Tag[274796251900] Index[0] Offset[0] 
+   Cache Miss[700] for 'C[239]'
+   Address[0x00007ff64415fffc] Tag[274796251903] Index[7] Offset[60] 
+   Cache Miss[701] for 'A[239]'
+   Address[0x00007ff64415effc] Tag[274796251895] Index[7] Offset[60] 
+   Cache Miss[702] for 'B[239]'
+   Address[0x00007ff64415f7fc] Tag[274796251899] Index[7] Offset[60] 
+
+Cache Miss(es) in Iteration[241]
+-----------------------------------------------------
+   Cache Miss[703] for 'C[240]'
+   Address[0x00007ff644160000] Tag[274796251904] Index[0] Offset[0] 
+   Cache Miss[704] for 'A[240]'
+   Address[0x00007ff64415f000] Tag[274796251896] Index[0] Offset[0] 
+
+Cache Miss(es) in Iteration[250]
+-----------------------------------------------------
+   Cache Miss[705] for 'B[249 + 1]'
+   Address[0x00007ff64415f828] Tag[274796251900] Index[0] Offset[40] 
+
+Cache Miss(es) in Iteration[251]
+-----------------------------------------------------
+   Cache Miss[706] for 'B[250 + 1]'
+   Address[0x00007ff64415f82c] Tag[274796251900] Index[0] Offset[44] 
+   Cache Miss[707] for 'C[250]'
+   Address[0x00007ff644160028] Tag[274796251904] Index[0] Offset[40] 
+   Cache Miss[708] for 'A[250]'
+   Address[0x00007ff64415f028] Tag[274796251896] Index[0] Offset[40] 
+   Cache Miss[709] for 'B[250]'
+   Address[0x00007ff64415f828] Tag[274796251900] Index[0] Offset[40] 
+
+Cache Miss(es) in Iteration[252]
+-----------------------------------------------------
+   Cache Miss[710] for 'B[251 + 1]'
+   Address[0x00007ff64415f830] Tag[274796251900] Index[0] Offset[48] 
+   Cache Miss[711] for 'C[251]'
+   Address[0x00007ff64416002c] Tag[274796251904] Index[0] Offset[44] 
+   Cache Miss[712] for 'A[251]'
+   Address[0x00007ff64415f02c] Tag[274796251896] Index[0] Offset[44] 
+   Cache Miss[713] for 'B[251]'
+   Address[0x00007ff64415f82c] Tag[274796251900] Index[0] Offset[44] 
+
+Cache Miss(es) in Iteration[253]
+-----------------------------------------------------
+   Cache Miss[714] for 'B[252 + 1]'
+   Address[0x00007ff64415f834] Tag[274796251900] Index[0] Offset[52] 
+   Cache Miss[715] for 'C[252]'
+   Address[0x00007ff644160030] Tag[274796251904] Index[0] Offset[48] 
+   Cache Miss[716] for 'A[252]'
+   Address[0x00007ff64415f030] Tag[274796251896] Index[0] Offset[48] 
+   Cache Miss[717] for 'B[252]'
+   Address[0x00007ff64415f830] Tag[274796251900] Index[0] Offset[48] 
+
+Cache Miss(es) in Iteration[254]
+-----------------------------------------------------
+   Cache Miss[718] for 'B[253 + 1]'
+   Address[0x00007ff64415f838] Tag[274796251900] Index[0] Offset[56] 
+   Cache Miss[719] for 'C[253]'
+   Address[0x00007ff644160034] Tag[274796251904] Index[0] Offset[52] 
+   Cache Miss[720] for 'A[253]'
+   Address[0x00007ff64415f034] Tag[274796251896] Index[0] Offset[52] 
+   Cache Miss[721] for 'B[253]'
+   Address[0x00007ff64415f834] Tag[274796251900] Index[0] Offset[52] 
+
+Cache Miss(es) in Iteration[255]
+-----------------------------------------------------
+   Cache Miss[722] for 'B[254 + 1]'
+   Address[0x00007ff64415f83c] Tag[274796251900] Index[0] Offset[60] 
+   Cache Miss[723] for 'C[254]'
+   Address[0x00007ff644160038] Tag[274796251904] Index[0] Offset[56] 
+   Cache Miss[724] for 'A[254]'
+   Address[0x00007ff64415f038] Tag[274796251896] Index[0] Offset[56] 
+   Cache Miss[725] for 'B[254]'
+   Address[0x00007ff64415f838] Tag[274796251900] Index[0] Offset[56] 
+
+Cache Miss(es) in Iteration[256]
+-----------------------------------------------------
+   Cache Miss[726] for 'B[255 + 1]'
+   Address[0x00007ff64415f840] Tag[274796251900] Index[1] Offset[0] 
+   Cache Miss[727] for 'C[255]'
+   Address[0x00007ff64416003c] Tag[274796251904] Index[0] Offset[60] 
+   Cache Miss[728] for 'A[255]'
+   Address[0x00007ff64415f03c] Tag[274796251896] Index[0] Offset[60] 
+   Cache Miss[729] for 'B[255]'
+   Address[0x00007ff64415f83c] Tag[274796251900] Index[0] Offset[60] 
+
+Cache Miss(es) in Iteration[257]
+-----------------------------------------------------
+   Cache Miss[730] for 'C[256]'
+   Address[0x00007ff644160040] Tag[274796251904] Index[1] Offset[0] 
+   Cache Miss[731] for 'A[256]'
+   Address[0x00007ff64415f040] Tag[274796251896] Index[1] Offset[0] 
+
+Cache Miss(es) in Iteration[266]
+-----------------------------------------------------
+   Cache Miss[732] for 'B[265 + 1]'
+   Address[0x00007ff64415f868] Tag[274796251900] Index[1] Offset[40] 
+
+Cache Miss(es) in Iteration[267]
+-----------------------------------------------------
+   Cache Miss[733] for 'B[266 + 1]'
+   Address[0x00007ff64415f86c] Tag[274796251900] Index[1] Offset[44] 
+   Cache Miss[734] for 'C[266]'
+   Address[0x00007ff644160068] Tag[274796251904] Index[1] Offset[40] 
+   Cache Miss[735] for 'A[266]'
+   Address[0x00007ff64415f068] Tag[274796251896] Index[1] Offset[40] 
+   Cache Miss[736] for 'B[266]'
+   Address[0x00007ff64415f868] Tag[274796251900] Index[1] Offset[40] 
+
+Cache Miss(es) in Iteration[268]
+-----------------------------------------------------
+   Cache Miss[737] for 'B[267 + 1]'
+   Address[0x00007ff64415f870] Tag[274796251900] Index[1] Offset[48] 
+   Cache Miss[738] for 'C[267]'
+   Address[0x00007ff64416006c] Tag[274796251904] Index[1] Offset[44] 
+   Cache Miss[739] for 'A[267]'
+   Address[0x00007ff64415f06c] Tag[274796251896] Index[1] Offset[44] 
+   Cache Miss[740] for 'B[267]'
+   Address[0x00007ff64415f86c] Tag[274796251900] Index[1] Offset[44] 
+
+Cache Miss(es) in Iteration[269]
+-----------------------------------------------------
+   Cache Miss[741] for 'B[268 + 1]'
+   Address[0x00007ff64415f874] Tag[274796251900] Index[1] Offset[52] 
+   Cache Miss[742] for 'C[268]'
+   Address[0x00007ff644160070] Tag[274796251904] Index[1] Offset[48] 
+   Cache Miss[743] for 'A[268]'
+   Address[0x00007ff64415f070] Tag[274796251896] Index[1] Offset[48] 
+   Cache Miss[744] for 'B[268]'
+   Address[0x00007ff64415f870] Tag[274796251900] Index[1] Offset[48] 
+
+Cache Miss(es) in Iteration[270]
+-----------------------------------------------------
+   Cache Miss[745] for 'B[269 + 1]'
+   Address[0x00007ff64415f878] Tag[274796251900] Index[1] Offset[56] 
+   Cache Miss[746] for 'C[269]'
+   Address[0x00007ff644160074] Tag[274796251904] Index[1] Offset[52] 
+   Cache Miss[747] for 'A[269]'
+   Address[0x00007ff64415f074] Tag[274796251896] Index[1] Offset[52] 
+   Cache Miss[748] for 'B[269]'
+   Address[0x00007ff64415f874] Tag[274796251900] Index[1] Offset[52] 
+
+Cache Miss(es) in Iteration[271]
+-----------------------------------------------------
+   Cache Miss[749] for 'B[270 + 1]'
+   Address[0x00007ff64415f87c] Tag[274796251900] Index[1] Offset[60] 
+   Cache Miss[750] for 'C[270]'
+   Address[0x00007ff644160078] Tag[274796251904] Index[1] Offset[56] 
+   Cache Miss[751] for 'A[270]'
+   Address[0x00007ff64415f078] Tag[274796251896] Index[1] Offset[56] 
+   Cache Miss[752] for 'B[270]'
+   Address[0x00007ff64415f878] Tag[274796251900] Index[1] Offset[56] 
+
+Cache Miss(es) in Iteration[272]
+-----------------------------------------------------
+   Cache Miss[753] for 'B[271 + 1]'
+   Address[0x00007ff64415f880] Tag[274796251900] Index[2] Offset[0] 
+   Cache Miss[754] for 'C[271]'
+   Address[0x00007ff64416007c] Tag[274796251904] Index[1] Offset[60] 
+   Cache Miss[755] for 'A[271]'
+   Address[0x00007ff64415f07c] Tag[274796251896] Index[1] Offset[60] 
+   Cache Miss[756] for 'B[271]'
+   Address[0x00007ff64415f87c] Tag[274796251900] Index[1] Offset[60] 
+
+Cache Miss(es) in Iteration[273]
+-----------------------------------------------------
+   Cache Miss[757] for 'C[272]'
+   Address[0x00007ff644160080] Tag[274796251904] Index[2] Offset[0] 
+   Cache Miss[758] for 'A[272]'
+   Address[0x00007ff64415f080] Tag[274796251896] Index[2] Offset[0] 
+
+Cache Miss(es) in Iteration[282]
+-----------------------------------------------------
+   Cache Miss[759] for 'B[281 + 1]'
+   Address[0x00007ff64415f8a8] Tag[274796251900] Index[2] Offset[40] 
+
+Cache Miss(es) in Iteration[283]
+-----------------------------------------------------
+   Cache Miss[760] for 'B[282 + 1]'
+   Address[0x00007ff64415f8ac] Tag[274796251900] Index[2] Offset[44] 
+   Cache Miss[761] for 'C[282]'
+   Address[0x00007ff6441600a8] Tag[274796251904] Index[2] Offset[40] 
+   Cache Miss[762] for 'A[282]'
+   Address[0x00007ff64415f0a8] Tag[274796251896] Index[2] Offset[40] 
+   Cache Miss[763] for 'B[282]'
+   Address[0x00007ff64415f8a8] Tag[274796251900] Index[2] Offset[40] 
+
+Cache Miss(es) in Iteration[284]
+-----------------------------------------------------
+   Cache Miss[764] for 'B[283 + 1]'
+   Address[0x00007ff64415f8b0] Tag[274796251900] Index[2] Offset[48] 
+   Cache Miss[765] for 'C[283]'
+   Address[0x00007ff6441600ac] Tag[274796251904] Index[2] Offset[44] 
+   Cache Miss[766] for 'A[283]'
+   Address[0x00007ff64415f0ac] Tag[274796251896] Index[2] Offset[44] 
+   Cache Miss[767] for 'B[283]'
+   Address[0x00007ff64415f8ac] Tag[274796251900] Index[2] Offset[44] 
+
+Cache Miss(es) in Iteration[285]
+-----------------------------------------------------
+   Cache Miss[768] for 'B[284 + 1]'
+   Address[0x00007ff64415f8b4] Tag[274796251900] Index[2] Offset[52] 
+   Cache Miss[769] for 'C[284]'
+   Address[0x00007ff6441600b0] Tag[274796251904] Index[2] Offset[48] 
+   Cache Miss[770] for 'A[284]'
+   Address[0x00007ff64415f0b0] Tag[274796251896] Index[2] Offset[48] 
+   Cache Miss[771] for 'B[284]'
+   Address[0x00007ff64415f8b0] Tag[274796251900] Index[2] Offset[48] 
+
+Cache Miss(es) in Iteration[286]
+-----------------------------------------------------
+   Cache Miss[772] for 'B[285 + 1]'
+   Address[0x00007ff64415f8b8] Tag[274796251900] Index[2] Offset[56] 
+   Cache Miss[773] for 'C[285]'
+   Address[0x00007ff6441600b4] Tag[274796251904] Index[2] Offset[52] 
+   Cache Miss[774] for 'A[285]'
+   Address[0x00007ff64415f0b4] Tag[274796251896] Index[2] Offset[52] 
+   Cache Miss[775] for 'B[285]'
+   Address[0x00007ff64415f8b4] Tag[274796251900] Index[2] Offset[52] 
+
+Cache Miss(es) in Iteration[287]
+-----------------------------------------------------
+   Cache Miss[776] for 'B[286 + 1]'
+   Address[0x00007ff64415f8bc] Tag[274796251900] Index[2] Offset[60] 
+   Cache Miss[777] for 'C[286]'
+   Address[0x00007ff6441600b8] Tag[274796251904] Index[2] Offset[56] 
+   Cache Miss[778] for 'A[286]'
+   Address[0x00007ff64415f0b8] Tag[274796251896] Index[2] Offset[56] 
+   Cache Miss[779] for 'B[286]'
+   Address[0x00007ff64415f8b8] Tag[274796251900] Index[2] Offset[56] 
+
+Cache Miss(es) in Iteration[288]
+-----------------------------------------------------
+   Cache Miss[780] for 'B[287 + 1]'
+   Address[0x00007ff64415f8c0] Tag[274796251900] Index[3] Offset[0] 
+   Cache Miss[781] for 'C[287]'
+   Address[0x00007ff6441600bc] Tag[274796251904] Index[2] Offset[60] 
+   Cache Miss[782] for 'A[287]'
+   Address[0x00007ff64415f0bc] Tag[274796251896] Index[2] Offset[60] 
+   Cache Miss[783] for 'B[287]'
+   Address[0x00007ff64415f8bc] Tag[274796251900] Index[2] Offset[60] 
+
+Cache Miss(es) in Iteration[289]
+-----------------------------------------------------
+   Cache Miss[784] for 'C[288]'
+   Address[0x00007ff6441600c0] Tag[274796251904] Index[3] Offset[0] 
+   Cache Miss[785] for 'A[288]'
+   Address[0x00007ff64415f0c0] Tag[274796251896] Index[3] Offset[0] 
+
+Cache Miss(es) in Iteration[298]
+-----------------------------------------------------
+   Cache Miss[786] for 'B[297 + 1]'
+   Address[0x00007ff64415f8e8] Tag[274796251900] Index[3] Offset[40] 
+
+Cache Miss(es) in Iteration[299]
+-----------------------------------------------------
+   Cache Miss[787] for 'B[298 + 1]'
+   Address[0x00007ff64415f8ec] Tag[274796251900] Index[3] Offset[44] 
+   Cache Miss[788] for 'C[298]'
+   Address[0x00007ff6441600e8] Tag[274796251904] Index[3] Offset[40] 
+   Cache Miss[789] for 'A[298]'
+   Address[0x00007ff64415f0e8] Tag[274796251896] Index[3] Offset[40] 
+   Cache Miss[790] for 'B[298]'
+   Address[0x00007ff64415f8e8] Tag[274796251900] Index[3] Offset[40] 
+
+Cache Miss(es) in Iteration[300]
+-----------------------------------------------------
+   Cache Miss[791] for 'B[299 + 1]'
+   Address[0x00007ff64415f8f0] Tag[274796251900] Index[3] Offset[48] 
+   Cache Miss[792] for 'C[299]'
+   Address[0x00007ff6441600ec] Tag[274796251904] Index[3] Offset[44] 
+   Cache Miss[793] for 'A[299]'
+   Address[0x00007ff64415f0ec] Tag[274796251896] Index[3] Offset[44] 
+   Cache Miss[794] for 'B[299]'
+   Address[0x00007ff64415f8ec] Tag[274796251900] Index[3] Offset[44] 
+
+Cache Miss(es) in Iteration[301]
+-----------------------------------------------------
+   Cache Miss[795] for 'B[300 + 1]'
+   Address[0x00007ff64415f8f4] Tag[274796251900] Index[3] Offset[52] 
+   Cache Miss[796] for 'C[300]'
+   Address[0x00007ff6441600f0] Tag[274796251904] Index[3] Offset[48] 
+   Cache Miss[797] for 'A[300]'
+   Address[0x00007ff64415f0f0] Tag[274796251896] Index[3] Offset[48] 
+   Cache Miss[798] for 'B[300]'
+   Address[0x00007ff64415f8f0] Tag[274796251900] Index[3] Offset[48] 
+
+Cache Miss(es) in Iteration[302]
+-----------------------------------------------------
+   Cache Miss[799] for 'B[301 + 1]'
+   Address[0x00007ff64415f8f8] Tag[274796251900] Index[3] Offset[56] 
+   Cache Miss[800] for 'C[301]'
+   Address[0x00007ff6441600f4] Tag[274796251904] Index[3] Offset[52] 
+   Cache Miss[801] for 'A[301]'
+   Address[0x00007ff64415f0f4] Tag[274796251896] Index[3] Offset[52] 
+   Cache Miss[802] for 'B[301]'
+   Address[0x00007ff64415f8f4] Tag[274796251900] Index[3] Offset[52] 
+
+Cache Miss(es) in Iteration[303]
+-----------------------------------------------------
+   Cache Miss[803] for 'B[302 + 1]'
+   Address[0x00007ff64415f8fc] Tag[274796251900] Index[3] Offset[60] 
+   Cache Miss[804] for 'C[302]'
+   Address[0x00007ff6441600f8] Tag[274796251904] Index[3] Offset[56] 
+   Cache Miss[805] for 'A[302]'
+   Address[0x00007ff64415f0f8] Tag[274796251896] Index[3] Offset[56] 
+   Cache Miss[806] for 'B[302]'
+   Address[0x00007ff64415f8f8] Tag[274796251900] Index[3] Offset[56] 
+
+Cache Miss(es) in Iteration[304]
+-----------------------------------------------------
+   Cache Miss[807] for 'B[303 + 1]'
+   Address[0x00007ff64415f900] Tag[274796251900] Index[4] Offset[0] 
+   Cache Miss[808] for 'C[303]'
+   Address[0x00007ff6441600fc] Tag[274796251904] Index[3] Offset[60] 
+   Cache Miss[809] for 'A[303]'
+   Address[0x00007ff64415f0fc] Tag[274796251896] Index[3] Offset[60] 
+   Cache Miss[810] for 'B[303]'
+   Address[0x00007ff64415f8fc] Tag[274796251900] Index[3] Offset[60] 
+
+Cache Miss(es) in Iteration[305]
+-----------------------------------------------------
+   Cache Miss[811] for 'B[304 + 1]'
+   Address[0x00007ff64415f904] Tag[274796251900] Index[4] Offset[4] 
+   Cache Miss[812] for 'C[304]'
+   Address[0x00007ff644160100] Tag[274796251904] Index[4] Offset[0] 
+   Cache Miss[813] for 'A[304]'
+   Address[0x00007ff64415f100] Tag[274796251896] Index[4] Offset[0] 
+   Cache Miss[814] for 'B[304]'
+   Address[0x00007ff64415f900] Tag[274796251900] Index[4] Offset[0] 
+
+Cache Miss(es) in Iteration[306]
+-----------------------------------------------------
+   Cache Miss[815] for 'B[305 + 1]'
+   Address[0x00007ff64415f908] Tag[274796251900] Index[4] Offset[8] 
+   Cache Miss[816] for 'C[305]'
+   Address[0x00007ff644160104] Tag[274796251904] Index[4] Offset[4] 
+   Cache Miss[817] for 'A[305]'
+   Address[0x00007ff64415f104] Tag[274796251896] Index[4] Offset[4] 
+   Cache Miss[818] for 'B[305]'
+   Address[0x00007ff64415f904] Tag[274796251900] Index[4] Offset[4] 
+
+Cache Miss(es) in Iteration[307]
+-----------------------------------------------------
+   Cache Miss[819] for 'B[306 + 1]'
+   Address[0x00007ff64415f90c] Tag[274796251900] Index[4] Offset[12] 
+   Cache Miss[820] for 'C[306]'
+   Address[0x00007ff644160108] Tag[274796251904] Index[4] Offset[8] 
+   Cache Miss[821] for 'A[306]'
+   Address[0x00007ff64415f108] Tag[274796251896] Index[4] Offset[8] 
+   Cache Miss[822] for 'B[306]'
+   Address[0x00007ff64415f908] Tag[274796251900] Index[4] Offset[8] 
+
+Cache Miss(es) in Iteration[308]
+-----------------------------------------------------
+   Cache Miss[823] for 'B[307 + 1]'
+   Address[0x00007ff64415f910] Tag[274796251900] Index[4] Offset[16] 
+   Cache Miss[824] for 'C[307]'
+   Address[0x00007ff64416010c] Tag[274796251904] Index[4] Offset[12] 
+   Cache Miss[825] for 'A[307]'
+   Address[0x00007ff64415f10c] Tag[274796251896] Index[4] Offset[12] 
+   Cache Miss[826] for 'B[307]'
+   Address[0x00007ff64415f90c] Tag[274796251900] Index[4] Offset[12] 
+
+Cache Miss(es) in Iteration[309]
+-----------------------------------------------------
+   Cache Miss[827] for 'B[308 + 1]'
+   Address[0x00007ff64415f914] Tag[274796251900] Index[4] Offset[20] 
+   Cache Miss[828] for 'C[308]'
+   Address[0x00007ff644160110] Tag[274796251904] Index[4] Offset[16] 
+   Cache Miss[829] for 'A[308]'
+   Address[0x00007ff64415f110] Tag[274796251896] Index[4] Offset[16] 
+   Cache Miss[830] for 'B[308]'
+   Address[0x00007ff64415f910] Tag[274796251900] Index[4] Offset[16] 
+
+Cache Miss(es) in Iteration[310]
+-----------------------------------------------------
+   Cache Miss[831] for 'B[309 + 1]'
+   Address[0x00007ff64415f918] Tag[274796251900] Index[4] Offset[24] 
+   Cache Miss[832] for 'C[309]'
+   Address[0x00007ff644160114] Tag[274796251904] Index[4] Offset[20] 
+   Cache Miss[833] for 'A[309]'
+   Address[0x00007ff64415f114] Tag[274796251896] Index[4] Offset[20] 
+   Cache Miss[834] for 'B[309]'
+   Address[0x00007ff64415f914] Tag[274796251900] Index[4] Offset[20] 
+
+Cache Miss(es) in Iteration[311]
+-----------------------------------------------------
+   Cache Miss[835] for 'B[310 + 1]'
+   Address[0x00007ff64415f91c] Tag[274796251900] Index[4] Offset[28] 
+   Cache Miss[836] for 'C[310]'
+   Address[0x00007ff644160118] Tag[274796251904] Index[4] Offset[24] 
+   Cache Miss[837] for 'A[310]'
+   Address[0x00007ff64415f118] Tag[274796251896] Index[4] Offset[24] 
+   Cache Miss[838] for 'B[310]'
+   Address[0x00007ff64415f918] Tag[274796251900] Index[4] Offset[24] 
+
+Cache Miss(es) in Iteration[312]
+-----------------------------------------------------
+   Cache Miss[839] for 'B[311 + 1]'
+   Address[0x00007ff64415f920] Tag[274796251900] Index[4] Offset[32] 
+   Cache Miss[840] for 'C[311]'
+   Address[0x00007ff64416011c] Tag[274796251904] Index[4] Offset[28] 
+   Cache Miss[841] for 'A[311]'
+   Address[0x00007ff64415f11c] Tag[274796251896] Index[4] Offset[28] 
+   Cache Miss[842] for 'B[311]'
+   Address[0x00007ff64415f91c] Tag[274796251900] Index[4] Offset[28] 
+
+Cache Miss(es) in Iteration[313]
+-----------------------------------------------------
+   Cache Miss[843] for 'B[312 + 1]'
+   Address[0x00007ff64415f924] Tag[274796251900] Index[4] Offset[36] 
+   Cache Miss[844] for 'C[312]'
+   Address[0x00007ff644160120] Tag[274796251904] Index[4] Offset[32] 
+   Cache Miss[845] for 'A[312]'
+   Address[0x00007ff64415f120] Tag[274796251896] Index[4] Offset[32] 
+   Cache Miss[846] for 'B[312]'
+   Address[0x00007ff64415f920] Tag[274796251900] Index[4] Offset[32] 
+
+Cache Miss(es) in Iteration[314]
+-----------------------------------------------------
+   Cache Miss[847] for 'B[313 + 1]'
+   Address[0x00007ff64415f928] Tag[274796251900] Index[4] Offset[40] 
+   Cache Miss[848] for 'C[313]'
+   Address[0x00007ff644160124] Tag[274796251904] Index[4] Offset[36] 
+   Cache Miss[849] for 'A[313]'
+   Address[0x00007ff64415f124] Tag[274796251896] Index[4] Offset[36] 
+   Cache Miss[850] for 'B[313]'
+   Address[0x00007ff64415f924] Tag[274796251900] Index[4] Offset[36] 
+
+Cache Miss(es) in Iteration[315]
+-----------------------------------------------------
+   Cache Miss[851] for 'B[314 + 1]'
+   Address[0x00007ff64415f92c] Tag[274796251900] Index[4] Offset[44] 
+   Cache Miss[852] for 'C[314]'
+   Address[0x00007ff644160128] Tag[274796251904] Index[4] Offset[40] 
+   Cache Miss[853] for 'A[314]'
+   Address[0x00007ff64415f128] Tag[274796251896] Index[4] Offset[40] 
+   Cache Miss[854] for 'B[314]'
+   Address[0x00007ff64415f928] Tag[274796251900] Index[4] Offset[40] 
+
+Cache Miss(es) in Iteration[316]
+-----------------------------------------------------
+   Cache Miss[855] for 'B[315 + 1]'
+   Address[0x00007ff64415f930] Tag[274796251900] Index[4] Offset[48] 
+   Cache Miss[856] for 'C[315]'
+   Address[0x00007ff64416012c] Tag[274796251904] Index[4] Offset[44] 
+   Cache Miss[857] for 'A[315]'
+   Address[0x00007ff64415f12c] Tag[274796251896] Index[4] Offset[44] 
+   Cache Miss[858] for 'B[315]'
+   Address[0x00007ff64415f92c] Tag[274796251900] Index[4] Offset[44] 
+
+Cache Miss(es) in Iteration[317]
+-----------------------------------------------------
+   Cache Miss[859] for 'B[316 + 1]'
+   Address[0x00007ff64415f934] Tag[274796251900] Index[4] Offset[52] 
+   Cache Miss[860] for 'C[316]'
+   Address[0x00007ff644160130] Tag[274796251904] Index[4] Offset[48] 
+   Cache Miss[861] for 'A[316]'
+   Address[0x00007ff64415f130] Tag[274796251896] Index[4] Offset[48] 
+   Cache Miss[862] for 'B[316]'
+   Address[0x00007ff64415f930] Tag[274796251900] Index[4] Offset[48] 
+
+Cache Miss(es) in Iteration[318]
+-----------------------------------------------------
+   Cache Miss[863] for 'B[317 + 1]'
+   Address[0x00007ff64415f938] Tag[274796251900] Index[4] Offset[56] 
+   Cache Miss[864] for 'C[317]'
+   Address[0x00007ff644160134] Tag[274796251904] Index[4] Offset[52] 
+   Cache Miss[865] for 'A[317]'
+   Address[0x00007ff64415f134] Tag[274796251896] Index[4] Offset[52] 
+   Cache Miss[866] for 'B[317]'
+   Address[0x00007ff64415f934] Tag[274796251900] Index[4] Offset[52] 
+
+Cache Miss(es) in Iteration[319]
+-----------------------------------------------------
+   Cache Miss[867] for 'B[318 + 1]'
+   Address[0x00007ff64415f93c] Tag[274796251900] Index[4] Offset[60] 
+   Cache Miss[868] for 'C[318]'
+   Address[0x00007ff644160138] Tag[274796251904] Index[4] Offset[56] 
+   Cache Miss[869] for 'A[318]'
+   Address[0x00007ff64415f138] Tag[274796251896] Index[4] Offset[56] 
+   Cache Miss[870] for 'B[318]'
+   Address[0x00007ff64415f938] Tag[274796251900] Index[4] Offset[56] 
+
+Cache Miss(es) in Iteration[320]
+-----------------------------------------------------
+   Cache Miss[871] for 'B[319 + 1]'
+   Address[0x00007ff64415f940] Tag[274796251900] Index[5] Offset[0] 
+   Cache Miss[872] for 'C[319]'
+   Address[0x00007ff64416013c] Tag[274796251904] Index[4] Offset[60] 
+   Cache Miss[873] for 'A[319]'
+   Address[0x00007ff64415f13c] Tag[274796251896] Index[4] Offset[60] 
+   Cache Miss[874] for 'B[319]'
+   Address[0x00007ff64415f93c] Tag[274796251900] Index[4] Offset[60] 
+
+Cache Miss(es) in Iteration[321]
+-----------------------------------------------------
+   Cache Miss[875] for 'B[320 + 1]'
+   Address[0x00007ff64415f944] Tag[274796251900] Index[5] Offset[4] 
+   Cache Miss[876] for 'C[320]'
+   Address[0x00007ff644160140] Tag[274796251904] Index[5] Offset[0] 
+   Cache Miss[877] for 'A[320]'
+   Address[0x00007ff64415f140] Tag[274796251896] Index[5] Offset[0] 
+   Cache Miss[878] for 'B[320]'
+   Address[0x00007ff64415f940] Tag[274796251900] Index[5] Offset[0] 
+
+Cache Miss(es) in Iteration[322]
+-----------------------------------------------------
+   Cache Miss[879] for 'B[321 + 1]'
+   Address[0x00007ff64415f948] Tag[274796251900] Index[5] Offset[8] 
+   Cache Miss[880] for 'C[321]'
+   Address[0x00007ff644160144] Tag[274796251904] Index[5] Offset[4] 
+   Cache Miss[881] for 'A[321]'
+   Address[0x00007ff64415f144] Tag[274796251896] Index[5] Offset[4] 
+   Cache Miss[882] for 'B[321]'
+   Address[0x00007ff64415f944] Tag[274796251900] Index[5] Offset[4] 
+
+Cache Miss(es) in Iteration[323]
+-----------------------------------------------------
+   Cache Miss[883] for 'B[322 + 1]'
+   Address[0x00007ff64415f94c] Tag[274796251900] Index[5] Offset[12] 
+   Cache Miss[884] for 'C[322]'
+   Address[0x00007ff644160148] Tag[274796251904] Index[5] Offset[8] 
+   Cache Miss[885] for 'A[322]'
+   Address[0x00007ff64415f148] Tag[274796251896] Index[5] Offset[8] 
+   Cache Miss[886] for 'B[322]'
+   Address[0x00007ff64415f948] Tag[274796251900] Index[5] Offset[8] 
+
+Cache Miss(es) in Iteration[324]
+-----------------------------------------------------
+   Cache Miss[887] for 'B[323 + 1]'
+   Address[0x00007ff64415f950] Tag[274796251900] Index[5] Offset[16] 
+   Cache Miss[888] for 'C[323]'
+   Address[0x00007ff64416014c] Tag[274796251904] Index[5] Offset[12] 
+   Cache Miss[889] for 'A[323]'
+   Address[0x00007ff64415f14c] Tag[274796251896] Index[5] Offset[12] 
+   Cache Miss[890] for 'B[323]'
+   Address[0x00007ff64415f94c] Tag[274796251900] Index[5] Offset[12] 
+
+Cache Miss(es) in Iteration[325]
+-----------------------------------------------------
+   Cache Miss[891] for 'B[324 + 1]'
+   Address[0x00007ff64415f954] Tag[274796251900] Index[5] Offset[20] 
+   Cache Miss[892] for 'C[324]'
+   Address[0x00007ff644160150] Tag[274796251904] Index[5] Offset[16] 
+   Cache Miss[893] for 'A[324]'
+   Address[0x00007ff64415f150] Tag[274796251896] Index[5] Offset[16] 
+   Cache Miss[894] for 'B[324]'
+   Address[0x00007ff64415f950] Tag[274796251900] Index[5] Offset[16] 
+
+Cache Miss(es) in Iteration[326]
+-----------------------------------------------------
+   Cache Miss[895] for 'B[325 + 1]'
+   Address[0x00007ff64415f958] Tag[274796251900] Index[5] Offset[24] 
+   Cache Miss[896] for 'C[325]'
+   Address[0x00007ff644160154] Tag[274796251904] Index[5] Offset[20] 
+   Cache Miss[897] for 'A[325]'
+   Address[0x00007ff64415f154] Tag[274796251896] Index[5] Offset[20] 
+   Cache Miss[898] for 'B[325]'
+   Address[0x00007ff64415f954] Tag[274796251900] Index[5] Offset[20] 
+
+Cache Miss(es) in Iteration[327]
+-----------------------------------------------------
+   Cache Miss[899] for 'B[326 + 1]'
+   Address[0x00007ff64415f95c] Tag[274796251900] Index[5] Offset[28] 
+   Cache Miss[900] for 'C[326]'
+   Address[0x00007ff644160158] Tag[274796251904] Index[5] Offset[24] 
+   Cache Miss[901] for 'A[326]'
+   Address[0x00007ff64415f158] Tag[274796251896] Index[5] Offset[24] 
+   Cache Miss[902] for 'B[326]'
+   Address[0x00007ff64415f958] Tag[274796251900] Index[5] Offset[24] 
+
+Cache Miss(es) in Iteration[328]
+-----------------------------------------------------
+   Cache Miss[903] for 'B[327 + 1]'
+   Address[0x00007ff64415f960] Tag[274796251900] Index[5] Offset[32] 
+   Cache Miss[904] for 'C[327]'
+   Address[0x00007ff64416015c] Tag[274796251904] Index[5] Offset[28] 
+   Cache Miss[905] for 'A[327]'
+   Address[0x00007ff64415f15c] Tag[274796251896] Index[5] Offset[28] 
+   Cache Miss[906] for 'B[327]'
+   Address[0x00007ff64415f95c] Tag[274796251900] Index[5] Offset[28] 
+
+Cache Miss(es) in Iteration[329]
+-----------------------------------------------------
+   Cache Miss[907] for 'B[328 + 1]'
+   Address[0x00007ff64415f964] Tag[274796251900] Index[5] Offset[36] 
+   Cache Miss[908] for 'C[328]'
+   Address[0x00007ff644160160] Tag[274796251904] Index[5] Offset[32] 
+   Cache Miss[909] for 'A[328]'
+   Address[0x00007ff64415f160] Tag[274796251896] Index[5] Offset[32] 
+   Cache Miss[910] for 'B[328]'
+   Address[0x00007ff64415f960] Tag[274796251900] Index[5] Offset[32] 
+
+Cache Miss(es) in Iteration[330]
+-----------------------------------------------------
+   Cache Miss[911] for 'B[329 + 1]'
+   Address[0x00007ff64415f968] Tag[274796251900] Index[5] Offset[40] 
+   Cache Miss[912] for 'C[329]'
+   Address[0x00007ff644160164] Tag[274796251904] Index[5] Offset[36] 
+   Cache Miss[913] for 'A[329]'
+   Address[0x00007ff64415f164] Tag[274796251896] Index[5] Offset[36] 
+   Cache Miss[914] for 'B[329]'
+   Address[0x00007ff64415f964] Tag[274796251900] Index[5] Offset[36] 
+
+Cache Miss(es) in Iteration[331]
+-----------------------------------------------------
+   Cache Miss[915] for 'B[330 + 1]'
+   Address[0x00007ff64415f96c] Tag[274796251900] Index[5] Offset[44] 
+   Cache Miss[916] for 'C[330]'
+   Address[0x00007ff644160168] Tag[274796251904] Index[5] Offset[40] 
+   Cache Miss[917] for 'A[330]'
+   Address[0x00007ff64415f168] Tag[274796251896] Index[5] Offset[40] 
+   Cache Miss[918] for 'B[330]'
+   Address[0x00007ff64415f968] Tag[274796251900] Index[5] Offset[40] 
+
+Cache Miss(es) in Iteration[332]
+-----------------------------------------------------
+   Cache Miss[919] for 'B[331 + 1]'
+   Address[0x00007ff64415f970] Tag[274796251900] Index[5] Offset[48] 
+   Cache Miss[920] for 'C[331]'
+   Address[0x00007ff64416016c] Tag[274796251904] Index[5] Offset[44] 
+   Cache Miss[921] for 'A[331]'
+   Address[0x00007ff64415f16c] Tag[274796251896] Index[5] Offset[44] 
+   Cache Miss[922] for 'B[331]'
+   Address[0x00007ff64415f96c] Tag[274796251900] Index[5] Offset[44] 
+
+Cache Miss(es) in Iteration[333]
+-----------------------------------------------------
+   Cache Miss[923] for 'B[332 + 1]'
+   Address[0x00007ff64415f974] Tag[274796251900] Index[5] Offset[52] 
+   Cache Miss[924] for 'C[332]'
+   Address[0x00007ff644160170] Tag[274796251904] Index[5] Offset[48] 
+   Cache Miss[925] for 'A[332]'
+   Address[0x00007ff64415f170] Tag[274796251896] Index[5] Offset[48] 
+   Cache Miss[926] for 'B[332]'
+   Address[0x00007ff64415f970] Tag[274796251900] Index[5] Offset[48] 
+
+Cache Miss(es) in Iteration[334]
+-----------------------------------------------------
+   Cache Miss[927] for 'B[333 + 1]'
+   Address[0x00007ff64415f978] Tag[274796251900] Index[5] Offset[56] 
+   Cache Miss[928] for 'C[333]'
+   Address[0x00007ff644160174] Tag[274796251904] Index[5] Offset[52] 
+   Cache Miss[929] for 'A[333]'
+   Address[0x00007ff64415f174] Tag[274796251896] Index[5] Offset[52] 
+   Cache Miss[930] for 'B[333]'
+   Address[0x00007ff64415f974] Tag[274796251900] Index[5] Offset[52] 
+
+Cache Miss(es) in Iteration[335]
+-----------------------------------------------------
+   Cache Miss[931] for 'B[334 + 1]'
+   Address[0x00007ff64415f97c] Tag[274796251900] Index[5] Offset[60] 
+   Cache Miss[932] for 'C[334]'
+   Address[0x00007ff644160178] Tag[274796251904] Index[5] Offset[56] 
+   Cache Miss[933] for 'A[334]'
+   Address[0x00007ff64415f178] Tag[274796251896] Index[5] Offset[56] 
+   Cache Miss[934] for 'B[334]'
+   Address[0x00007ff64415f978] Tag[274796251900] Index[5] Offset[56] 
+
+Cache Miss(es) in Iteration[336]
+-----------------------------------------------------
+   Cache Miss[935] for 'B[335 + 1]'
+   Address[0x00007ff64415f980] Tag[274796251900] Index[6] Offset[0] 
+   Cache Miss[936] for 'C[335]'
+   Address[0x00007ff64416017c] Tag[274796251904] Index[5] Offset[60] 
+   Cache Miss[937] for 'A[335]'
+   Address[0x00007ff64415f17c] Tag[274796251896] Index[5] Offset[60] 
+   Cache Miss[938] for 'B[335]'
+   Address[0x00007ff64415f97c] Tag[274796251900] Index[5] Offset[60] 
+
+Cache Miss(es) in Iteration[337]
+-----------------------------------------------------
+   Cache Miss[939] for 'B[336 + 1]'
+   Address[0x00007ff64415f984] Tag[274796251900] Index[6] Offset[4] 
+   Cache Miss[940] for 'C[336]'
+   Address[0x00007ff644160180] Tag[274796251904] Index[6] Offset[0] 
+   Cache Miss[941] for 'A[336]'
+   Address[0x00007ff64415f180] Tag[274796251896] Index[6] Offset[0] 
+   Cache Miss[942] for 'B[336]'
+   Address[0x00007ff64415f980] Tag[274796251900] Index[6] Offset[0] 
+
+Cache Miss(es) in Iteration[338]
+-----------------------------------------------------
+   Cache Miss[943] for 'B[337 + 1]'
+   Address[0x00007ff64415f988] Tag[274796251900] Index[6] Offset[8] 
+   Cache Miss[944] for 'C[337]'
+   Address[0x00007ff644160184] Tag[274796251904] Index[6] Offset[4] 
+   Cache Miss[945] for 'A[337]'
+   Address[0x00007ff64415f184] Tag[274796251896] Index[6] Offset[4] 
+   Cache Miss[946] for 'B[337]'
+   Address[0x00007ff64415f984] Tag[274796251900] Index[6] Offset[4] 
+
+Cache Miss(es) in Iteration[339]
+-----------------------------------------------------
+   Cache Miss[947] for 'B[338 + 1]'
+   Address[0x00007ff64415f98c] Tag[274796251900] Index[6] Offset[12] 
+   Cache Miss[948] for 'C[338]'
+   Address[0x00007ff644160188] Tag[274796251904] Index[6] Offset[8] 
+   Cache Miss[949] for 'A[338]'
+   Address[0x00007ff64415f188] Tag[274796251896] Index[6] Offset[8] 
+   Cache Miss[950] for 'B[338]'
+   Address[0x00007ff64415f988] Tag[274796251900] Index[6] Offset[8] 
+
+Cache Miss(es) in Iteration[340]
+-----------------------------------------------------
+   Cache Miss[951] for 'B[339 + 1]'
+   Address[0x00007ff64415f990] Tag[274796251900] Index[6] Offset[16] 
+   Cache Miss[952] for 'C[339]'
+   Address[0x00007ff64416018c] Tag[274796251904] Index[6] Offset[12] 
+   Cache Miss[953] for 'A[339]'
+   Address[0x00007ff64415f18c] Tag[274796251896] Index[6] Offset[12] 
+   Cache Miss[954] for 'B[339]'
+   Address[0x00007ff64415f98c] Tag[274796251900] Index[6] Offset[12] 
+
+Cache Miss(es) in Iteration[341]
+-----------------------------------------------------
+   Cache Miss[955] for 'B[340 + 1]'
+   Address[0x00007ff64415f994] Tag[274796251900] Index[6] Offset[20] 
+   Cache Miss[956] for 'C[340]'
+   Address[0x00007ff644160190] Tag[274796251904] Index[6] Offset[16] 
+   Cache Miss[957] for 'A[340]'
+   Address[0x00007ff64415f190] Tag[274796251896] Index[6] Offset[16] 
+   Cache Miss[958] for 'B[340]'
+   Address[0x00007ff64415f990] Tag[274796251900] Index[6] Offset[16] 
+
+Cache Miss(es) in Iteration[342]
+-----------------------------------------------------
+   Cache Miss[959] for 'B[341 + 1]'
+   Address[0x00007ff64415f998] Tag[274796251900] Index[6] Offset[24] 
+   Cache Miss[960] for 'C[341]'
+   Address[0x00007ff644160194] Tag[274796251904] Index[6] Offset[20] 
+   Cache Miss[961] for 'A[341]'
+   Address[0x00007ff64415f194] Tag[274796251896] Index[6] Offset[20] 
+   Cache Miss[962] for 'B[341]'
+   Address[0x00007ff64415f994] Tag[274796251900] Index[6] Offset[20] 
+
+Cache Miss(es) in Iteration[343]
+-----------------------------------------------------
+   Cache Miss[963] for 'B[342 + 1]'
+   Address[0x00007ff64415f99c] Tag[274796251900] Index[6] Offset[28] 
+   Cache Miss[964] for 'C[342]'
+   Address[0x00007ff644160198] Tag[274796251904] Index[6] Offset[24] 
+   Cache Miss[965] for 'A[342]'
+   Address[0x00007ff64415f198] Tag[274796251896] Index[6] Offset[24] 
+   Cache Miss[966] for 'B[342]'
+   Address[0x00007ff64415f998] Tag[274796251900] Index[6] Offset[24] 
+
+Cache Miss(es) in Iteration[344]
+-----------------------------------------------------
+   Cache Miss[967] for 'B[343 + 1]'
+   Address[0x00007ff64415f9a0] Tag[274796251900] Index[6] Offset[32] 
+   Cache Miss[968] for 'C[343]'
+   Address[0x00007ff64416019c] Tag[274796251904] Index[6] Offset[28] 
+   Cache Miss[969] for 'A[343]'
+   Address[0x00007ff64415f19c] Tag[274796251896] Index[6] Offset[28] 
+   Cache Miss[970] for 'B[343]'
+   Address[0x00007ff64415f99c] Tag[274796251900] Index[6] Offset[28] 
+
+Cache Miss(es) in Iteration[345]
+-----------------------------------------------------
+   Cache Miss[971] for 'B[344 + 1]'
+   Address[0x00007ff64415f9a4] Tag[274796251900] Index[6] Offset[36] 
+   Cache Miss[972] for 'C[344]'
+   Address[0x00007ff6441601a0] Tag[274796251904] Index[6] Offset[32] 
+   Cache Miss[973] for 'A[344]'
+   Address[0x00007ff64415f1a0] Tag[274796251896] Index[6] Offset[32] 
+   Cache Miss[974] for 'B[344]'
+   Address[0x00007ff64415f9a0] Tag[274796251900] Index[6] Offset[32] 
+
+Cache Miss(es) in Iteration[346]
+-----------------------------------------------------
+   Cache Miss[975] for 'B[345 + 1]'
+   Address[0x00007ff64415f9a8] Tag[274796251900] Index[6] Offset[40] 
+   Cache Miss[976] for 'C[345]'
+   Address[0x00007ff6441601a4] Tag[274796251904] Index[6] Offset[36] 
+   Cache Miss[977] for 'A[345]'
+   Address[0x00007ff64415f1a4] Tag[274796251896] Index[6] Offset[36] 
+   Cache Miss[978] for 'B[345]'
+   Address[0x00007ff64415f9a4] Tag[274796251900] Index[6] Offset[36] 
+
+Cache Miss(es) in Iteration[347]
+-----------------------------------------------------
+   Cache Miss[979] for 'B[346 + 1]'
+   Address[0x00007ff64415f9ac] Tag[274796251900] Index[6] Offset[44] 
+   Cache Miss[980] for 'C[346]'
+   Address[0x00007ff6441601a8] Tag[274796251904] Index[6] Offset[40] 
+   Cache Miss[981] for 'A[346]'
+   Address[0x00007ff64415f1a8] Tag[274796251896] Index[6] Offset[40] 
+   Cache Miss[982] for 'B[346]'
+   Address[0x00007ff64415f9a8] Tag[274796251900] Index[6] Offset[40] 
+
+Cache Miss(es) in Iteration[348]
+-----------------------------------------------------
+   Cache Miss[983] for 'B[347 + 1]'
+   Address[0x00007ff64415f9b0] Tag[274796251900] Index[6] Offset[48] 
+   Cache Miss[984] for 'C[347]'
+   Address[0x00007ff6441601ac] Tag[274796251904] Index[6] Offset[44] 
+   Cache Miss[985] for 'A[347]'
+   Address[0x00007ff64415f1ac] Tag[274796251896] Index[6] Offset[44] 
+   Cache Miss[986] for 'B[347]'
+   Address[0x00007ff64415f9ac] Tag[274796251900] Index[6] Offset[44] 
+
+Cache Miss(es) in Iteration[349]
+-----------------------------------------------------
+   Cache Miss[987] for 'B[348 + 1]'
+   Address[0x00007ff64415f9b4] Tag[274796251900] Index[6] Offset[52] 
+   Cache Miss[988] for 'C[348]'
+   Address[0x00007ff6441601b0] Tag[274796251904] Index[6] Offset[48] 
+   Cache Miss[989] for 'A[348]'
+   Address[0x00007ff64415f1b0] Tag[274796251896] Index[6] Offset[48] 
+   Cache Miss[990] for 'B[348]'
+   Address[0x00007ff64415f9b0] Tag[274796251900] Index[6] Offset[48] 
+
+Cache Miss(es) in Iteration[350]
+-----------------------------------------------------
+   Cache Miss[991] for 'B[349 + 1]'
+   Address[0x00007ff64415f9b8] Tag[274796251900] Index[6] Offset[56] 
+   Cache Miss[992] for 'C[349]'
+   Address[0x00007ff6441601b4] Tag[274796251904] Index[6] Offset[52] 
+   Cache Miss[993] for 'A[349]'
+   Address[0x00007ff64415f1b4] Tag[274796251896] Index[6] Offset[52] 
+   Cache Miss[994] for 'B[349]'
+   Address[0x00007ff64415f9b4] Tag[274796251900] Index[6] Offset[52] 
+
+Cache Miss(es) in Iteration[351]
+-----------------------------------------------------
+   Cache Miss[995] for 'B[350 + 1]'
+   Address[0x00007ff64415f9bc] Tag[274796251900] Index[6] Offset[60] 
+   Cache Miss[996] for 'C[350]'
+   Address[0x00007ff6441601b8] Tag[274796251904] Index[6] Offset[56] 
+   Cache Miss[997] for 'A[350]'
+   Address[0x00007ff64415f1b8] Tag[274796251896] Index[6] Offset[56] 
+   Cache Miss[998] for 'B[350]'
+   Address[0x00007ff64415f9b8] Tag[274796251900] Index[6] Offset[56] 
+
+Cache Miss(es) in Iteration[352]
+-----------------------------------------------------
+   Cache Miss[999] for 'B[351 + 1]'
+   Address[0x00007ff64415f9c0] Tag[274796251900] Index[7] Offset[0] 
+   Cache Miss[1000] for 'C[351]'
+   Address[0x00007ff6441601bc] Tag[274796251904] Index[6] Offset[60] 
+   Cache Miss[1001] for 'A[351]'
+   Address[0x00007ff64415f1bc] Tag[274796251896] Index[6] Offset[60] 
+   Cache Miss[1002] for 'B[351]'
+   Address[0x00007ff64415f9bc] Tag[274796251900] Index[6] Offset[60] 
+
+Cache Miss(es) in Iteration[353]
+-----------------------------------------------------
+   Cache Miss[1003] for 'B[352 + 1]'
+   Address[0x00007ff64415f9c4] Tag[274796251900] Index[7] Offset[4] 
+   Cache Miss[1004] for 'C[352]'
+   Address[0x00007ff6441601c0] Tag[274796251904] Index[7] Offset[0] 
+   Cache Miss[1005] for 'A[352]'
+   Address[0x00007ff64415f1c0] Tag[274796251896] Index[7] Offset[0] 
+   Cache Miss[1006] for 'B[352]'
+   Address[0x00007ff64415f9c0] Tag[274796251900] Index[7] Offset[0] 
+
+Cache Miss(es) in Iteration[354]
+-----------------------------------------------------
+   Cache Miss[1007] for 'B[353 + 1]'
+   Address[0x00007ff64415f9c8] Tag[274796251900] Index[7] Offset[8] 
+   Cache Miss[1008] for 'C[353]'
+   Address[0x00007ff6441601c4] Tag[274796251904] Index[7] Offset[4] 
+   Cache Miss[1009] for 'A[353]'
+   Address[0x00007ff64415f1c4] Tag[274796251896] Index[7] Offset[4] 
+   Cache Miss[1010] for 'B[353]'
+   Address[0x00007ff64415f9c4] Tag[274796251900] Index[7] Offset[4] 
+
+Cache Miss(es) in Iteration[355]
+-----------------------------------------------------
+   Cache Miss[1011] for 'B[354 + 1]'
+   Address[0x00007ff64415f9cc] Tag[274796251900] Index[7] Offset[12] 
+   Cache Miss[1012] for 'C[354]'
+   Address[0x00007ff6441601c8] Tag[274796251904] Index[7] Offset[8] 
+   Cache Miss[1013] for 'A[354]'
+   Address[0x00007ff64415f1c8] Tag[274796251896] Index[7] Offset[8] 
+   Cache Miss[1014] for 'B[354]'
+   Address[0x00007ff64415f9c8] Tag[274796251900] Index[7] Offset[8] 
+
+Cache Miss(es) in Iteration[356]
+-----------------------------------------------------
+   Cache Miss[1015] for 'B[355 + 1]'
+   Address[0x00007ff64415f9d0] Tag[274796251900] Index[7] Offset[16] 
+   Cache Miss[1016] for 'C[355]'
+   Address[0x00007ff6441601cc] Tag[274796251904] Index[7] Offset[12] 
+   Cache Miss[1017] for 'A[355]'
+   Address[0x00007ff64415f1cc] Tag[274796251896] Index[7] Offset[12] 
+   Cache Miss[1018] for 'B[355]'
+   Address[0x00007ff64415f9cc] Tag[274796251900] Index[7] Offset[12] 
+
+Cache Miss(es) in Iteration[357]
+-----------------------------------------------------
+   Cache Miss[1019] for 'B[356 + 1]'
+   Address[0x00007ff64415f9d4] Tag[274796251900] Index[7] Offset[20] 
+   Cache Miss[1020] for 'C[356]'
+   Address[0x00007ff6441601d0] Tag[274796251904] Index[7] Offset[16] 
+   Cache Miss[1021] for 'A[356]'
+   Address[0x00007ff64415f1d0] Tag[274796251896] Index[7] Offset[16] 
+   Cache Miss[1022] for 'B[356]'
+   Address[0x00007ff64415f9d0] Tag[274796251900] Index[7] Offset[16] 
+
+Cache Miss(es) in Iteration[358]
+-----------------------------------------------------
+   Cache Miss[1023] for 'B[357 + 1]'
+   Address[0x00007ff64415f9d8] Tag[274796251900] Index[7] Offset[24] 
+   Cache Miss[1024] for 'C[357]'
+   Address[0x00007ff6441601d4] Tag[274796251904] Index[7] Offset[20] 
+   Cache Miss[1025] for 'A[357]'
+   Address[0x00007ff64415f1d4] Tag[274796251896] Index[7] Offset[20] 
+   Cache Miss[1026] for 'B[357]'
+   Address[0x00007ff64415f9d4] Tag[274796251900] Index[7] Offset[20] 
+
+Cache Miss(es) in Iteration[359]
+-----------------------------------------------------
+   Cache Miss[1027] for 'B[358 + 1]'
+   Address[0x00007ff64415f9dc] Tag[274796251900] Index[7] Offset[28] 
+   Cache Miss[1028] for 'C[358]'
+   Address[0x00007ff6441601d8] Tag[274796251904] Index[7] Offset[24] 
+   Cache Miss[1029] for 'A[358]'
+   Address[0x00007ff64415f1d8] Tag[274796251896] Index[7] Offset[24] 
+   Cache Miss[1030] for 'B[358]'
+   Address[0x00007ff64415f9d8] Tag[274796251900] Index[7] Offset[24] 
+
+Cache Miss(es) in Iteration[360]
+-----------------------------------------------------
+   Cache Miss[1031] for 'B[359 + 1]'
+   Address[0x00007ff64415f9e0] Tag[274796251900] Index[7] Offset[32] 
+   Cache Miss[1032] for 'C[359]'
+   Address[0x00007ff6441601dc] Tag[274796251904] Index[7] Offset[28] 
+   Cache Miss[1033] for 'A[359]'
+   Address[0x00007ff64415f1dc] Tag[274796251896] Index[7] Offset[28] 
+   Cache Miss[1034] for 'B[359]'
+   Address[0x00007ff64415f9dc] Tag[274796251900] Index[7] Offset[28] 
+
+Cache Miss(es) in Iteration[361]
+-----------------------------------------------------
+   Cache Miss[1035] for 'B[360 + 1]'
+   Address[0x00007ff64415f9e4] Tag[274796251900] Index[7] Offset[36] 
+   Cache Miss[1036] for 'C[360]'
+   Address[0x00007ff6441601e0] Tag[274796251904] Index[7] Offset[32] 
+   Cache Miss[1037] for 'A[360]'
+   Address[0x00007ff64415f1e0] Tag[274796251896] Index[7] Offset[32] 
+   Cache Miss[1038] for 'B[360]'
+   Address[0x00007ff64415f9e0] Tag[274796251900] Index[7] Offset[32] 
+
+Cache Miss(es) in Iteration[362]
+-----------------------------------------------------
+   Cache Miss[1039] for 'B[361 + 1]'
+   Address[0x00007ff64415f9e8] Tag[274796251900] Index[7] Offset[40] 
+   Cache Miss[1040] for 'C[361]'
+   Address[0x00007ff6441601e4] Tag[274796251904] Index[7] Offset[36] 
+   Cache Miss[1041] for 'A[361]'
+   Address[0x00007ff64415f1e4] Tag[274796251896] Index[7] Offset[36] 
+   Cache Miss[1042] for 'B[361]'
+   Address[0x00007ff64415f9e4] Tag[274796251900] Index[7] Offset[36] 
+
+Cache Miss(es) in Iteration[363]
+-----------------------------------------------------
+   Cache Miss[1043] for 'B[362 + 1]'
+   Address[0x00007ff64415f9ec] Tag[274796251900] Index[7] Offset[44] 
+   Cache Miss[1044] for 'C[362]'
+   Address[0x00007ff6441601e8] Tag[274796251904] Index[7] Offset[40] 
+   Cache Miss[1045] for 'A[362]'
+   Address[0x00007ff64415f1e8] Tag[274796251896] Index[7] Offset[40] 
+   Cache Miss[1046] for 'B[362]'
+   Address[0x00007ff64415f9e8] Tag[274796251900] Index[7] Offset[40] 
+
+Cache Miss(es) in Iteration[364]
+-----------------------------------------------------
+   Cache Miss[1047] for 'B[363 + 1]'
+   Address[0x00007ff64415f9f0] Tag[274796251900] Index[7] Offset[48] 
+   Cache Miss[1048] for 'C[363]'
+   Address[0x00007ff6441601ec] Tag[274796251904] Index[7] Offset[44] 
+   Cache Miss[1049] for 'A[363]'
+   Address[0x00007ff64415f1ec] Tag[274796251896] Index[7] Offset[44] 
+   Cache Miss[1050] for 'B[363]'
+   Address[0x00007ff64415f9ec] Tag[274796251900] Index[7] Offset[44] 
+
+Cache Miss(es) in Iteration[365]
+-----------------------------------------------------
+   Cache Miss[1051] for 'B[364 + 1]'
+   Address[0x00007ff64415f9f4] Tag[274796251900] Index[7] Offset[52] 
+   Cache Miss[1052] for 'C[364]'
+   Address[0x00007ff6441601f0] Tag[274796251904] Index[7] Offset[48] 
+   Cache Miss[1053] for 'A[364]'
+   Address[0x00007ff64415f1f0] Tag[274796251896] Index[7] Offset[48] 
+   Cache Miss[1054] for 'B[364]'
+   Address[0x00007ff64415f9f0] Tag[274796251900] Index[7] Offset[48] 
+
+Cache Miss(es) in Iteration[366]
+-----------------------------------------------------
+   Cache Miss[1055] for 'B[365 + 1]'
+   Address[0x00007ff64415f9f8] Tag[274796251900] Index[7] Offset[56] 
+   Cache Miss[1056] for 'C[365]'
+   Address[0x00007ff6441601f4] Tag[274796251904] Index[7] Offset[52] 
+   Cache Miss[1057] for 'A[365]'
+   Address[0x00007ff64415f1f4] Tag[274796251896] Index[7] Offset[52] 
+   Cache Miss[1058] for 'B[365]'
+   Address[0x00007ff64415f9f4] Tag[274796251900] Index[7] Offset[52] 
+
+Cache Miss(es) in Iteration[367]
+-----------------------------------------------------
+   Cache Miss[1059] for 'B[366 + 1]'
+   Address[0x00007ff64415f9fc] Tag[274796251900] Index[7] Offset[60] 
+   Cache Miss[1060] for 'C[366]'
+   Address[0x00007ff6441601f8] Tag[274796251904] Index[7] Offset[56] 
+   Cache Miss[1061] for 'A[366]'
+   Address[0x00007ff64415f1f8] Tag[274796251896] Index[7] Offset[56] 
+   Cache Miss[1062] for 'B[366]'
+   Address[0x00007ff64415f9f8] Tag[274796251900] Index[7] Offset[56] 
+
+Cache Miss(es) in Iteration[368]
+-----------------------------------------------------
+   Cache Miss[1063] for 'B[367 + 1]'
+   Address[0x00007ff64415fa00] Tag[274796251901] Index[0] Offset[0] 
+   Cache Miss[1064] for 'C[367]'
+   Address[0x00007ff6441601fc] Tag[274796251904] Index[7] Offset[60] 
+   Cache Miss[1065] for 'A[367]'
+   Address[0x00007ff64415f1fc] Tag[274796251896] Index[7] Offset[60] 
+   Cache Miss[1066] for 'B[367]'
+   Address[0x00007ff64415f9fc] Tag[274796251900] Index[7] Offset[60] 
+
+Cache Miss(es) in Iteration[369]
+-----------------------------------------------------
+   Cache Miss[1067] for 'C[368]'
+   Address[0x00007ff644160200] Tag[274796251905] Index[0] Offset[0] 
+   Cache Miss[1068] for 'A[368]'
+   Address[0x00007ff64415f200] Tag[274796251897] Index[0] Offset[0] 
+
+Cache Miss(es) in Iteration[378]
+-----------------------------------------------------
+   Cache Miss[1069] for 'B[377 + 1]'
+   Address[0x00007ff64415fa28] Tag[274796251901] Index[0] Offset[40] 
+
+Cache Miss(es) in Iteration[379]
+-----------------------------------------------------
+   Cache Miss[1070] for 'B[378 + 1]'
+   Address[0x00007ff64415fa2c] Tag[274796251901] Index[0] Offset[44] 
+   Cache Miss[1071] for 'C[378]'
+   Address[0x00007ff644160228] Tag[274796251905] Index[0] Offset[40] 
+   Cache Miss[1072] for 'A[378]'
+   Address[0x00007ff64415f228] Tag[274796251897] Index[0] Offset[40] 
+   Cache Miss[1073] for 'B[378]'
+   Address[0x00007ff64415fa28] Tag[274796251901] Index[0] Offset[40] 
+
+Cache Miss(es) in Iteration[380]
+-----------------------------------------------------
+   Cache Miss[1074] for 'B[379 + 1]'
+   Address[0x00007ff64415fa30] Tag[274796251901] Index[0] Offset[48] 
+   Cache Miss[1075] for 'C[379]'
+   Address[0x00007ff64416022c] Tag[274796251905] Index[0] Offset[44] 
+   Cache Miss[1076] for 'A[379]'
+   Address[0x00007ff64415f22c] Tag[274796251897] Index[0] Offset[44] 
+   Cache Miss[1077] for 'B[379]'
+   Address[0x00007ff64415fa2c] Tag[274796251901] Index[0] Offset[44] 
+
+Cache Miss(es) in Iteration[381]
+-----------------------------------------------------
+   Cache Miss[1078] for 'B[380 + 1]'
+   Address[0x00007ff64415fa34] Tag[274796251901] Index[0] Offset[52] 
+   Cache Miss[1079] for 'C[380]'
+   Address[0x00007ff644160230] Tag[274796251905] Index[0] Offset[48] 
+   Cache Miss[1080] for 'A[380]'
+   Address[0x00007ff64415f230] Tag[274796251897] Index[0] Offset[48] 
+   Cache Miss[1081] for 'B[380]'
+   Address[0x00007ff64415fa30] Tag[274796251901] Index[0] Offset[48] 
+
+Cache Miss(es) in Iteration[382]
+-----------------------------------------------------
+   Cache Miss[1082] for 'B[381 + 1]'
+   Address[0x00007ff64415fa38] Tag[274796251901] Index[0] Offset[56] 
+   Cache Miss[1083] for 'C[381]'
+   Address[0x00007ff644160234] Tag[274796251905] Index[0] Offset[52] 
+   Cache Miss[1084] for 'A[381]'
+   Address[0x00007ff64415f234] Tag[274796251897] Index[0] Offset[52] 
+   Cache Miss[1085] for 'B[381]'
+   Address[0x00007ff64415fa34] Tag[274796251901] Index[0] Offset[52] 
+
+Cache Miss(es) in Iteration[383]
+-----------------------------------------------------
+   Cache Miss[1086] for 'B[382 + 1]'
+   Address[0x00007ff64415fa3c] Tag[274796251901] Index[0] Offset[60] 
+   Cache Miss[1087] for 'C[382]'
+   Address[0x00007ff644160238] Tag[274796251905] Index[0] Offset[56] 
+   Cache Miss[1088] for 'A[382]'
+   Address[0x00007ff64415f238] Tag[274796251897] Index[0] Offset[56] 
+   Cache Miss[1089] for 'B[382]'
+   Address[0x00007ff64415fa38] Tag[274796251901] Index[0] Offset[56] 
+
+Cache Miss(es) in Iteration[384]
+-----------------------------------------------------
+   Cache Miss[1090] for 'B[383 + 1]'
+   Address[0x00007ff64415fa40] Tag[274796251901] Index[1] Offset[0] 
+   Cache Miss[1091] for 'C[383]'
+   Address[0x00007ff64416023c] Tag[274796251905] Index[0] Offset[60] 
+   Cache Miss[1092] for 'A[383]'
+   Address[0x00007ff64415f23c] Tag[274796251897] Index[0] Offset[60] 
+   Cache Miss[1093] for 'B[383]'
+   Address[0x00007ff64415fa3c] Tag[274796251901] Index[0] Offset[60] 
+
+Cache Miss(es) in Iteration[385]
+-----------------------------------------------------
+   Cache Miss[1094] for 'C[384]'
+   Address[0x00007ff644160240] Tag[274796251905] Index[1] Offset[0] 
+   Cache Miss[1095] for 'A[384]'
+   Address[0x00007ff64415f240] Tag[274796251897] Index[1] Offset[0] 
+
+Cache Miss(es) in Iteration[394]
+-----------------------------------------------------
+   Cache Miss[1096] for 'B[393 + 1]'
+   Address[0x00007ff64415fa68] Tag[274796251901] Index[1] Offset[40] 
+
+Cache Miss(es) in Iteration[395]
+-----------------------------------------------------
+   Cache Miss[1097] for 'B[394 + 1]'
+   Address[0x00007ff64415fa6c] Tag[274796251901] Index[1] Offset[44] 
+   Cache Miss[1098] for 'C[394]'
+   Address[0x00007ff644160268] Tag[274796251905] Index[1] Offset[40] 
+   Cache Miss[1099] for 'A[394]'
+   Address[0x00007ff64415f268] Tag[274796251897] Index[1] Offset[40] 
+   Cache Miss[1100] for 'B[394]'
+   Address[0x00007ff64415fa68] Tag[274796251901] Index[1] Offset[40] 
+
+Cache Miss(es) in Iteration[396]
+-----------------------------------------------------
+   Cache Miss[1101] for 'B[395 + 1]'
+   Address[0x00007ff64415fa70] Tag[274796251901] Index[1] Offset[48] 
+   Cache Miss[1102] for 'C[395]'
+   Address[0x00007ff64416026c] Tag[274796251905] Index[1] Offset[44] 
+   Cache Miss[1103] for 'A[395]'
+   Address[0x00007ff64415f26c] Tag[274796251897] Index[1] Offset[44] 
+   Cache Miss[1104] for 'B[395]'
+   Address[0x00007ff64415fa6c] Tag[274796251901] Index[1] Offset[44] 
+
+Cache Miss(es) in Iteration[397]
+-----------------------------------------------------
+   Cache Miss[1105] for 'B[396 + 1]'
+   Address[0x00007ff64415fa74] Tag[274796251901] Index[1] Offset[52] 
+   Cache Miss[1106] for 'C[396]'
+   Address[0x00007ff644160270] Tag[274796251905] Index[1] Offset[48] 
+   Cache Miss[1107] for 'A[396]'
+   Address[0x00007ff64415f270] Tag[274796251897] Index[1] Offset[48] 
+   Cache Miss[1108] for 'B[396]'
+   Address[0x00007ff64415fa70] Tag[274796251901] Index[1] Offset[48] 
+
+Cache Miss(es) in Iteration[398]
+-----------------------------------------------------
+   Cache Miss[1109] for 'B[397 + 1]'
+   Address[0x00007ff64415fa78] Tag[274796251901] Index[1] Offset[56] 
+   Cache Miss[1110] for 'C[397]'
+   Address[0x00007ff644160274] Tag[274796251905] Index[1] Offset[52] 
+   Cache Miss[1111] for 'A[397]'
+   Address[0x00007ff64415f274] Tag[274796251897] Index[1] Offset[52] 
+   Cache Miss[1112] for 'B[397]'
+   Address[0x00007ff64415fa74] Tag[274796251901] Index[1] Offset[52] 
+
+Cache Miss(es) in Iteration[399]
+-----------------------------------------------------
+   Cache Miss[1113] for 'B[398 + 1]'
+   Address[0x00007ff64415fa7c] Tag[274796251901] Index[1] Offset[60] 
+   Cache Miss[1114] for 'C[398]'
+   Address[0x00007ff644160278] Tag[274796251905] Index[1] Offset[56] 
+   Cache Miss[1115] for 'A[398]'
+   Address[0x00007ff64415f278] Tag[274796251897] Index[1] Offset[56] 
+   Cache Miss[1116] for 'B[398]'
+   Address[0x00007ff64415fa78] Tag[274796251901] Index[1] Offset[56] 
+
+Cache Miss(es) in Iteration[400]
+-----------------------------------------------------
+   Cache Miss[1117] for 'B[399 + 1]'
+   Address[0x00007ff64415fa80] Tag[274796251901] Index[2] Offset[0] 
+   Cache Miss[1118] for 'C[399]'
+   Address[0x00007ff64416027c] Tag[274796251905] Index[1] Offset[60] 
+   Cache Miss[1119] for 'A[399]'
+   Address[0x00007ff64415f27c] Tag[274796251897] Index[1] Offset[60] 
+   Cache Miss[1120] for 'B[399]'
+   Address[0x00007ff64415fa7c] Tag[274796251901] Index[1] Offset[60] 
+
+Cache Miss(es) in Iteration[401]
+-----------------------------------------------------
+   Cache Miss[1121] for 'C[400]'
+   Address[0x00007ff644160280] Tag[274796251905] Index[2] Offset[0] 
+   Cache Miss[1122] for 'A[400]'
+   Address[0x00007ff64415f280] Tag[274796251897] Index[2] Offset[0] 
+
+Cache Miss(es) in Iteration[410]
+-----------------------------------------------------
+   Cache Miss[1123] for 'B[409 + 1]'
+   Address[0x00007ff64415faa8] Tag[274796251901] Index[2] Offset[40] 
+
+Cache Miss(es) in Iteration[411]
+-----------------------------------------------------
+   Cache Miss[1124] for 'B[410 + 1]'
+   Address[0x00007ff64415faac] Tag[274796251901] Index[2] Offset[44] 
+   Cache Miss[1125] for 'C[410]'
+   Address[0x00007ff6441602a8] Tag[274796251905] Index[2] Offset[40] 
+   Cache Miss[1126] for 'A[410]'
+   Address[0x00007ff64415f2a8] Tag[274796251897] Index[2] Offset[40] 
+   Cache Miss[1127] for 'B[410]'
+   Address[0x00007ff64415faa8] Tag[274796251901] Index[2] Offset[40] 
+
+Cache Miss(es) in Iteration[412]
+-----------------------------------------------------
+   Cache Miss[1128] for 'B[411 + 1]'
+   Address[0x00007ff64415fab0] Tag[274796251901] Index[2] Offset[48] 
+   Cache Miss[1129] for 'C[411]'
+   Address[0x00007ff6441602ac] Tag[274796251905] Index[2] Offset[44] 
+   Cache Miss[1130] for 'A[411]'
+   Address[0x00007ff64415f2ac] Tag[274796251897] Index[2] Offset[44] 
+   Cache Miss[1131] for 'B[411]'
+   Address[0x00007ff64415faac] Tag[274796251901] Index[2] Offset[44] 
+
+Cache Miss(es) in Iteration[413]
+-----------------------------------------------------
+   Cache Miss[1132] for 'B[412 + 1]'
+   Address[0x00007ff64415fab4] Tag[274796251901] Index[2] Offset[52] 
+   Cache Miss[1133] for 'C[412]'
+   Address[0x00007ff6441602b0] Tag[274796251905] Index[2] Offset[48] 
+   Cache Miss[1134] for 'A[412]'
+   Address[0x00007ff64415f2b0] Tag[274796251897] Index[2] Offset[48] 
+   Cache Miss[1135] for 'B[412]'
+   Address[0x00007ff64415fab0] Tag[274796251901] Index[2] Offset[48] 
+
+Cache Miss(es) in Iteration[414]
+-----------------------------------------------------
+   Cache Miss[1136] for 'B[413 + 1]'
+   Address[0x00007ff64415fab8] Tag[274796251901] Index[2] Offset[56] 
+   Cache Miss[1137] for 'C[413]'
+   Address[0x00007ff6441602b4] Tag[274796251905] Index[2] Offset[52] 
+   Cache Miss[1138] for 'A[413]'
+   Address[0x00007ff64415f2b4] Tag[274796251897] Index[2] Offset[52] 
+   Cache Miss[1139] for 'B[413]'
+   Address[0x00007ff64415fab4] Tag[274796251901] Index[2] Offset[52] 
+
+Cache Miss(es) in Iteration[415]
+-----------------------------------------------------
+   Cache Miss[1140] for 'B[414 + 1]'
+   Address[0x00007ff64415fabc] Tag[274796251901] Index[2] Offset[60] 
+   Cache Miss[1141] for 'C[414]'
+   Address[0x00007ff6441602b8] Tag[274796251905] Index[2] Offset[56] 
+   Cache Miss[1142] for 'A[414]'
+   Address[0x00007ff64415f2b8] Tag[274796251897] Index[2] Offset[56] 
+   Cache Miss[1143] for 'B[414]'
+   Address[0x00007ff64415fab8] Tag[274796251901] Index[2] Offset[56] 
+
+Cache Miss(es) in Iteration[416]
+-----------------------------------------------------
+   Cache Miss[1144] for 'B[415 + 1]'
+   Address[0x00007ff64415fac0] Tag[274796251901] Index[3] Offset[0] 
+   Cache Miss[1145] for 'C[415]'
+   Address[0x00007ff6441602bc] Tag[274796251905] Index[2] Offset[60] 
+   Cache Miss[1146] for 'A[415]'
+   Address[0x00007ff64415f2bc] Tag[274796251897] Index[2] Offset[60] 
+   Cache Miss[1147] for 'B[415]'
+   Address[0x00007ff64415fabc] Tag[274796251901] Index[2] Offset[60] 
+
+Cache Miss(es) in Iteration[417]
+-----------------------------------------------------
+   Cache Miss[1148] for 'C[416]'
+   Address[0x00007ff6441602c0] Tag[274796251905] Index[3] Offset[0] 
+   Cache Miss[1149] for 'A[416]'
+   Address[0x00007ff64415f2c0] Tag[274796251897] Index[3] Offset[0] 
+
+Cache Miss(es) in Iteration[426]
+-----------------------------------------------------
+   Cache Miss[1150] for 'B[425 + 1]'
+   Address[0x00007ff64415fae8] Tag[274796251901] Index[3] Offset[40] 
+
+Cache Miss(es) in Iteration[427]
+-----------------------------------------------------
+   Cache Miss[1151] for 'B[426 + 1]'
+   Address[0x00007ff64415faec] Tag[274796251901] Index[3] Offset[44] 
+   Cache Miss[1152] for 'C[426]'
+   Address[0x00007ff6441602e8] Tag[274796251905] Index[3] Offset[40] 
+   Cache Miss[1153] for 'A[426]'
+   Address[0x00007ff64415f2e8] Tag[274796251897] Index[3] Offset[40] 
+   Cache Miss[1154] for 'B[426]'
+   Address[0x00007ff64415fae8] Tag[274796251901] Index[3] Offset[40] 
+
+Cache Miss(es) in Iteration[428]
+-----------------------------------------------------
+   Cache Miss[1155] for 'B[427 + 1]'
+   Address[0x00007ff64415faf0] Tag[274796251901] Index[3] Offset[48] 
+   Cache Miss[1156] for 'C[427]'
+   Address[0x00007ff6441602ec] Tag[274796251905] Index[3] Offset[44] 
+   Cache Miss[1157] for 'A[427]'
+   Address[0x00007ff64415f2ec] Tag[274796251897] Index[3] Offset[44] 
+   Cache Miss[1158] for 'B[427]'
+   Address[0x00007ff64415faec] Tag[274796251901] Index[3] Offset[44] 
+
+Cache Miss(es) in Iteration[429]
+-----------------------------------------------------
+   Cache Miss[1159] for 'B[428 + 1]'
+   Address[0x00007ff64415faf4] Tag[274796251901] Index[3] Offset[52] 
+   Cache Miss[1160] for 'C[428]'
+   Address[0x00007ff6441602f0] Tag[274796251905] Index[3] Offset[48] 
+   Cache Miss[1161] for 'A[428]'
+   Address[0x00007ff64415f2f0] Tag[274796251897] Index[3] Offset[48] 
+   Cache Miss[1162] for 'B[428]'
+   Address[0x00007ff64415faf0] Tag[274796251901] Index[3] Offset[48] 
+
+Cache Miss(es) in Iteration[430]
+-----------------------------------------------------
+   Cache Miss[1163] for 'B[429 + 1]'
+   Address[0x00007ff64415faf8] Tag[274796251901] Index[3] Offset[56] 
+   Cache Miss[1164] for 'C[429]'
+   Address[0x00007ff6441602f4] Tag[274796251905] Index[3] Offset[52] 
+   Cache Miss[1165] for 'A[429]'
+   Address[0x00007ff64415f2f4] Tag[274796251897] Index[3] Offset[52] 
+   Cache Miss[1166] for 'B[429]'
+   Address[0x00007ff64415faf4] Tag[274796251901] Index[3] Offset[52] 
+
+Cache Miss(es) in Iteration[431]
+-----------------------------------------------------
+   Cache Miss[1167] for 'B[430 + 1]'
+   Address[0x00007ff64415fafc] Tag[274796251901] Index[3] Offset[60] 
+   Cache Miss[1168] for 'C[430]'
+   Address[0x00007ff6441602f8] Tag[274796251905] Index[3] Offset[56] 
+   Cache Miss[1169] for 'A[430]'
+   Address[0x00007ff64415f2f8] Tag[274796251897] Index[3] Offset[56] 
+   Cache Miss[1170] for 'B[430]'
+   Address[0x00007ff64415faf8] Tag[274796251901] Index[3] Offset[56] 
+
+Cache Miss(es) in Iteration[432]
+-----------------------------------------------------
+   Cache Miss[1171] for 'B[431 + 1]'
+   Address[0x00007ff64415fb00] Tag[274796251901] Index[4] Offset[0] 
+   Cache Miss[1172] for 'C[431]'
+   Address[0x00007ff6441602fc] Tag[274796251905] Index[3] Offset[60] 
+   Cache Miss[1173] for 'A[431]'
+   Address[0x00007ff64415f2fc] Tag[274796251897] Index[3] Offset[60] 
+   Cache Miss[1174] for 'B[431]'
+   Address[0x00007ff64415fafc] Tag[274796251901] Index[3] Offset[60] 
+
+Cache Miss(es) in Iteration[433]
+-----------------------------------------------------
+   Cache Miss[1175] for 'B[432 + 1]'
+   Address[0x00007ff64415fb04] Tag[274796251901] Index[4] Offset[4] 
+   Cache Miss[1176] for 'C[432]'
+   Address[0x00007ff644160300] Tag[274796251905] Index[4] Offset[0] 
+   Cache Miss[1177] for 'A[432]'
+   Address[0x00007ff64415f300] Tag[274796251897] Index[4] Offset[0] 
+   Cache Miss[1178] for 'B[432]'
+   Address[0x00007ff64415fb00] Tag[274796251901] Index[4] Offset[0] 
+
+Cache Miss(es) in Iteration[434]
+-----------------------------------------------------
+   Cache Miss[1179] for 'B[433 + 1]'
+   Address[0x00007ff64415fb08] Tag[274796251901] Index[4] Offset[8] 
+   Cache Miss[1180] for 'C[433]'
+   Address[0x00007ff644160304] Tag[274796251905] Index[4] Offset[4] 
+   Cache Miss[1181] for 'A[433]'
+   Address[0x00007ff64415f304] Tag[274796251897] Index[4] Offset[4] 
+   Cache Miss[1182] for 'B[433]'
+   Address[0x00007ff64415fb04] Tag[274796251901] Index[4] Offset[4] 
+
+Cache Miss(es) in Iteration[435]
+-----------------------------------------------------
+   Cache Miss[1183] for 'B[434 + 1]'
+   Address[0x00007ff64415fb0c] Tag[274796251901] Index[4] Offset[12] 
+   Cache Miss[1184] for 'C[434]'
+   Address[0x00007ff644160308] Tag[274796251905] Index[4] Offset[8] 
+   Cache Miss[1185] for 'A[434]'
+   Address[0x00007ff64415f308] Tag[274796251897] Index[4] Offset[8] 
+   Cache Miss[1186] for 'B[434]'
+   Address[0x00007ff64415fb08] Tag[274796251901] Index[4] Offset[8] 
+
+Cache Miss(es) in Iteration[436]
+-----------------------------------------------------
+   Cache Miss[1187] for 'B[435 + 1]'
+   Address[0x00007ff64415fb10] Tag[274796251901] Index[4] Offset[16] 
+   Cache Miss[1188] for 'C[435]'
+   Address[0x00007ff64416030c] Tag[274796251905] Index[4] Offset[12] 
+   Cache Miss[1189] for 'A[435]'
+   Address[0x00007ff64415f30c] Tag[274796251897] Index[4] Offset[12] 
+   Cache Miss[1190] for 'B[435]'
+   Address[0x00007ff64415fb0c] Tag[274796251901] Index[4] Offset[12] 
+
+Cache Miss(es) in Iteration[437]
+-----------------------------------------------------
+   Cache Miss[1191] for 'B[436 + 1]'
+   Address[0x00007ff64415fb14] Tag[274796251901] Index[4] Offset[20] 
+   Cache Miss[1192] for 'C[436]'
+   Address[0x00007ff644160310] Tag[274796251905] Index[4] Offset[16] 
+   Cache Miss[1193] for 'A[436]'
+   Address[0x00007ff64415f310] Tag[274796251897] Index[4] Offset[16] 
+   Cache Miss[1194] for 'B[436]'
+   Address[0x00007ff64415fb10] Tag[274796251901] Index[4] Offset[16] 
+
+Cache Miss(es) in Iteration[438]
+-----------------------------------------------------
+   Cache Miss[1195] for 'B[437 + 1]'
+   Address[0x00007ff64415fb18] Tag[274796251901] Index[4] Offset[24] 
+   Cache Miss[1196] for 'C[437]'
+   Address[0x00007ff644160314] Tag[274796251905] Index[4] Offset[20] 
+   Cache Miss[1197] for 'A[437]'
+   Address[0x00007ff64415f314] Tag[274796251897] Index[4] Offset[20] 
+   Cache Miss[1198] for 'B[437]'
+   Address[0x00007ff64415fb14] Tag[274796251901] Index[4] Offset[20] 
+
+Cache Miss(es) in Iteration[439]
+-----------------------------------------------------
+   Cache Miss[1199] for 'B[438 + 1]'
+   Address[0x00007ff64415fb1c] Tag[274796251901] Index[4] Offset[28] 
+   Cache Miss[1200] for 'C[438]'
+   Address[0x00007ff644160318] Tag[274796251905] Index[4] Offset[24] 
+   Cache Miss[1201] for 'A[438]'
+   Address[0x00007ff64415f318] Tag[274796251897] Index[4] Offset[24] 
+   Cache Miss[1202] for 'B[438]'
+   Address[0x00007ff64415fb18] Tag[274796251901] Index[4] Offset[24] 
+
+Cache Miss(es) in Iteration[440]
+-----------------------------------------------------
+   Cache Miss[1203] for 'B[439 + 1]'
+   Address[0x00007ff64415fb20] Tag[274796251901] Index[4] Offset[32] 
+   Cache Miss[1204] for 'C[439]'
+   Address[0x00007ff64416031c] Tag[274796251905] Index[4] Offset[28] 
+   Cache Miss[1205] for 'A[439]'
+   Address[0x00007ff64415f31c] Tag[274796251897] Index[4] Offset[28] 
+   Cache Miss[1206] for 'B[439]'
+   Address[0x00007ff64415fb1c] Tag[274796251901] Index[4] Offset[28] 
+
+Cache Miss(es) in Iteration[441]
+-----------------------------------------------------
+   Cache Miss[1207] for 'B[440 + 1]'
+   Address[0x00007ff64415fb24] Tag[274796251901] Index[4] Offset[36] 
+   Cache Miss[1208] for 'C[440]'
+   Address[0x00007ff644160320] Tag[274796251905] Index[4] Offset[32] 
+   Cache Miss[1209] for 'A[440]'
+   Address[0x00007ff64415f320] Tag[274796251897] Index[4] Offset[32] 
+   Cache Miss[1210] for 'B[440]'
+   Address[0x00007ff64415fb20] Tag[274796251901] Index[4] Offset[32] 
+
+Cache Miss(es) in Iteration[442]
+-----------------------------------------------------
+   Cache Miss[1211] for 'B[441 + 1]'
+   Address[0x00007ff64415fb28] Tag[274796251901] Index[4] Offset[40] 
+   Cache Miss[1212] for 'C[441]'
+   Address[0x00007ff644160324] Tag[274796251905] Index[4] Offset[36] 
+   Cache Miss[1213] for 'A[441]'
+   Address[0x00007ff64415f324] Tag[274796251897] Index[4] Offset[36] 
+   Cache Miss[1214] for 'B[441]'
+   Address[0x00007ff64415fb24] Tag[274796251901] Index[4] Offset[36] 
+
+Cache Miss(es) in Iteration[443]
+-----------------------------------------------------
+   Cache Miss[1215] for 'B[442 + 1]'
+   Address[0x00007ff64415fb2c] Tag[274796251901] Index[4] Offset[44] 
+   Cache Miss[1216] for 'C[442]'
+   Address[0x00007ff644160328] Tag[274796251905] Index[4] Offset[40] 
+   Cache Miss[1217] for 'A[442]'
+   Address[0x00007ff64415f328] Tag[274796251897] Index[4] Offset[40] 
+   Cache Miss[1218] for 'B[442]'
+   Address[0x00007ff64415fb28] Tag[274796251901] Index[4] Offset[40] 
+
+Cache Miss(es) in Iteration[444]
+-----------------------------------------------------
+   Cache Miss[1219] for 'B[443 + 1]'
+   Address[0x00007ff64415fb30] Tag[274796251901] Index[4] Offset[48] 
+   Cache Miss[1220] for 'C[443]'
+   Address[0x00007ff64416032c] Tag[274796251905] Index[4] Offset[44] 
+   Cache Miss[1221] for 'A[443]'
+   Address[0x00007ff64415f32c] Tag[274796251897] Index[4] Offset[44] 
+   Cache Miss[1222] for 'B[443]'
+   Address[0x00007ff64415fb2c] Tag[274796251901] Index[4] Offset[44] 
+
+Cache Miss(es) in Iteration[445]
+-----------------------------------------------------
+   Cache Miss[1223] for 'B[444 + 1]'
+   Address[0x00007ff64415fb34] Tag[274796251901] Index[4] Offset[52] 
+   Cache Miss[1224] for 'C[444]'
+   Address[0x00007ff644160330] Tag[274796251905] Index[4] Offset[48] 
+   Cache Miss[1225] for 'A[444]'
+   Address[0x00007ff64415f330] Tag[274796251897] Index[4] Offset[48] 
+   Cache Miss[1226] for 'B[444]'
+   Address[0x00007ff64415fb30] Tag[274796251901] Index[4] Offset[48] 
+
+Cache Miss(es) in Iteration[446]
+-----------------------------------------------------
+   Cache Miss[1227] for 'B[445 + 1]'
+   Address[0x00007ff64415fb38] Tag[274796251901] Index[4] Offset[56] 
+   Cache Miss[1228] for 'C[445]'
+   Address[0x00007ff644160334] Tag[274796251905] Index[4] Offset[52] 
+   Cache Miss[1229] for 'A[445]'
+   Address[0x00007ff64415f334] Tag[274796251897] Index[4] Offset[52] 
+   Cache Miss[1230] for 'B[445]'
+   Address[0x00007ff64415fb34] Tag[274796251901] Index[4] Offset[52] 
+
+Cache Miss(es) in Iteration[447]
+-----------------------------------------------------
+   Cache Miss[1231] for 'B[446 + 1]'
+   Address[0x00007ff64415fb3c] Tag[274796251901] Index[4] Offset[60] 
+   Cache Miss[1232] for 'C[446]'
+   Address[0x00007ff644160338] Tag[274796251905] Index[4] Offset[56] 
+   Cache Miss[1233] for 'A[446]'
+   Address[0x00007ff64415f338] Tag[274796251897] Index[4] Offset[56] 
+   Cache Miss[1234] for 'B[446]'
+   Address[0x00007ff64415fb38] Tag[274796251901] Index[4] Offset[56] 
+
+Cache Miss(es) in Iteration[448]
+-----------------------------------------------------
+   Cache Miss[1235] for 'B[447 + 1]'
+   Address[0x00007ff64415fb40] Tag[274796251901] Index[5] Offset[0] 
+   Cache Miss[1236] for 'C[447]'
+   Address[0x00007ff64416033c] Tag[274796251905] Index[4] Offset[60] 
+   Cache Miss[1237] for 'A[447]'
+   Address[0x00007ff64415f33c] Tag[274796251897] Index[4] Offset[60] 
+   Cache Miss[1238] for 'B[447]'
+   Address[0x00007ff64415fb3c] Tag[274796251901] Index[4] Offset[60] 
+
+Cache Miss(es) in Iteration[449]
+-----------------------------------------------------
+   Cache Miss[1239] for 'B[448 + 1]'
+   Address[0x00007ff64415fb44] Tag[274796251901] Index[5] Offset[4] 
+   Cache Miss[1240] for 'C[448]'
+   Address[0x00007ff644160340] Tag[274796251905] Index[5] Offset[0] 
+   Cache Miss[1241] for 'A[448]'
+   Address[0x00007ff64415f340] Tag[274796251897] Index[5] Offset[0] 
+   Cache Miss[1242] for 'B[448]'
+   Address[0x00007ff64415fb40] Tag[274796251901] Index[5] Offset[0] 
+
+Cache Miss(es) in Iteration[450]
+-----------------------------------------------------
+   Cache Miss[1243] for 'B[449 + 1]'
+   Address[0x00007ff64415fb48] Tag[274796251901] Index[5] Offset[8] 
+   Cache Miss[1244] for 'C[449]'
+   Address[0x00007ff644160344] Tag[274796251905] Index[5] Offset[4] 
+   Cache Miss[1245] for 'A[449]'
+   Address[0x00007ff64415f344] Tag[274796251897] Index[5] Offset[4] 
+   Cache Miss[1246] for 'B[449]'
+   Address[0x00007ff64415fb44] Tag[274796251901] Index[5] Offset[4] 
+
+Cache Miss(es) in Iteration[451]
+-----------------------------------------------------
+   Cache Miss[1247] for 'B[450 + 1]'
+   Address[0x00007ff64415fb4c] Tag[274796251901] Index[5] Offset[12] 
+   Cache Miss[1248] for 'C[450]'
+   Address[0x00007ff644160348] Tag[274796251905] Index[5] Offset[8] 
+   Cache Miss[1249] for 'A[450]'
+   Address[0x00007ff64415f348] Tag[274796251897] Index[5] Offset[8] 
+   Cache Miss[1250] for 'B[450]'
+   Address[0x00007ff64415fb48] Tag[274796251901] Index[5] Offset[8] 
+
+Cache Miss(es) in Iteration[452]
+-----------------------------------------------------
+   Cache Miss[1251] for 'B[451 + 1]'
+   Address[0x00007ff64415fb50] Tag[274796251901] Index[5] Offset[16] 
+   Cache Miss[1252] for 'C[451]'
+   Address[0x00007ff64416034c] Tag[274796251905] Index[5] Offset[12] 
+   Cache Miss[1253] for 'A[451]'
+   Address[0x00007ff64415f34c] Tag[274796251897] Index[5] Offset[12] 
+   Cache Miss[1254] for 'B[451]'
+   Address[0x00007ff64415fb4c] Tag[274796251901] Index[5] Offset[12] 
+
+Cache Miss(es) in Iteration[453]
+-----------------------------------------------------
+   Cache Miss[1255] for 'B[452 + 1]'
+   Address[0x00007ff64415fb54] Tag[274796251901] Index[5] Offset[20] 
+   Cache Miss[1256] for 'C[452]'
+   Address[0x00007ff644160350] Tag[274796251905] Index[5] Offset[16] 
+   Cache Miss[1257] for 'A[452]'
+   Address[0x00007ff64415f350] Tag[274796251897] Index[5] Offset[16] 
+   Cache Miss[1258] for 'B[452]'
+   Address[0x00007ff64415fb50] Tag[274796251901] Index[5] Offset[16] 
+
+Cache Miss(es) in Iteration[454]
+-----------------------------------------------------
+   Cache Miss[1259] for 'B[453 + 1]'
+   Address[0x00007ff64415fb58] Tag[274796251901] Index[5] Offset[24] 
+   Cache Miss[1260] for 'C[453]'
+   Address[0x00007ff644160354] Tag[274796251905] Index[5] Offset[20] 
+   Cache Miss[1261] for 'A[453]'
+   Address[0x00007ff64415f354] Tag[274796251897] Index[5] Offset[20] 
+   Cache Miss[1262] for 'B[453]'
+   Address[0x00007ff64415fb54] Tag[274796251901] Index[5] Offset[20] 
+
+Cache Miss(es) in Iteration[455]
+-----------------------------------------------------
+   Cache Miss[1263] for 'B[454 + 1]'
+   Address[0x00007ff64415fb5c] Tag[274796251901] Index[5] Offset[28] 
+   Cache Miss[1264] for 'C[454]'
+   Address[0x00007ff644160358] Tag[274796251905] Index[5] Offset[24] 
+   Cache Miss[1265] for 'A[454]'
+   Address[0x00007ff64415f358] Tag[274796251897] Index[5] Offset[24] 
+   Cache Miss[1266] for 'B[454]'
+   Address[0x00007ff64415fb58] Tag[274796251901] Index[5] Offset[24] 
+
+Cache Miss(es) in Iteration[456]
+-----------------------------------------------------
+   Cache Miss[1267] for 'B[455 + 1]'
+   Address[0x00007ff64415fb60] Tag[274796251901] Index[5] Offset[32] 
+   Cache Miss[1268] for 'C[455]'
+   Address[0x00007ff64416035c] Tag[274796251905] Index[5] Offset[28] 
+   Cache Miss[1269] for 'A[455]'
+   Address[0x00007ff64415f35c] Tag[274796251897] Index[5] Offset[28] 
+   Cache Miss[1270] for 'B[455]'
+   Address[0x00007ff64415fb5c] Tag[274796251901] Index[5] Offset[28] 
+
+Cache Miss(es) in Iteration[457]
+-----------------------------------------------------
+   Cache Miss[1271] for 'B[456 + 1]'
+   Address[0x00007ff64415fb64] Tag[274796251901] Index[5] Offset[36] 
+   Cache Miss[1272] for 'C[456]'
+   Address[0x00007ff644160360] Tag[274796251905] Index[5] Offset[32] 
+   Cache Miss[1273] for 'A[456]'
+   Address[0x00007ff64415f360] Tag[274796251897] Index[5] Offset[32] 
+   Cache Miss[1274] for 'B[456]'
+   Address[0x00007ff64415fb60] Tag[274796251901] Index[5] Offset[32] 
+
+Cache Miss(es) in Iteration[458]
+-----------------------------------------------------
+   Cache Miss[1275] for 'B[457 + 1]'
+   Address[0x00007ff64415fb68] Tag[274796251901] Index[5] Offset[40] 
+   Cache Miss[1276] for 'C[457]'
+   Address[0x00007ff644160364] Tag[274796251905] Index[5] Offset[36] 
+   Cache Miss[1277] for 'A[457]'
+   Address[0x00007ff64415f364] Tag[274796251897] Index[5] Offset[36] 
+   Cache Miss[1278] for 'B[457]'
+   Address[0x00007ff64415fb64] Tag[274796251901] Index[5] Offset[36] 
+
+Cache Miss(es) in Iteration[459]
+-----------------------------------------------------
+   Cache Miss[1279] for 'B[458 + 1]'
+   Address[0x00007ff64415fb6c] Tag[274796251901] Index[5] Offset[44] 
+   Cache Miss[1280] for 'C[458]'
+   Address[0x00007ff644160368] Tag[274796251905] Index[5] Offset[40] 
+   Cache Miss[1281] for 'A[458]'
+   Address[0x00007ff64415f368] Tag[274796251897] Index[5] Offset[40] 
+   Cache Miss[1282] for 'B[458]'
+   Address[0x00007ff64415fb68] Tag[274796251901] Index[5] Offset[40] 
+
+Cache Miss(es) in Iteration[460]
+-----------------------------------------------------
+   Cache Miss[1283] for 'B[459 + 1]'
+   Address[0x00007ff64415fb70] Tag[274796251901] Index[5] Offset[48] 
+   Cache Miss[1284] for 'C[459]'
+   Address[0x00007ff64416036c] Tag[274796251905] Index[5] Offset[44] 
+   Cache Miss[1285] for 'A[459]'
+   Address[0x00007ff64415f36c] Tag[274796251897] Index[5] Offset[44] 
+   Cache Miss[1286] for 'B[459]'
+   Address[0x00007ff64415fb6c] Tag[274796251901] Index[5] Offset[44] 
+
+Cache Miss(es) in Iteration[461]
+-----------------------------------------------------
+   Cache Miss[1287] for 'B[460 + 1]'
+   Address[0x00007ff64415fb74] Tag[274796251901] Index[5] Offset[52] 
+   Cache Miss[1288] for 'C[460]'
+   Address[0x00007ff644160370] Tag[274796251905] Index[5] Offset[48] 
+   Cache Miss[1289] for 'A[460]'
+   Address[0x00007ff64415f370] Tag[274796251897] Index[5] Offset[48] 
+   Cache Miss[1290] for 'B[460]'
+   Address[0x00007ff64415fb70] Tag[274796251901] Index[5] Offset[48] 
+
+Cache Miss(es) in Iteration[462]
+-----------------------------------------------------
+   Cache Miss[1291] for 'B[461 + 1]'
+   Address[0x00007ff64415fb78] Tag[274796251901] Index[5] Offset[56] 
+   Cache Miss[1292] for 'C[461]'
+   Address[0x00007ff644160374] Tag[274796251905] Index[5] Offset[52] 
+   Cache Miss[1293] for 'A[461]'
+   Address[0x00007ff64415f374] Tag[274796251897] Index[5] Offset[52] 
+   Cache Miss[1294] for 'B[461]'
+   Address[0x00007ff64415fb74] Tag[274796251901] Index[5] Offset[52] 
+
+Cache Miss(es) in Iteration[463]
+-----------------------------------------------------
+   Cache Miss[1295] for 'B[462 + 1]'
+   Address[0x00007ff64415fb7c] Tag[274796251901] Index[5] Offset[60] 
+   Cache Miss[1296] for 'C[462]'
+   Address[0x00007ff644160378] Tag[274796251905] Index[5] Offset[56] 
+   Cache Miss[1297] for 'A[462]'
+   Address[0x00007ff64415f378] Tag[274796251897] Index[5] Offset[56] 
+   Cache Miss[1298] for 'B[462]'
+   Address[0x00007ff64415fb78] Tag[274796251901] Index[5] Offset[56] 
+
+Cache Miss(es) in Iteration[464]
+-----------------------------------------------------
+   Cache Miss[1299] for 'B[463 + 1]'
+   Address[0x00007ff64415fb80] Tag[274796251901] Index[6] Offset[0] 
+   Cache Miss[1300] for 'C[463]'
+   Address[0x00007ff64416037c] Tag[274796251905] Index[5] Offset[60] 
+   Cache Miss[1301] for 'A[463]'
+   Address[0x00007ff64415f37c] Tag[274796251897] Index[5] Offset[60] 
+   Cache Miss[1302] for 'B[463]'
+   Address[0x00007ff64415fb7c] Tag[274796251901] Index[5] Offset[60] 
+
+Cache Miss(es) in Iteration[465]
+-----------------------------------------------------
+   Cache Miss[1303] for 'B[464 + 1]'
+   Address[0x00007ff64415fb84] Tag[274796251901] Index[6] Offset[4] 
+   Cache Miss[1304] for 'C[464]'
+   Address[0x00007ff644160380] Tag[274796251905] Index[6] Offset[0] 
+   Cache Miss[1305] for 'A[464]'
+   Address[0x00007ff64415f380] Tag[274796251897] Index[6] Offset[0] 
+   Cache Miss[1306] for 'B[464]'
+   Address[0x00007ff64415fb80] Tag[274796251901] Index[6] Offset[0] 
+
+Cache Miss(es) in Iteration[466]
+-----------------------------------------------------
+   Cache Miss[1307] for 'B[465 + 1]'
+   Address[0x00007ff64415fb88] Tag[274796251901] Index[6] Offset[8] 
+   Cache Miss[1308] for 'C[465]'
+   Address[0x00007ff644160384] Tag[274796251905] Index[6] Offset[4] 
+   Cache Miss[1309] for 'A[465]'
+   Address[0x00007ff64415f384] Tag[274796251897] Index[6] Offset[4] 
+   Cache Miss[1310] for 'B[465]'
+   Address[0x00007ff64415fb84] Tag[274796251901] Index[6] Offset[4] 
+
+Cache Miss(es) in Iteration[467]
+-----------------------------------------------------
+   Cache Miss[1311] for 'B[466 + 1]'
+   Address[0x00007ff64415fb8c] Tag[274796251901] Index[6] Offset[12] 
+   Cache Miss[1312] for 'C[466]'
+   Address[0x00007ff644160388] Tag[274796251905] Index[6] Offset[8] 
+   Cache Miss[1313] for 'A[466]'
+   Address[0x00007ff64415f388] Tag[274796251897] Index[6] Offset[8] 
+   Cache Miss[1314] for 'B[466]'
+   Address[0x00007ff64415fb88] Tag[274796251901] Index[6] Offset[8] 
+
+Cache Miss(es) in Iteration[468]
+-----------------------------------------------------
+   Cache Miss[1315] for 'B[467 + 1]'
+   Address[0x00007ff64415fb90] Tag[274796251901] Index[6] Offset[16] 
+   Cache Miss[1316] for 'C[467]'
+   Address[0x00007ff64416038c] Tag[274796251905] Index[6] Offset[12] 
+   Cache Miss[1317] for 'A[467]'
+   Address[0x00007ff64415f38c] Tag[274796251897] Index[6] Offset[12] 
+   Cache Miss[1318] for 'B[467]'
+   Address[0x00007ff64415fb8c] Tag[274796251901] Index[6] Offset[12] 
+
+Cache Miss(es) in Iteration[469]
+-----------------------------------------------------
+   Cache Miss[1319] for 'B[468 + 1]'
+   Address[0x00007ff64415fb94] Tag[274796251901] Index[6] Offset[20] 
+   Cache Miss[1320] for 'C[468]'
+   Address[0x00007ff644160390] Tag[274796251905] Index[6] Offset[16] 
+   Cache Miss[1321] for 'A[468]'
+   Address[0x00007ff64415f390] Tag[274796251897] Index[6] Offset[16] 
+   Cache Miss[1322] for 'B[468]'
+   Address[0x00007ff64415fb90] Tag[274796251901] Index[6] Offset[16] 
+
+Cache Miss(es) in Iteration[470]
+-----------------------------------------------------
+   Cache Miss[1323] for 'B[469 + 1]'
+   Address[0x00007ff64415fb98] Tag[274796251901] Index[6] Offset[24] 
+   Cache Miss[1324] for 'C[469]'
+   Address[0x00007ff644160394] Tag[274796251905] Index[6] Offset[20] 
+   Cache Miss[1325] for 'A[469]'
+   Address[0x00007ff64415f394] Tag[274796251897] Index[6] Offset[20] 
+   Cache Miss[1326] for 'B[469]'
+   Address[0x00007ff64415fb94] Tag[274796251901] Index[6] Offset[20] 
+
+Cache Miss(es) in Iteration[471]
+-----------------------------------------------------
+   Cache Miss[1327] for 'B[470 + 1]'
+   Address[0x00007ff64415fb9c] Tag[274796251901] Index[6] Offset[28] 
+   Cache Miss[1328] for 'C[470]'
+   Address[0x00007ff644160398] Tag[274796251905] Index[6] Offset[24] 
+   Cache Miss[1329] for 'A[470]'
+   Address[0x00007ff64415f398] Tag[274796251897] Index[6] Offset[24] 
+   Cache Miss[1330] for 'B[470]'
+   Address[0x00007ff64415fb98] Tag[274796251901] Index[6] Offset[24] 
+
+Cache Miss(es) in Iteration[472]
+-----------------------------------------------------
+   Cache Miss[1331] for 'B[471 + 1]'
+   Address[0x00007ff64415fba0] Tag[274796251901] Index[6] Offset[32] 
+   Cache Miss[1332] for 'C[471]'
+   Address[0x00007ff64416039c] Tag[274796251905] Index[6] Offset[28] 
+   Cache Miss[1333] for 'A[471]'
+   Address[0x00007ff64415f39c] Tag[274796251897] Index[6] Offset[28] 
+   Cache Miss[1334] for 'B[471]'
+   Address[0x00007ff64415fb9c] Tag[274796251901] Index[6] Offset[28] 
+
+Cache Miss(es) in Iteration[473]
+-----------------------------------------------------
+   Cache Miss[1335] for 'B[472 + 1]'
+   Address[0x00007ff64415fba4] Tag[274796251901] Index[6] Offset[36] 
+   Cache Miss[1336] for 'C[472]'
+   Address[0x00007ff6441603a0] Tag[274796251905] Index[6] Offset[32] 
+   Cache Miss[1337] for 'A[472]'
+   Address[0x00007ff64415f3a0] Tag[274796251897] Index[6] Offset[32] 
+   Cache Miss[1338] for 'B[472]'
+   Address[0x00007ff64415fba0] Tag[274796251901] Index[6] Offset[32] 
+
+Cache Miss(es) in Iteration[474]
+-----------------------------------------------------
+   Cache Miss[1339] for 'B[473 + 1]'
+   Address[0x00007ff64415fba8] Tag[274796251901] Index[6] Offset[40] 
+   Cache Miss[1340] for 'C[473]'
+   Address[0x00007ff6441603a4] Tag[274796251905] Index[6] Offset[36] 
+   Cache Miss[1341] for 'A[473]'
+   Address[0x00007ff64415f3a4] Tag[274796251897] Index[6] Offset[36] 
+   Cache Miss[1342] for 'B[473]'
+   Address[0x00007ff64415fba4] Tag[274796251901] Index[6] Offset[36] 
+
+Cache Miss(es) in Iteration[475]
+-----------------------------------------------------
+   Cache Miss[1343] for 'B[474 + 1]'
+   Address[0x00007ff64415fbac] Tag[274796251901] Index[6] Offset[44] 
+   Cache Miss[1344] for 'C[474]'
+   Address[0x00007ff6441603a8] Tag[274796251905] Index[6] Offset[40] 
+   Cache Miss[1345] for 'A[474]'
+   Address[0x00007ff64415f3a8] Tag[274796251897] Index[6] Offset[40] 
+   Cache Miss[1346] for 'B[474]'
+   Address[0x00007ff64415fba8] Tag[274796251901] Index[6] Offset[40] 
+
+Cache Miss(es) in Iteration[476]
+-----------------------------------------------------
+   Cache Miss[1347] for 'B[475 + 1]'
+   Address[0x00007ff64415fbb0] Tag[274796251901] Index[6] Offset[48] 
+   Cache Miss[1348] for 'C[475]'
+   Address[0x00007ff6441603ac] Tag[274796251905] Index[6] Offset[44] 
+   Cache Miss[1349] for 'A[475]'
+   Address[0x00007ff64415f3ac] Tag[274796251897] Index[6] Offset[44] 
+   Cache Miss[1350] for 'B[475]'
+   Address[0x00007ff64415fbac] Tag[274796251901] Index[6] Offset[44] 
+
+Cache Miss(es) in Iteration[477]
+-----------------------------------------------------
+   Cache Miss[1351] for 'B[476 + 1]'
+   Address[0x00007ff64415fbb4] Tag[274796251901] Index[6] Offset[52] 
+   Cache Miss[1352] for 'C[476]'
+   Address[0x00007ff6441603b0] Tag[274796251905] Index[6] Offset[48] 
+   Cache Miss[1353] for 'A[476]'
+   Address[0x00007ff64415f3b0] Tag[274796251897] Index[6] Offset[48] 
+   Cache Miss[1354] for 'B[476]'
+   Address[0x00007ff64415fbb0] Tag[274796251901] Index[6] Offset[48] 
+
+Cache Miss(es) in Iteration[478]
+-----------------------------------------------------
+   Cache Miss[1355] for 'B[477 + 1]'
+   Address[0x00007ff64415fbb8] Tag[274796251901] Index[6] Offset[56] 
+   Cache Miss[1356] for 'C[477]'
+   Address[0x00007ff6441603b4] Tag[274796251905] Index[6] Offset[52] 
+   Cache Miss[1357] for 'A[477]'
+   Address[0x00007ff64415f3b4] Tag[274796251897] Index[6] Offset[52] 
+   Cache Miss[1358] for 'B[477]'
+   Address[0x00007ff64415fbb4] Tag[274796251901] Index[6] Offset[52] 
+
+Cache Miss(es) in Iteration[479]
+-----------------------------------------------------
+   Cache Miss[1359] for 'B[478 + 1]'
+   Address[0x00007ff64415fbbc] Tag[274796251901] Index[6] Offset[60] 
+   Cache Miss[1360] for 'C[478]'
+   Address[0x00007ff6441603b8] Tag[274796251905] Index[6] Offset[56] 
+   Cache Miss[1361] for 'A[478]'
+   Address[0x00007ff64415f3b8] Tag[274796251897] Index[6] Offset[56] 
+   Cache Miss[1362] for 'B[478]'
+   Address[0x00007ff64415fbb8] Tag[274796251901] Index[6] Offset[56] 
+
+Cache Miss(es) in Iteration[480]
+-----------------------------------------------------
+   Cache Miss[1363] for 'B[479 + 1]'
+   Address[0x00007ff64415fbc0] Tag[274796251901] Index[7] Offset[0] 
+   Cache Miss[1364] for 'C[479]'
+   Address[0x00007ff6441603bc] Tag[274796251905] Index[6] Offset[60] 
+   Cache Miss[1365] for 'A[479]'
+   Address[0x00007ff64415f3bc] Tag[274796251897] Index[6] Offset[60] 
+   Cache Miss[1366] for 'B[479]'
+   Address[0x00007ff64415fbbc] Tag[274796251901] Index[6] Offset[60] 
+
+Cache Miss(es) in Iteration[481]
+-----------------------------------------------------
+   Cache Miss[1367] for 'B[480 + 1]'
+   Address[0x00007ff64415fbc4] Tag[274796251901] Index[7] Offset[4] 
+   Cache Miss[1368] for 'C[480]'
+   Address[0x00007ff6441603c0] Tag[274796251905] Index[7] Offset[0] 
+   Cache Miss[1369] for 'A[480]'
+   Address[0x00007ff64415f3c0] Tag[274796251897] Index[7] Offset[0] 
+   Cache Miss[1370] for 'B[480]'
+   Address[0x00007ff64415fbc0] Tag[274796251901] Index[7] Offset[0] 
+
+Cache Miss(es) in Iteration[482]
+-----------------------------------------------------
+   Cache Miss[1371] for 'B[481 + 1]'
+   Address[0x00007ff64415fbc8] Tag[274796251901] Index[7] Offset[8] 
+   Cache Miss[1372] for 'C[481]'
+   Address[0x00007ff6441603c4] Tag[274796251905] Index[7] Offset[4] 
+   Cache Miss[1373] for 'A[481]'
+   Address[0x00007ff64415f3c4] Tag[274796251897] Index[7] Offset[4] 
+   Cache Miss[1374] for 'B[481]'
+   Address[0x00007ff64415fbc4] Tag[274796251901] Index[7] Offset[4] 
+
+Cache Miss(es) in Iteration[483]
+-----------------------------------------------------
+   Cache Miss[1375] for 'B[482 + 1]'
+   Address[0x00007ff64415fbcc] Tag[274796251901] Index[7] Offset[12] 
+   Cache Miss[1376] for 'C[482]'
+   Address[0x00007ff6441603c8] Tag[274796251905] Index[7] Offset[8] 
+   Cache Miss[1377] for 'A[482]'
+   Address[0x00007ff64415f3c8] Tag[274796251897] Index[7] Offset[8] 
+   Cache Miss[1378] for 'B[482]'
+   Address[0x00007ff64415fbc8] Tag[274796251901] Index[7] Offset[8] 
+
+Cache Miss(es) in Iteration[484]
+-----------------------------------------------------
+   Cache Miss[1379] for 'B[483 + 1]'
+   Address[0x00007ff64415fbd0] Tag[274796251901] Index[7] Offset[16] 
+   Cache Miss[1380] for 'C[483]'
+   Address[0x00007ff6441603cc] Tag[274796251905] Index[7] Offset[12] 
+   Cache Miss[1381] for 'A[483]'
+   Address[0x00007ff64415f3cc] Tag[274796251897] Index[7] Offset[12] 
+   Cache Miss[1382] for 'B[483]'
+   Address[0x00007ff64415fbcc] Tag[274796251901] Index[7] Offset[12] 
+
+Cache Miss(es) in Iteration[485]
+-----------------------------------------------------
+   Cache Miss[1383] for 'B[484 + 1]'
+   Address[0x00007ff64415fbd4] Tag[274796251901] Index[7] Offset[20] 
+   Cache Miss[1384] for 'C[484]'
+   Address[0x00007ff6441603d0] Tag[274796251905] Index[7] Offset[16] 
+   Cache Miss[1385] for 'A[484]'
+   Address[0x00007ff64415f3d0] Tag[274796251897] Index[7] Offset[16] 
+   Cache Miss[1386] for 'B[484]'
+   Address[0x00007ff64415fbd0] Tag[274796251901] Index[7] Offset[16] 
+
+Cache Miss(es) in Iteration[486]
+-----------------------------------------------------
+   Cache Miss[1387] for 'B[485 + 1]'
+   Address[0x00007ff64415fbd8] Tag[274796251901] Index[7] Offset[24] 
+   Cache Miss[1388] for 'C[485]'
+   Address[0x00007ff6441603d4] Tag[274796251905] Index[7] Offset[20] 
+   Cache Miss[1389] for 'A[485]'
+   Address[0x00007ff64415f3d4] Tag[274796251897] Index[7] Offset[20] 
+   Cache Miss[1390] for 'B[485]'
+   Address[0x00007ff64415fbd4] Tag[274796251901] Index[7] Offset[20] 
+
+Cache Miss(es) in Iteration[487]
+-----------------------------------------------------
+   Cache Miss[1391] for 'B[486 + 1]'
+   Address[0x00007ff64415fbdc] Tag[274796251901] Index[7] Offset[28] 
+   Cache Miss[1392] for 'C[486]'
+   Address[0x00007ff6441603d8] Tag[274796251905] Index[7] Offset[24] 
+   Cache Miss[1393] for 'A[486]'
+   Address[0x00007ff64415f3d8] Tag[274796251897] Index[7] Offset[24] 
+   Cache Miss[1394] for 'B[486]'
+   Address[0x00007ff64415fbd8] Tag[274796251901] Index[7] Offset[24] 
+
+Cache Miss(es) in Iteration[488]
+-----------------------------------------------------
+   Cache Miss[1395] for 'B[487 + 1]'
+   Address[0x00007ff64415fbe0] Tag[274796251901] Index[7] Offset[32] 
+   Cache Miss[1396] for 'C[487]'
+   Address[0x00007ff6441603dc] Tag[274796251905] Index[7] Offset[28] 
+   Cache Miss[1397] for 'A[487]'
+   Address[0x00007ff64415f3dc] Tag[274796251897] Index[7] Offset[28] 
+   Cache Miss[1398] for 'B[487]'
+   Address[0x00007ff64415fbdc] Tag[274796251901] Index[7] Offset[28] 
+
+Cache Miss(es) in Iteration[489]
+-----------------------------------------------------
+   Cache Miss[1399] for 'B[488 + 1]'
+   Address[0x00007ff64415fbe4] Tag[274796251901] Index[7] Offset[36] 
+   Cache Miss[1400] for 'C[488]'
+   Address[0x00007ff6441603e0] Tag[274796251905] Index[7] Offset[32] 
+   Cache Miss[1401] for 'A[488]'
+   Address[0x00007ff64415f3e0] Tag[274796251897] Index[7] Offset[32] 
+   Cache Miss[1402] for 'B[488]'
+   Address[0x00007ff64415fbe0] Tag[274796251901] Index[7] Offset[32] 
+
+Cache Miss(es) in Iteration[490]
+-----------------------------------------------------
+   Cache Miss[1403] for 'B[489 + 1]'
+   Address[0x00007ff64415fbe8] Tag[274796251901] Index[7] Offset[40] 
+   Cache Miss[1404] for 'C[489]'
+   Address[0x00007ff6441603e4] Tag[274796251905] Index[7] Offset[36] 
+   Cache Miss[1405] for 'A[489]'
+   Address[0x00007ff64415f3e4] Tag[274796251897] Index[7] Offset[36] 
+   Cache Miss[1406] for 'B[489]'
+   Address[0x00007ff64415fbe4] Tag[274796251901] Index[7] Offset[36] 
+
+Cache Miss(es) in Iteration[491]
+-----------------------------------------------------
+   Cache Miss[1407] for 'B[490 + 1]'
+   Address[0x00007ff64415fbec] Tag[274796251901] Index[7] Offset[44] 
+   Cache Miss[1408] for 'C[490]'
+   Address[0x00007ff6441603e8] Tag[274796251905] Index[7] Offset[40] 
+   Cache Miss[1409] for 'A[490]'
+   Address[0x00007ff64415f3e8] Tag[274796251897] Index[7] Offset[40] 
+   Cache Miss[1410] for 'B[490]'
+   Address[0x00007ff64415fbe8] Tag[274796251901] Index[7] Offset[40] 
+
+Cache Miss(es) in Iteration[492]
+-----------------------------------------------------
+   Cache Miss[1411] for 'B[491 + 1]'
+   Address[0x00007ff64415fbf0] Tag[274796251901] Index[7] Offset[48] 
+   Cache Miss[1412] for 'C[491]'
+   Address[0x00007ff6441603ec] Tag[274796251905] Index[7] Offset[44] 
+   Cache Miss[1413] for 'A[491]'
+   Address[0x00007ff64415f3ec] Tag[274796251897] Index[7] Offset[44] 
+   Cache Miss[1414] for 'B[491]'
+   Address[0x00007ff64415fbec] Tag[274796251901] Index[7] Offset[44] 
+
+Cache Miss(es) in Iteration[493]
+-----------------------------------------------------
+   Cache Miss[1415] for 'B[492 + 1]'
+   Address[0x00007ff64415fbf4] Tag[274796251901] Index[7] Offset[52] 
+   Cache Miss[1416] for 'C[492]'
+   Address[0x00007ff6441603f0] Tag[274796251905] Index[7] Offset[48] 
+   Cache Miss[1417] for 'A[492]'
+   Address[0x00007ff64415f3f0] Tag[274796251897] Index[7] Offset[48] 
+   Cache Miss[1418] for 'B[492]'
+   Address[0x00007ff64415fbf0] Tag[274796251901] Index[7] Offset[48] 
+
+Cache Miss(es) in Iteration[494]
+-----------------------------------------------------
+   Cache Miss[1419] for 'B[493 + 1]'
+   Address[0x00007ff64415fbf8] Tag[274796251901] Index[7] Offset[56] 
+   Cache Miss[1420] for 'C[493]'
+   Address[0x00007ff6441603f4] Tag[274796251905] Index[7] Offset[52] 
+   Cache Miss[1421] for 'A[493]'
+   Address[0x00007ff64415f3f4] Tag[274796251897] Index[7] Offset[52] 
+   Cache Miss[1422] for 'B[493]'
+   Address[0x00007ff64415fbf4] Tag[274796251901] Index[7] Offset[52] 
+
+Cache Miss(es) in Iteration[495]
+-----------------------------------------------------
+   Cache Miss[1423] for 'B[494 + 1]'
+   Address[0x00007ff64415fbfc] Tag[274796251901] Index[7] Offset[60] 
+   Cache Miss[1424] for 'C[494]'
+   Address[0x00007ff6441603f8] Tag[274796251905] Index[7] Offset[56] 
+   Cache Miss[1425] for 'A[494]'
+   Address[0x00007ff64415f3f8] Tag[274796251897] Index[7] Offset[56] 
+   Cache Miss[1426] for 'B[494]'
+   Address[0x00007ff64415fbf8] Tag[274796251901] Index[7] Offset[56] 
+
+Cache Miss(es) in Iteration[496]
+-----------------------------------------------------
+   Cache Miss[1427] for 'B[495 + 1]'
+   Address[0x00007ff64415fc00] Tag[274796251902] Index[0] Offset[0] 
+   Cache Miss[1428] for 'C[495]'
+   Address[0x00007ff6441603fc] Tag[274796251905] Index[7] Offset[60] 
+   Cache Miss[1429] for 'A[495]'
+   Address[0x00007ff64415f3fc] Tag[274796251897] Index[7] Offset[60] 
+   Cache Miss[1430] for 'B[495]'
+   Address[0x00007ff64415fbfc] Tag[274796251901] Index[7] Offset[60] 
+
+Cache Miss(es) in Iteration[497]
+-----------------------------------------------------
+   Cache Miss[1431] for 'C[496]'
+   Address[0x00007ff644160400] Tag[274796251906] Index[0] Offset[0] 
+   Cache Miss[1432] for 'A[496]'
+   Address[0x00007ff64415f400] Tag[274796251898] Index[0] Offset[0] 
+
+Cache Miss(es) in Iteration[506]
+-----------------------------------------------------
+   Cache Miss[1433] for 'B[505 + 1]'
+   Address[0x00007ff64415fc28] Tag[274796251902] Index[0] Offset[40] 
+
+Cache Miss(es) in Iteration[507]
+-----------------------------------------------------
+   Cache Miss[1434] for 'B[506 + 1]'
+   Address[0x00007ff64415fc2c] Tag[274796251902] Index[0] Offset[44] 
+   Cache Miss[1435] for 'C[506]'
+   Address[0x00007ff644160428] Tag[274796251906] Index[0] Offset[40] 
+   Cache Miss[1436] for 'A[506]'
+   Address[0x00007ff64415f428] Tag[274796251898] Index[0] Offset[40] 
+   Cache Miss[1437] for 'B[506]'
+   Address[0x00007ff64415fc28] Tag[274796251902] Index[0] Offset[40] 
+
+Cache Miss(es) in Iteration[508]
+-----------------------------------------------------
+   Cache Miss[1438] for 'B[507 + 1]'
+   Address[0x00007ff64415fc30] Tag[274796251902] Index[0] Offset[48] 
+   Cache Miss[1439] for 'C[507]'
+   Address[0x00007ff64416042c] Tag[274796251906] Index[0] Offset[44] 
+   Cache Miss[1440] for 'A[507]'
+   Address[0x00007ff64415f42c] Tag[274796251898] Index[0] Offset[44] 
+   Cache Miss[1441] for 'B[507]'
+   Address[0x00007ff64415fc2c] Tag[274796251902] Index[0] Offset[44] 
+
+Cache Miss(es) in Iteration[509]
+-----------------------------------------------------
+   Cache Miss[1442] for 'B[508 + 1]'
+   Address[0x00007ff64415fc34] Tag[274796251902] Index[0] Offset[52] 
+   Cache Miss[1443] for 'C[508]'
+   Address[0x00007ff644160430] Tag[274796251906] Index[0] Offset[48] 
+   Cache Miss[1444] for 'A[508]'
+   Address[0x00007ff64415f430] Tag[274796251898] Index[0] Offset[48] 
+   Cache Miss[1445] for 'B[508]'
+   Address[0x00007ff64415fc30] Tag[274796251902] Index[0] Offset[48] 
+
+Cache Miss(es) in Iteration[510]
+-----------------------------------------------------
+   Cache Miss[1446] for 'B[509 + 1]'
+   Address[0x00007ff64415fc38] Tag[274796251902] Index[0] Offset[56] 
+   Cache Miss[1447] for 'C[509]'
+   Address[0x00007ff644160434] Tag[274796251906] Index[0] Offset[52] 
+   Cache Miss[1448] for 'A[509]'
+   Address[0x00007ff64415f434] Tag[274796251898] Index[0] Offset[52] 
+   Cache Miss[1449] for 'B[509]'
+   Address[0x00007ff64415fc34] Tag[274796251902] Index[0] Offset[52] 
+
+Cache Miss(es) in Iteration[511]
+-----------------------------------------------------
+   Cache Miss[1450] for 'B[510 + 1]'
+   Address[0x00007ff64415fc3c] Tag[274796251902] Index[0] Offset[60] 
+   Cache Miss[1451] for 'C[510]'
+   Address[0x00007ff644160438] Tag[274796251906] Index[0] Offset[56] 
+   Cache Miss[1452] for 'A[510]'
+   Address[0x00007ff64415f438] Tag[274796251898] Index[0] Offset[56] 
+   Cache Miss[1453] for 'B[510]'
+   Address[0x00007ff64415fc38] Tag[274796251902] Index[0] Offset[56] 
+----------------------------------------
+Cache Misses:1453
+Cache Hits:  591
+Cache Errors:128

@@ -1,0 +1,12 @@
+Executing an x64 build
+Following based on the physical address of A[0] being 0x00007ff7629dec40
+=================================================================
+
+Cache Miss(es) in Iteration[1]
+-----------------------------------------------------
+   Cache Miss[1] for 'B[0 + 1]'
+   Address[0x00007ff7629df444] Tag[274805640954] Index[1] Offset[4] 
+   Cache Miss[2] for 'C[0]'
+   Address[0x00007ff7629dfc40] Tag[274805640958] Index[1] Offset[0] 
+   Cache Miss[3] for 'A[0]'
+   Address[0x00007ff7629dec40] Tag[274805640950] Index[1] Offset[0] 

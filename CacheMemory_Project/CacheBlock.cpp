@@ -19,13 +19,17 @@ CCacheBlock::CCacheBlock ( ) noexcept
 };
 
 
-bool CCacheBlock::GetCacheData (size_t cbOffset, DWORD_PTR& dwData) const noexcept
+bool CCacheBlock::GetCacheData (size_t cbOffset, DWORD& dwData) const noexcept
 {
     bool bReturn = false;
-    if ( cbOffset < ( sizeof (m_rgBlock) + sizeof (DWORD_PTR) - sizeof (BYTE)) )
+    if ( cbOffset < ( sizeof (m_rgBlock) + sizeof (DWORD) - sizeof (BYTE)) )
     {
-        dwData  = *reinterpret_cast<const DWORD_PTR*>(&m_rgBlock[cbOffset]);
+        dwData  = *reinterpret_cast<const DWORD*>(&m_rgBlock[cbOffset]);
         bReturn = true;
+    }
+    else
+    {
+        _CrtDbgBreak();
     }
     return bReturn;
 }

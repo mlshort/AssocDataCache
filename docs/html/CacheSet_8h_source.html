@@ -106,126 +106,100 @@ $(document).ready(function(){initNavTree('CacheSet_8h_source.html','');});
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="CacheBlock_8h.html">CacheBlock.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="CacheSet_8h.html#adc0422a1a4f803088acbe912b0f255e3">   25</a></span>&#160;constexpr <span class="keywordtype">int</span> <a class="code" href="CacheSet_8h.html#adc0422a1a4f803088acbe912b0f255e3">g_CACHE_SETS</a>           = <a class="code" href="CacheBlock_8h.html#a4e37c0a4c09dc16b3fb5f1dd224fcc46">g_CACHE_NUM_BLOCKS</a> / 4;        </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="CacheSet_8h.html#a305e80ae577697adbeb9080f3986e110">   26</a></span>&#160;constexpr <span class="keywordtype">int</span> <a class="code" href="CacheSet_8h.html#a305e80ae577697adbeb9080f3986e110">g_CACHE_BLOCKS_PER_SET</a> = <a class="code" href="CacheBlock_8h.html#a4e37c0a4c09dc16b3fb5f1dd224fcc46">g_CACHE_NUM_BLOCKS</a> / <a class="code" href="CacheSet_8h.html#adc0422a1a4f803088acbe912b0f255e3">g_CACHE_SETS</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    The simplest approach, direct-mapped, forces a many-to-one mapping between</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    addresses and the available storage locations in the cache. In other words, </span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    a particular address can reside only in a single location in the cache; that </span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">    location is usually determined by extracting n bits from the address and using </span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">    those n bits as a direct index into one of 2n possible locations in the cache.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">    Of course, since there is a many-to-one mapping, each location must also store</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">    a tag that contains the remaining address bits corresponding to the block of </span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">    data stored at that location. On each lookup, the hardware must read the tag </span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">    and compare it with the address bits of the reference being performed to </span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">    determine whether a hit or miss has occurred.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    In the degenerate case where a direct-mapped memory contains enough storage</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">    locations for every address block (i.e., the n index bits include all bits of </span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">    the address), no tag is needed, as the mapping between addresses and storage </span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">    locations is now one-to-one instead of many-to-one. The register file inside </span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">    the processor is an example of such a memory; it need not be tagged since all </span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">    the address bits (all bits of the register identifier) are used as the index </span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">    into the register file.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">    Set-associative, is a many-to-few mapping between addresses and storage locations.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">    On each lookup, a subset of address bits is used to generate an index, just </span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">    as in the direct-mapped case. However, this index now corresponds to a set </span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">    of entries, usually two to eight, that are searched in parallel for a matching </span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">    tag. In practice, this approach is much more efficient from a hardware </span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">    implementation perspective, since it requires fewer address comparators than </span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">    a fully associative cache, but due to its flexible mapping policy behaves </span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">    similarly to a fully associative cache.</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">    Set-associative caches permit the flexible placement of data among all the entries </span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">    of a set.</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    - index bits            - select a particular set,</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">    - tag bits              - select an entry within the set,</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">    - block offset bits     - select the word within the selected entry.</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">// n-way set associative</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// - Each set contains n entries</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">// - Block number determines which set</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//      - (Block number) mod (Sets in cache)</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// - Search all entries in a given set at once</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    A Set-associative cache, is a many-to-few mapping between addresses and </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    storage locations. On each lookup, a subset of address bits is used to </span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">    generate an index, just as in the direct-mapped case. However, this index </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">    now corresponds to a set of entries, usually two to eight, that are searched </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    in parallel for a matching tag. In practice, this approach is much more </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    efficient from a hardware implementation perspective, since it requires </span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    fewer address comparators than a fully associative cache, but due to its </span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">    flexible mapping policy behaves similarly to a fully associative cache.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">    Set-associative caches permit the flexible placement of data among all the </span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">    entries of a set.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">    - index bits            - select a particular set,</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">    - tag bits              - select an entry within the set,</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">    - block offset bits     - select the word within the selected entry.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// n-way set associative</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// - Each set contains n entries (or blocks)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// - Block number determines which set</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//      - (Block number) mod (Sets in cache)</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// - Search all entries in a given set at once</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// In a 4-way set-associative data cache, the following data is used:</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">// Total Number of Blocks (b)      = 16; (see requirements)</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">// BlockSize (in bytes)            = 32; (see requirements) </span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// Number of Blocks per Set (N)    = 4;  (see requirements) 4-way set associative</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// Calculate other items as follows:</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// ---------------------------------</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// Number of Sets (s) = b / N;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//                 s  = 16 / 4;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//                 s  = 4;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// Offset Bits (o) - allows Selecting the word within each block</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//              o  = log2 (BlockSize)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//              o  = log2(32)</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//              o  = 5;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// Index Bits (i)  = allows Selecting the set of blocks</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//              i  = log2 (Number of Sets)</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//              i  = log2 (4)</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//              i  = 2</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// Four-way set-associative data cache</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// Blocks     = 16;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// BlockSize  = 32 (Bytes);</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// Sets (s)   = Blocks / 4;</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//         s  = 16 / 4;</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//         s  = 4;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">// Offset (o) - Select the word within each block</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//         o  = lg (BlockSize)</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">//         o  = lg (32)</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">//         o  = 5;</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">// Index (i)  = Select set of blocks</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">//         i  = lg (Number of Sets)</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">//         i  = lg (4)</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">//         i  = 2</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">// Tag (t)    = ID blocks within a set</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">//         t  = 32 - o - i;</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">//         t  = 32 - 5 - 2;</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">//         t  = 25;</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">//           32 bit Address</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//     Tag       (set) Index   (blocK) Offset</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// |   bits[t]  |   bits[i]    |   bits[o]    |</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">// |    25      |     2        |      5       |</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">// |   0..24    |   25..26     |   27..31     |</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">//           64 bit Address</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">//     Tag       (set) Index   (block) Offset</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">// |   bits[t]  |   bits[i]    |   bits[o]    |</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">// |    57      |     2        |      5       |</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">// |   0..56    |   57..58     |   59..63     |</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classCCacheSet.html">  128</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCCacheSet.html">CCacheSet</a></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="classCCacheBlock.html">CCacheBlock</a>              m_rgCacheBlock[<a class="code" href="CacheSet_8h.html#a305e80ae577697adbeb9080f3986e110">g_CACHE_BLOCKS_PER_SET</a>];</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    std::queue&lt;CCacheBlock*&gt; m_queAvailableBlocks;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="code" href="classCCacheSet.html#a547e62610bde5c5799502a8e4afed8ae">CCacheSet</a> ( ) noexcept;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCCacheSet.html#ae81b4404b96854ec95a7ddb2faba7273">Init</a>();</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCCacheSet.html#ac769e7c999fa9b6c679ff62c39d3f0cf">GetCacheData</a> (DWORD_PTR dwTag, DWORD_PTR cbOffset, DWORD_PTR&amp; dwData) noexcept;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCCacheSet.html#a3dd34c2591817b869893361bc81f3d9f">LoadCacheBlock</a> (DWORD_PTR dwTag, <span class="keyword">const</span> <span class="keywordtype">void</span>* pAddress) noexcept;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="classCCacheSet.html#a547e62610bde5c5799502a8e4afed8ae">CCacheSet</a>(<span class="keyword">const</span> <a class="code" href="classCCacheSet.html">CCacheSet</a>&amp; rhs) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="classCCacheSet.html">CCacheSet</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classCCacheSet.html">CCacheSet</a>&amp; rhs) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;};</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// Tag Bits (t)    = ID blocks within a set</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//              t  = sizeof(address) - o - i;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//              (given a 32-bit address)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//              t  = 32 - 5 - 2;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//              t  = 25;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classCCacheSet.html">   83</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCCacheSet.html">CCacheSet</a></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classCCacheBlock.html">CCacheBlock</a>              m_rgCacheBlock[<a class="code" href="namespacereq.html#a4e356360cff2a1d4e13211477b049364">req::g_4WAY_BLOCKS_PER_SET</a>];</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::queue&lt;CCacheBlock*&gt; m_queAvailableBlocks;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classCCacheSet.html#a547e62610bde5c5799502a8e4afed8ae">CCacheSet</a> ( ) noexcept;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCCacheSet.html#ae81b4404b96854ec95a7ddb2faba7273">Init</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCCacheSet.html#ad80ca9016ca6c31cbaac925535b81fae">GetCacheData</a> (DWORD_PTR dwTag, <span class="keywordtype">size_t</span> cbOffset, <a class="code" href="CommonDef_8h.html#a9e573b32980bc2aee14f4d2639269b85">DWORD</a>&amp; dwData) noexcept;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCCacheSet.html#a3dd34c2591817b869893361bc81f3d9f">LoadCacheBlock</a> (DWORD_PTR dwTag, <span class="keyword">const</span> <span class="keywordtype">void</span>* pAddress) noexcept;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="classCCacheSet.html#a547e62610bde5c5799502a8e4afed8ae">CCacheSet</a>(<span class="keyword">const</span> <a class="code" href="classCCacheSet.html">CCacheSet</a>&amp; rhs) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="classCCacheSet.html">CCacheSet</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classCCacheSet.html">CCacheSet</a>&amp; rhs) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassCCacheSet_html_ac769e7c999fa9b6c679ff62c39d3f0cf"><div class="ttname"><a href="classCCacheSet.html#ac769e7c999fa9b6c679ff62c39d3f0cf">CCacheSet::GetCacheData</a></div><div class="ttdeci">bool GetCacheData(DWORD_PTR dwTag, DWORD_PTR cbOffset, DWORD_PTR &amp;dwData) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="CacheSet_8cpp_source.html#l00024">CacheSet.cpp:24</a></div></div>
-<div class="ttc" id="aclassCCacheSet_html_a3dd34c2591817b869893361bc81f3d9f"><div class="ttname"><a href="classCCacheSet.html#a3dd34c2591817b869893361bc81f3d9f">CCacheSet::LoadCacheBlock</a></div><div class="ttdeci">bool LoadCacheBlock(DWORD_PTR dwTag, const void *pAddress) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="CacheSet_8cpp_source.html#l00061">CacheSet.cpp:61</a></div></div>
-<div class="ttc" id="aCacheSet_8h_html_a305e80ae577697adbeb9080f3986e110"><div class="ttname"><a href="CacheSet_8h.html#a305e80ae577697adbeb9080f3986e110">g_CACHE_BLOCKS_PER_SET</a></div><div class="ttdeci">constexpr int g_CACHE_BLOCKS_PER_SET</div><div class="ttdef"><b>Definition:</b> <a href="CacheSet_8h_source.html#l00026">CacheSet.h:26</a></div></div>
-<div class="ttc" id="aclassCCacheSet_html"><div class="ttname"><a href="classCCacheSet.html">CCacheSet</a></div><div class="ttdef"><b>Definition:</b> <a href="CacheSet_8h_source.html#l00128">CacheSet.h:128</a></div></div>
+<div class="ttc" id="aclassCCacheSet_html_a3dd34c2591817b869893361bc81f3d9f"><div class="ttname"><a href="classCCacheSet.html#a3dd34c2591817b869893361bc81f3d9f">CCacheSet::LoadCacheBlock</a></div><div class="ttdeci">bool LoadCacheBlock(DWORD_PTR dwTag, const void *pAddress) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="CacheSet_8cpp_source.html#l00082">CacheSet.cpp:82</a></div></div>
+<div class="ttc" id="aclassCCacheSet_html"><div class="ttname"><a href="classCCacheSet.html">CCacheSet</a></div><div class="ttdef"><b>Definition:</b> <a href="CacheSet_8h_source.html#l00083">CacheSet.h:83</a></div></div>
+<div class="ttc" id="anamespacereq_html_a4e356360cff2a1d4e13211477b049364"><div class="ttname"><a href="namespacereq.html#a4e356360cff2a1d4e13211477b049364">req::g_4WAY_BLOCKS_PER_SET</a></div><div class="ttdeci">constexpr int g_4WAY_BLOCKS_PER_SET</div><div class="ttdoc">4-way set associative cache (Project Requirement)</div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00061">CommonDef.h:61</a></div></div>
 <div class="ttc" id="aCacheBlock_8h_html"><div class="ttname"><a href="CacheBlock_8h.html">CacheBlock.h</a></div><div class="ttdoc">CCacheBlock class interface.</div></div>
-<div class="ttc" id="aCacheBlock_8h_html_a4e37c0a4c09dc16b3fb5f1dd224fcc46"><div class="ttname"><a href="CacheBlock_8h.html#a4e37c0a4c09dc16b3fb5f1dd224fcc46">g_CACHE_NUM_BLOCKS</a></div><div class="ttdeci">const int g_CACHE_NUM_BLOCKS</div><div class="ttdoc">number of cache data blocks</div><div class="ttdef"><b>Definition:</b> <a href="CacheBlock_8h_source.html#l00043">CacheBlock.h:43</a></div></div>
-<div class="ttc" id="aclassCCacheSet_html_a547e62610bde5c5799502a8e4afed8ae"><div class="ttname"><a href="classCCacheSet.html#a547e62610bde5c5799502a8e4afed8ae">CCacheSet::CCacheSet</a></div><div class="ttdeci">CCacheSet() noexcept</div><div class="ttdoc">Default Constructor (is_nothrow_default_constructible == true)</div><div class="ttdef"><b>Definition:</b> <a href="CacheSet_8cpp_source.html#l00013">CacheSet.cpp:13</a></div></div>
+<div class="ttc" id="aclassCCacheSet_html_a547e62610bde5c5799502a8e4afed8ae"><div class="ttname"><a href="classCCacheSet.html#a547e62610bde5c5799502a8e4afed8ae">CCacheSet::CCacheSet</a></div><div class="ttdeci">CCacheSet() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="CacheSet_8cpp_source.html#l00013">CacheSet.cpp:13</a></div></div>
 <div class="ttc" id="aCommonDef_8h_html"><div class="ttname"><a href="CommonDef_8h.html">CommonDef.h</a></div><div class="ttdoc">Common type definitions.</div></div>
+<div class="ttc" id="aCommonDef_8h_html_a9e573b32980bc2aee14f4d2639269b85"><div class="ttname"><a href="CommonDef_8h.html#a9e573b32980bc2aee14f4d2639269b85">DWORD</a></div><div class="ttdeci">unsigned __int32 DWORD</div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00018">CommonDef.h:18</a></div></div>
+<div class="ttc" id="aclassCCacheSet_html_ad80ca9016ca6c31cbaac925535b81fae"><div class="ttname"><a href="classCCacheSet.html#ad80ca9016ca6c31cbaac925535b81fae">CCacheSet::GetCacheData</a></div><div class="ttdeci">bool GetCacheData(DWORD_PTR dwTag, size_t cbOffset, DWORD &amp;dwData) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="CacheSet_8cpp_source.html#l00024">CacheSet.cpp:24</a></div></div>
 <div class="ttc" id="aclassCCacheSet_html_ae81b4404b96854ec95a7ddb2faba7273"><div class="ttname"><a href="classCCacheSet.html#ae81b4404b96854ec95a7ddb2faba7273">CCacheSet::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdef"><b>Definition:</b> <a href="CacheSet_8cpp_source.html#l00018">CacheSet.cpp:18</a></div></div>
-<div class="ttc" id="aclassCCacheBlock_html"><div class="ttname"><a href="classCCacheBlock.html">CCacheBlock</a></div><div class="ttdef"><b>Definition:</b> <a href="CacheBlock_8h_source.html#l00049">CacheBlock.h:49</a></div></div>
-<div class="ttc" id="aCacheSet_8h_html_adc0422a1a4f803088acbe912b0f255e3"><div class="ttname"><a href="CacheSet_8h.html#adc0422a1a4f803088acbe912b0f255e3">g_CACHE_SETS</a></div><div class="ttdeci">constexpr int g_CACHE_SETS</div><div class="ttdoc">Number of caches sets needed.</div><div class="ttdef"><b>Definition:</b> <a href="CacheSet_8h_source.html#l00025">CacheSet.h:25</a></div></div>
+<div class="ttc" id="aclassCCacheBlock_html"><div class="ttname"><a href="classCCacheBlock.html">CCacheBlock</a></div><div class="ttdef"><b>Definition:</b> <a href="CacheBlock_8h_source.html#l00020">CacheBlock.h:20</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_daf31f26a43db8669501ae1cb1258dfc.html">CacheMemory_Project</a></li><li class="navelem"><a class="el" href="CacheSet_8h.html">CacheSet.h</a></li>
-    <li class="footer">Generated on Sat Nov 9 2019 10:18:21 for 4-way Set Associative Cache Project by
+    <li class="footer">Generated on Sat Nov 9 2019 19:51:35 for 4-way Set Associative Cache Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

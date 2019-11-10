@@ -1,0 +1,7 @@
+Executing an x32 build
+Following based on the physical address of A[0] being 0x00a7ab40
+=================================================================
+
+Cache Miss(es) in Iteration[1]
+-----------------------------------------------------
+   Cache Miss[1] for 'B[0 + 1]'

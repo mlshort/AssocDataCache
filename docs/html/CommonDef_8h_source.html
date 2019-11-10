@@ -107,16 +107,32 @@ $(document).ready(function(){initNavTree('CommonDef_8h_source.html','');});
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    #include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespacereq.html">   27</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacereq.html">req</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespacereq.html#ab09855ba48d494fecf6bcb0ae4687adf">   29</a></span>&#160;    constexpr <span class="keywordtype">int</span> <a class="code" href="namespacereq.html#ab09855ba48d494fecf6bcb0ae4687adf">g_CACHE_NUM_BLOCKS</a>      = 16;  </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespacereq.html#a17a9fe9f4845e2499267792763eb752c">   60</a></span>&#160;    constexpr <span class="keywordtype">int</span> <a class="code" href="namespacereq.html#a17a9fe9f4845e2499267792763eb752c">g_CACHE_BLOCK_SIZE</a>      = 32;  </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="namespacereq.html#a4e356360cff2a1d4e13211477b049364">   61</a></span>&#160;    constexpr <span class="keywordtype">int</span> <a class="code" href="namespacereq.html#a4e356360cff2a1d4e13211477b049364">g_4WAY_BLOCKS_PER_SET</a>   =  4;  </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespacereq.html#adf3ab502f229a2a4c425e597aeac3b91">   62</a></span>&#160;    constexpr <span class="keywordtype">int</span> <a class="code" href="namespacereq.html#adf3ab502f229a2a4c425e597aeac3b91">g_4WAY_CACHE_SETS</a>       = <a class="code" href="namespacereq.html#ab09855ba48d494fecf6bcb0ae4687adf">g_CACHE_NUM_BLOCKS</a> / <a class="code" href="namespacereq.html#a4e356360cff2a1d4e13211477b049364">g_4WAY_BLOCKS_PER_SET</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespacereq.html#ae57f33076ade7d794410f0bdacf49d7d">   63</a></span>&#160;    constexpr <span class="keywordtype">int</span> <a class="code" href="namespacereq.html#ae57f33076ade7d794410f0bdacf49d7d">g_MAX_ARRAY_SIZE</a>        = 512;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespacereq_html_adf3ab502f229a2a4c425e597aeac3b91"><div class="ttname"><a href="namespacereq.html#adf3ab502f229a2a4c425e597aeac3b91">req::g_4WAY_CACHE_SETS</a></div><div class="ttdeci">constexpr int g_4WAY_CACHE_SETS</div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00062">CommonDef.h:62</a></div></div>
+<div class="ttc" id="anamespacereq_html_a4e356360cff2a1d4e13211477b049364"><div class="ttname"><a href="namespacereq.html#a4e356360cff2a1d4e13211477b049364">req::g_4WAY_BLOCKS_PER_SET</a></div><div class="ttdeci">constexpr int g_4WAY_BLOCKS_PER_SET</div><div class="ttdoc">4-way set associative cache (Project Requirement)</div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00061">CommonDef.h:61</a></div></div>
+<div class="ttc" id="anamespacereq_html"><div class="ttname"><a href="namespacereq.html">req</a></div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00027">CommonDef.h:27</a></div></div>
+<div class="ttc" id="anamespacereq_html_ab09855ba48d494fecf6bcb0ae4687adf"><div class="ttname"><a href="namespacereq.html#ab09855ba48d494fecf6bcb0ae4687adf">req::g_CACHE_NUM_BLOCKS</a></div><div class="ttdeci">constexpr int g_CACHE_NUM_BLOCKS</div><div class="ttdoc">number of cache data blocks (Project Requirement)</div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00029">CommonDef.h:29</a></div></div>
 <div class="ttc" id="aCommonDef_8h_html_a9e573b32980bc2aee14f4d2639269b85"><div class="ttname"><a href="CommonDef_8h.html#a9e573b32980bc2aee14f4d2639269b85">DWORD</a></div><div class="ttdeci">unsigned __int32 DWORD</div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00018">CommonDef.h:18</a></div></div>
+<div class="ttc" id="anamespacereq_html_ae57f33076ade7d794410f0bdacf49d7d"><div class="ttname"><a href="namespacereq.html#ae57f33076ade7d794410f0bdacf49d7d">req::g_MAX_ARRAY_SIZE</a></div><div class="ttdeci">constexpr int g_MAX_ARRAY_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00063">CommonDef.h:63</a></div></div>
 <div class="ttc" id="aCommonDef_8h_html_a634460dafaee84690f6af3690c42dedd"><div class="ttname"><a href="CommonDef_8h.html#a634460dafaee84690f6af3690c42dedd">BYTE</a></div><div class="ttdeci">unsigned __int8 BYTE</div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00017">CommonDef.h:17</a></div></div>
+<div class="ttc" id="anamespacereq_html_a17a9fe9f4845e2499267792763eb752c"><div class="ttname"><a href="namespacereq.html#a17a9fe9f4845e2499267792763eb752c">req::g_CACHE_BLOCK_SIZE</a></div><div class="ttdeci">constexpr int g_CACHE_BLOCK_SIZE</div><div class="ttdoc">size of cache block (in bytes)</div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00060">CommonDef.h:60</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_daf31f26a43db8669501ae1cb1258dfc.html">CacheMemory_Project</a></li><li class="navelem"><a class="el" href="CommonDef_8h.html">CommonDef.h</a></li>
-    <li class="footer">Generated on Sat Nov 9 2019 10:18:21 for 4-way Set Associative Cache Project by
+    <li class="footer">Generated on Sat Nov 9 2019 19:51:35 for 4-way Set Associative Cache Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

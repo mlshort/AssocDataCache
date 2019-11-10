@@ -42,10 +42,7 @@
 *       cache implementation was required.
 *
 *    2. The attached source code has been run on a x64 bit system, but compiled 
-*       as a 32bit application. It is not designed or developed for porting 
-*       or recompilation as a x64 bit executable.  There are explicit types, 
-*       type-casts and assumptions made throughout the code (i.e. casting 
-*       memory address to 32-bit types) that limit it to a 32-bit executable.
+*       as a 32bit application. It is has been modified to support x32 / x64.
 *
 *    3. "Handling Updates to a Block" was not considered at this time and 
 *       would require further implementation.
@@ -100,15 +97,14 @@
 #include "CacheManager.h"
 
 
-constexpr int g_MAX_ARRAY_SIZE = 512;
 constexpr int g_DR_PASSOS_LOOP = 511;
 
 
-__declspec(align(32)) int g_rgA[g_MAX_ARRAY_SIZE] = { 0 };
-__declspec(align(32)) int g_rgB[g_MAX_ARRAY_SIZE] = { 0 };
-__declspec(align(32)) int g_rgC[g_MAX_ARRAY_SIZE] = { 0 };
+__declspec(align(32)) int g_rgA[req::g_MAX_ARRAY_SIZE] = { 0 };
+__declspec(align(32)) int g_rgB[req::g_MAX_ARRAY_SIZE] = { 0 };
+__declspec(align(32)) int g_rgC[req::g_MAX_ARRAY_SIZE] = { 0 };
 #ifdef _DEBUG
-__declspec(align(32)) int g_rgD[g_MAX_ARRAY_SIZE] = { -1 };  // for debugging purposes
+__declspec(align(32)) int g_rgD[req::g_MAX_ARRAY_SIZE] = { -1 };  // for debugging purposes
 #endif
 
 
@@ -141,13 +137,13 @@ int _tmain (int /*argc*/, _TCHAR* /*argv[]*/)
     // seeding the global data arrays with some data that we
     // can potentially use to verify if our cache is storing
     // and retrieving correct values
-    for ( int i = 0; i < g_MAX_ARRAY_SIZE; i++)
+    for ( int i = 0; i < req::g_MAX_ARRAY_SIZE; i++)
         g_rgA[i] = i + 0x1100;
 
-    for ( int i = 0; i < g_MAX_ARRAY_SIZE; i++ )
+    for ( int i = 0; i < req::g_MAX_ARRAY_SIZE; i++ )
         g_rgB[i] = i + 0x2200;
 
-    for ( int i = 0; i < g_MAX_ARRAY_SIZE; i++ )
+    for ( int i = 0; i < req::g_MAX_ARRAY_SIZE; i++ )
         g_rgC[i] = i + 0x3300;
 
     CCacheManager cacheManager;
@@ -183,7 +179,7 @@ int _tmain (int /*argc*/, _TCHAR* /*argv[]*/)
 
     for ( int i = 0; i < g_DR_PASSOS_LOOP; i++ )
     {
-        DWORD_PTR dataFromCache;
+        DWORD dataFromCache;
         bool bCacheMissThisIteration = false;
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -362,7 +358,6 @@ int _tmain (int /*argc*/, _TCHAR* /*argv[]*/)
         std::cout << "Cache Misses:" << iCacheMisses  << std::endl;
         std::cout << "Cache Hits:  " << iCacheHits    << std::endl;
         std::cout << "Cache Errors:" << iCacheErrors  << std::endl;
-
     }
 
     oflog << std::dec;

@@ -99,21 +99,18 @@ $(document).ready(function(){initNavTree('classCCacheSet.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a547e62610bde5c5799502a8e4afed8ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheSet.html#a547e62610bde5c5799502a8e4afed8ae">CCacheSet</a> () noexcept</td></tr>
-<tr class="memdesc:a547e62610bde5c5799502a8e4afed8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor (is_nothrow_default_constructible == true)  <a href="classCCacheSet.html#a547e62610bde5c5799502a8e4afed8ae">More...</a><br /></td></tr>
 <tr class="separator:a547e62610bde5c5799502a8e4afed8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae81b4404b96854ec95a7ddb2faba7273"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheSet.html#ae81b4404b96854ec95a7ddb2faba7273">Init</a> ()</td></tr>
 <tr class="separator:ae81b4404b96854ec95a7ddb2faba7273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac769e7c999fa9b6c679ff62c39d3f0cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheSet.html#ac769e7c999fa9b6c679ff62c39d3f0cf">GetCacheData</a> (DWORD_PTR dwTag, DWORD_PTR cbOffset, DWORD_PTR &amp;dwData) noexcept</td></tr>
-<tr class="separator:ac769e7c999fa9b6c679ff62c39d3f0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80ca9016ca6c31cbaac925535b81fae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheSet.html#ad80ca9016ca6c31cbaac925535b81fae">GetCacheData</a> (DWORD_PTR dwTag, size_t cbOffset, <a class="el" href="CommonDef_8h.html#a9e573b32980bc2aee14f4d2639269b85">DWORD</a> &amp;dwData) noexcept</td></tr>
+<tr class="separator:ad80ca9016ca6c31cbaac925535b81fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dd34c2591817b869893361bc81f3d9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCacheSet.html#a3dd34c2591817b869893361bc81f3d9f">LoadCacheBlock</a> (DWORD_PTR dwTag, const void *pAddress) noexcept</td></tr>
 <tr class="separator:a3dd34c2591817b869893361bc81f3d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section note"><dt>Note</dt><dd>The following policy will be followed:</dd></dl>
-<p>The FIFO policy simply keeps track of the insertion order of the candidates and evicts the entry that has resided in the cache for the longest amount of time. The mechanism that implements this policy is straightforward, since the candidate eviction set (all blocks in a fully associative cache, or all blocks in a single set in a set-associative cache) can be managed as a circular queue. The circular queue has a single pointer to the oldest entry which is used to identify the eviction candidate and the pointer is incremented whenever a new entry is placed in the queue. This results in a single update for every miss in the cache.</p>
-<p>However, the FIFO policy does not always match the temporal locality characteristics inherent in a program’s reference stream, since some memory locations are accessed continually throughout the execution (e.g., commonly referenced global variables). Such references would experience frequent misses under a FIFO policy, since the blocks used to satisfy them would be evicted at regular intervals, as soon as every other block in the candidate eviction set had been evicted. </p>
+<div class="textblock"><p>Contains a set of cache blocks and manages the associated replacement policy </p>
 
-<p class="definition">Definition at line <a class="el" href="CacheSet_8h_source.html#l00128">128</a> of file <a class="el" href="CacheSet_8h_source.html">CacheSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CacheSet_8h_source.html#l00083">83</a> of file <a class="el" href="CacheSet_8h_source.html">CacheSet.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a547e62610bde5c5799502a8e4afed8ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a547e62610bde5c5799502a8e4afed8ae">&#9670;&nbsp;</a></span>CCacheSet()</h2>
@@ -137,16 +134,16 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Default Constructor (is_nothrow_default_constructible == true) </p>
+<p>Default Constructor</p>
+<dl class="section note"><dt>Note</dt><dd>(is_nothrow_default_constructible == true) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="CacheSet_8cpp_source.html#l00013">13</a> of file <a class="el" href="CacheSet_8cpp_source.html">CacheSet.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac769e7c999fa9b6c679ff62c39d3f0cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac769e7c999fa9b6c679ff62c39d3f0cf">&#9670;&nbsp;</a></span>GetCacheData()</h2>
+<a id="ad80ca9016ca6c31cbaac925535b81fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80ca9016ca6c31cbaac925535b81fae">&#9670;&nbsp;</a></span>GetCacheData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,13 +160,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DWORD_PTR&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>cbOffset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DWORD_PTR &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="CommonDef_8h.html#a9e573b32980bc2aee14f4d2639269b85">DWORD</a> &amp;&#160;</td>
           <td class="paramname"><em>dwData</em>&#160;</td>
         </tr>
         <tr>
@@ -187,7 +184,7 @@ Public Member Functions</h2></td></tr>
 <p>Attempts to retrieve data from cache memory based on tag and offset</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dwTag</td><td>tag associated with the cache block </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dwTag</td><td>Tag associated with the cache block </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">cbOffset</td><td>count of byte (cb) offset into cache block </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">dwData</td><td>output variable to return stored data value</td></tr>
   </table>
@@ -220,6 +217,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Initiializes internal data-structures</p>
+<p>Two-stage construction: Construct and initialize the object in two separate stages. The constructor creates the object and an initialization function initializes it. </p>
 
 <p class="definition">Definition at line <a class="el" href="CacheSet_8cpp_source.html#l00018">18</a> of file <a class="el" href="CacheSet_8cpp_source.html">CacheSet.cpp</a>.</p>
 
@@ -269,12 +268,24 @@ Public Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">true</td><td>if successful </td></tr>
-    <tr><td class="paramname">false</td><td>on error </td></tr>
+    <tr><td class="paramname">false</td><td>on error</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>LoadCacheBlock utilitizes the FIFO replacement policy</dd></dl>
+<p>The FIFO policy simply keeps track of the insertion order of the candidates and evicts the entry that has resided in the cache for the longest amount of time. The mechanism that implements this policy is straightforward, since the candidate eviction set (all blocks in a fully associative cache, or all blocks in a single set in a set-associative cache) can be managed as a circular queue. The circular queue has a single pointer to the oldest entry which is used to identify the eviction candidate and the pointer is incremented whenever a new entry is placed in the queue. This results in a single update for every miss in the cache.</p>
+<p>However, the FIFO policy does not always match the temporal locality characteristics inherent in a program's reference stream, since some memory locations are accessed continually throughout the execution (e.g., commonly referenced global variables). Such references would experience frequent misses under a FIFO policy, since the blocks used to satisfy them would be evicted at regular intervals, as soon as every other block in the candidate eviction set had been evicted. </p>
 
-<p class="definition">Definition at line <a class="el" href="CacheSet_8cpp_source.html#l00061">61</a> of file <a class="el" href="CacheSet_8cpp_source.html">CacheSet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CacheSet_8cpp_source.html#l00082">82</a> of file <a class="el" href="CacheSet_8cpp_source.html">CacheSet.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCCacheSet_a3dd34c2591817b869893361bc81f3d9f_cgraph.png" border="0" usemap="#classCCacheSet_a3dd34c2591817b869893361bc81f3d9f_cgraph" alt=""/></div>
+<map name="classCCacheSet_a3dd34c2591817b869893361bc81f3d9f_cgraph" id="classCCacheSet_a3dd34c2591817b869893361bc81f3d9f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,200,32"/>
+<area shape="rect" href="classCCacheBlock.html#a4a86be16eb4bfe41f8fdce3f964c47bb" title=" " alt="" coords="248,5,455,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -284,7 +295,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classCCacheSet.html">CCacheSet</a></li>
-    <li class="footer">Generated on Sat Nov 9 2019 10:18:23 for 4-way Set Associative Cache Project by
+    <li class="footer">Generated on Sat Nov 9 2019 19:51:36 for 4-way Set Associative Cache Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

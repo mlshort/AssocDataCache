@@ -104,45 +104,50 @@ $(document).ready(function(){initNavTree('CacheBlock_8cpp_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classCCacheBlock.html#abf1dde86a057cc5a9b1bd88684aa3ece">   22</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classCCacheBlock.html#abf1dde86a057cc5a9b1bd88684aa3ece">CCacheBlock::GetCacheData</a> (<span class="keywordtype">size_t</span> cbOffset, DWORD_PTR&amp; dwData) <span class="keyword">const</span> noexcept</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classCCacheBlock.html#ae2817a9b0f8f25b5cbf64e66b28cb15a">   22</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classCCacheBlock.html#ae2817a9b0f8f25b5cbf64e66b28cb15a">CCacheBlock::GetCacheData</a> (<span class="keywordtype">size_t</span> cbOffset, <a class="code" href="CommonDef_8h.html#a9e573b32980bc2aee14f4d2639269b85">DWORD</a>&amp; dwData) <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> bReturn = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> ( cbOffset &lt; ( <span class="keyword">sizeof</span> (m_rgBlock) + <span class="keyword">sizeof</span> (DWORD_PTR) - <span class="keyword">sizeof</span> (<a class="code" href="CommonDef_8h.html#a634460dafaee84690f6af3690c42dedd">BYTE</a>)) )</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> ( cbOffset &lt; ( <span class="keyword">sizeof</span> (m_rgBlock) + <span class="keyword">sizeof</span> (<a class="code" href="CommonDef_8h.html#a9e573b32980bc2aee14f4d2639269b85">DWORD</a>) - <span class="keyword">sizeof</span> (<a class="code" href="CommonDef_8h.html#a634460dafaee84690f6af3690c42dedd">BYTE</a>)) )</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        dwData  = *reinterpret_cast&lt;const DWORD_PTR*&gt;(&amp;m_rgBlock[cbOffset]);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        dwData  = *reinterpret_cast&lt;const DWORD*&gt;(&amp;m_rgBlock[cbOffset]);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        bReturn = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> bReturn;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classCCacheBlock.html#a8c40311c2f535d52f4caee133110f152">   33</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classCCacheBlock.html#a8c40311c2f535d52f4caee133110f152">CCacheBlock::LoadCacheBlock</a> (DWORD_PTR dwTag, <span class="keyword">const</span> <a class="code" href="CommonDef_8h.html#a634460dafaee84690f6af3690c42dedd">BYTE</a>* pData, </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                  <span class="keywordtype">size_t</span> cbLen <span class="comment">/* = g_CACHE_BLOCK_SIZE */</span>) noexcept</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> bReturn = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> ( pData != <span class="keyword">nullptr</span> )</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span> ( cbLen &lt;= <span class="keyword">sizeof</span>(m_rgBlock) )</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            memcpy (m_rgBlock, pData, cbLen);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            m_dwTag = dwTag;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            bReturn = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> bReturn;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        _CrtDbgBreak();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> bReturn;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classCCacheBlock.html#a4a86be16eb4bfe41f8fdce3f964c47bb">   37</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classCCacheBlock.html#a4a86be16eb4bfe41f8fdce3f964c47bb">CCacheBlock::LoadCacheBlock</a> (DWORD_PTR dwTag, <span class="keyword">const</span> <a class="code" href="CommonDef_8h.html#a634460dafaee84690f6af3690c42dedd">BYTE</a>* pData, </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                  <span class="keywordtype">size_t</span> cbLen <span class="comment">/* = g_CACHE_BLOCK_SIZE */</span>) noexcept</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> bReturn = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> ( pData != <span class="keyword">nullptr</span> )</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> ( cbLen &lt;= <span class="keyword">sizeof</span>(m_rgBlock) )</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            memcpy (m_rgBlock, pData, cbLen);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            m_dwTag = dwTag;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            bReturn = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> bReturn;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassCCacheBlock_html_abf1dde86a057cc5a9b1bd88684aa3ece"><div class="ttname"><a href="classCCacheBlock.html#abf1dde86a057cc5a9b1bd88684aa3ece">CCacheBlock::GetCacheData</a></div><div class="ttdeci">bool GetCacheData(size_t cbOffset, DWORD_PTR &amp;dwData) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="CacheBlock_8cpp_source.html#l00022">CacheBlock.cpp:22</a></div></div>
-<div class="ttc" id="aclassCCacheBlock_html_ad64f34425e9bd5cd47fb105273626451"><div class="ttname"><a href="classCCacheBlock.html#ad64f34425e9bd5cd47fb105273626451">CCacheBlock::CCacheBlock</a></div><div class="ttdeci">CCacheBlock() noexcept</div><div class="ttdoc">Default Constructor (is_nothrow_default_constructible == true)</div><div class="ttdef"><b>Definition:</b> <a href="CacheBlock_8cpp_source.html#l00014">CacheBlock.cpp:14</a></div></div>
+<div class="ttc" id="aclassCCacheBlock_html_ad64f34425e9bd5cd47fb105273626451"><div class="ttname"><a href="classCCacheBlock.html#ad64f34425e9bd5cd47fb105273626451">CCacheBlock::CCacheBlock</a></div><div class="ttdeci">CCacheBlock() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="CacheBlock_8cpp_source.html#l00014">CacheBlock.cpp:14</a></div></div>
+<div class="ttc" id="aclassCCacheBlock_html_ae2817a9b0f8f25b5cbf64e66b28cb15a"><div class="ttname"><a href="classCCacheBlock.html#ae2817a9b0f8f25b5cbf64e66b28cb15a">CCacheBlock::GetCacheData</a></div><div class="ttdeci">bool GetCacheData(size_t cbOffset, DWORD &amp;dwData) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="CacheBlock_8cpp_source.html#l00022">CacheBlock.cpp:22</a></div></div>
 <div class="ttc" id="aCacheBlock_8h_html"><div class="ttname"><a href="CacheBlock_8h.html">CacheBlock.h</a></div><div class="ttdoc">CCacheBlock class interface.</div></div>
-<div class="ttc" id="aclassCCacheBlock_html_a8c40311c2f535d52f4caee133110f152"><div class="ttname"><a href="classCCacheBlock.html#a8c40311c2f535d52f4caee133110f152">CCacheBlock::LoadCacheBlock</a></div><div class="ttdeci">bool LoadCacheBlock(DWORD_PTR dwTag, const BYTE *pData, size_t cbLen=g_CACHE_BLOCK_SIZE) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="CacheBlock_8cpp_source.html#l00033">CacheBlock.cpp:33</a></div></div>
 <div class="ttc" id="astdafx_8h_html"><div class="ttname"><a href="stdafx_8h.html">stdafx.h</a></div></div>
+<div class="ttc" id="aclassCCacheBlock_html_a4a86be16eb4bfe41f8fdce3f964c47bb"><div class="ttname"><a href="classCCacheBlock.html#a4a86be16eb4bfe41f8fdce3f964c47bb">CCacheBlock::LoadCacheBlock</a></div><div class="ttdeci">bool LoadCacheBlock(DWORD_PTR dwTag, const BYTE *pData, size_t cbLen=req::g_CACHE_BLOCK_SIZE) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="CacheBlock_8cpp_source.html#l00037">CacheBlock.cpp:37</a></div></div>
+<div class="ttc" id="aCommonDef_8h_html_a9e573b32980bc2aee14f4d2639269b85"><div class="ttname"><a href="CommonDef_8h.html#a9e573b32980bc2aee14f4d2639269b85">DWORD</a></div><div class="ttdeci">unsigned __int32 DWORD</div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00018">CommonDef.h:18</a></div></div>
 <div class="ttc" id="aCommonDef_8h_html_a634460dafaee84690f6af3690c42dedd"><div class="ttname"><a href="CommonDef_8h.html#a634460dafaee84690f6af3690c42dedd">BYTE</a></div><div class="ttdeci">unsigned __int8 BYTE</div><div class="ttdef"><b>Definition:</b> <a href="CommonDef_8h_source.html#l00017">CommonDef.h:17</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_daf31f26a43db8669501ae1cb1258dfc.html">CacheMemory_Project</a></li><li class="navelem"><a class="el" href="CacheBlock_8cpp.html">CacheBlock.cpp</a></li>
-    <li class="footer">Generated on Sat Nov 9 2019 10:18:20 for 4-way Set Associative Cache Project by
+    <li class="footer">Generated on Sat Nov 9 2019 19:51:35 for 4-way Set Associative Cache Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

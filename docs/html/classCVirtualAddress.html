@@ -113,10 +113,32 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1f15d2fe7edfbda8a0443422c56dab63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class is used to translate physical memory addresses into "virtual" addresses by decoding relevant bit patterns into corresponding information fields needed to reference cache memory. The original address is partitioned into three portions: the index bits are used to select a block; the block offset bits are used to select a word within a selected block, and the tag bits are used to do a tag match against the tag stored in the tag field of the selected entry.</p>
-<p>Set-associative caches permit the flexible placement of data among all the entries of a "set". The index bits select a particular set, the tag bits select an entry (i.e. block) within the set, and the block offset bits select the word within the selected entry (i.e. block). </p>
+<div class="textblock"><p>This class is used to translate physical memory addresses into "virtual" addresses by decoding relevant bit patterns into corresponding information fields needed to reference cache memory.</p>
+<p>The original address is partitioned into three portions: the index bits are used to select a block (and the associated set); the block offset bits are used to select a word within a selected block; and the tag bits are used to do a tag match against the tag stored in the tag field of the selected block.</p>
+<p>The underlying member pointer address is translated as follows: </p><pre class="fragment">           32 bit Address
+</pre> <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">Tag  </th><th class="markdownTableHeadCenter">(set) Index  </th><th class="markdownTableHeadCenter">(block) Offset   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter">log2(NumSets)  </td><td class="markdownTableBodyCenter">log2(BlockSize)   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">25 bits  </td><td class="markdownTableBodyCenter">2 bits  </td><td class="markdownTableBodyCenter">5 bits   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">0..24  </td><td class="markdownTableBodyCenter">25..26  </td><td class="markdownTableBodyCenter">27..31   </td></tr>
+</table>
+<pre class="fragment">           64 bit Address
+</pre> <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">Tag  </th><th class="markdownTableHeadCenter">(set) Index  </th><th class="markdownTableHeadCenter">(block) Offset   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter">log2(NumSets)  </td><td class="markdownTableBodyCenter">log2(BlockSize)   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">57 bits  </td><td class="markdownTableBodyCenter">2 bits  </td><td class="markdownTableBodyCenter">5 bits   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">0..56  </td><td class="markdownTableBodyCenter">57..58  </td><td class="markdownTableBodyCenter">59..63   </td></tr>
+</table>
 
-<p class="definition">Definition at line <a class="el" href="VirtualAddress_8h_source.html#l00050">50</a> of file <a class="el" href="VirtualAddress_8h_source.html">VirtualAddress.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VirtualAddress_8h_source.html#l00052">52</a> of file <a class="el" href="VirtualAddress_8h_source.html">VirtualAddress.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a84a18286c6acdd729b74e6ab5a560967"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84a18286c6acdd729b74e6ab5a560967">&#9670;&nbsp;</a></span>CVirtualAddress()</h2>
@@ -144,7 +166,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Initialization Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="VirtualAddress_8h_source.html#l00063">63</a> of file <a class="el" href="VirtualAddress_8h_source.html">VirtualAddress.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VirtualAddress_8h_source.html#l00059">59</a> of file <a class="el" href="VirtualAddress_8h_source.html">VirtualAddress.h</a>.</p>
 
 </div>
 </div>
@@ -173,7 +195,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="VirtualAddress_8h_source.html#l00091">91</a> of file <a class="el" href="VirtualAddress_8h_source.html">VirtualAddress.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VirtualAddress_8h_source.html#l00087">87</a> of file <a class="el" href="VirtualAddress_8h_source.html">VirtualAddress.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +261,7 @@ Public Member Functions</h2></td></tr>
 <p>Decodes and returns Block Offset from the underlying memory address</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Offset</td><td>on success </td></tr>
+    <tr><td class="paramname">DWORD_PTR</td><td>containing Offset on success </td></tr>
     <tr><td class="paramname">DECODE_ERROR</td><td>on failure </td></tr>
   </table>
   </dd>
@@ -275,7 +297,7 @@ Public Member Functions</h2></td></tr>
 <p>Decodes and returns Tag from the underlying memory address</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Tag</td><td>on success </td></tr>
+    <tr><td class="paramname">DWORD_PTR</td><td>containg Tag on success </td></tr>
     <tr><td class="paramname">DECODE_ERROR</td><td>on failure </td></tr>
   </table>
   </dd>
@@ -302,6 +324,18 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="VirtualAddress_8cpp_source.html#l00079">79</a> of file <a class="el" href="VirtualAddress_8cpp_source.html">VirtualAddress.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCVirtualAddress_a1f15d2fe7edfbda8a0443422c56dab63_cgraph.png" border="0" usemap="#classCVirtualAddress_a1f15d2fe7edfbda8a0443422c56dab63_cgraph" alt=""/></div>
+<map name="classCVirtualAddress_a1f15d2fe7edfbda8a0443422c56dab63_cgraph" id="classCVirtualAddress_a1f15d2fe7edfbda8a0443422c56dab63_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,192,108"/>
+<area shape="rect" href="classCVirtualAddress.html#ab567a5829e2b750cf8b93af86e9e376a" title=" " alt="" coords="240,5,456,32"/>
+<area shape="rect" href="classCVirtualAddress.html#a69c32b6698d42bd7405fa0dab20cf0e8" title=" " alt="" coords="249,56,447,83"/>
+<area shape="rect" href="classCVirtualAddress.html#a1d6a00425367d9448ec98997109bf2b1" title=" " alt="" coords="247,107,449,133"/>
+<area shape="rect" href="classCVirtualAddress.html#a2ab12804e118206cf9d5ec929482ffed" title=" " alt="" coords="253,157,443,184"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -311,7 +345,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classCVirtualAddress.html">CVirtualAddress</a></li>
-    <li class="footer">Generated on Sat Nov 9 2019 10:18:23 for 4-way Set Associative Cache Project by
+    <li class="footer">Generated on Sat Nov 9 2019 19:51:36 for 4-way Set Associative Cache Project by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

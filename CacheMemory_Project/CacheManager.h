@@ -17,6 +17,10 @@
     #include "CacheSet.h"
 #endif
 
+/**
+    Number of cache sets needed
+ */
+constexpr int g_CACHE_SETS = req::g_CACHE_NUM_BLOCKS / req::g_4WAY_BLOCKS_PER_SET;
 
 class CCacheManager
 {
@@ -24,10 +28,20 @@ class CCacheManager
 
 public:
 
-    /// Default Constructor (is_nothrow_default_constructible == true)
+/**
+ *  Default Constructor
+ *
+ *  @note (is_nothrow_default_constructible == true)
+ */
     CCacheManager ( ) noexcept
     { };
 
+/**
+ *  Initiializes internal data-structures
+ *
+ *  Two-stage construction: Construct and initialize the object in two separate stages.
+ *  The constructor creates the object and an initialization function initializes it.
+ */
     void Init();
 
 /**
@@ -39,7 +53,7 @@ public:
     @retval true     on cache hit, dwData is set
     @retval false    on cache miss, dwData is not set 
 */
-    bool GetCacheData  (const void* pAddress, DWORD_PTR& dwData) noexcept;
+    bool GetCacheData  (const void* pAddress, DWORD& dwData) noexcept;
 
  /**
     Loads a contiguous block of memory, upto CACHE_BLOCK_SIZE, based on the
