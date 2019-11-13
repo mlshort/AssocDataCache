@@ -90,8 +90,7 @@ public:
     std::ostream& operator << (std::ostream& os) const;
 
 private:
-    // We really do not want this class to be instantiated in this manner,
-    // so going to make private
+    // We really do not want this class to be instantiated in this manner
 
     CVirtualAddress() = delete;
 };
