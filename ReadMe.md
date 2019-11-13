@@ -1,6 +1,6 @@
 # 4-way set associative data cache
   
-# [Project Documentation](https://mlshort.github.io/AssocDataCache/html/index.html)
+# [Doxygen Generated Project Documentation](https://mlshort.github.io/AssocDataCache/html/index.html)
 
 DIRECTORY STRUCTURE
 ===================
